@@ -381,17 +381,15 @@ textarea {
     padding: 1em;
     width: 300px;
     border-radius: 20px;
-    
     transition: background-color 0.3s ease-in-out;
-    
-    border: 1px solid #808080;
+    border: 1px solid var(--gray-color2);
     background-color: transparent;
     
 }
 
 #btn-reset:hover {
-    background-color: #242424;
-    color: #fbfbfb;
+    background-color: var(--black-color2);
+    color: var(--white-color1);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     
 }
@@ -404,8 +402,8 @@ textarea {
     transition: background-color 0.3s ease-in-out;
     transition: box-shadow 0.3s ease-in-out;
     border: none;
-    background-color: #fc732a;
-    color: #fbfbfb;
+    background-color: var(--orange-color2);
+    color: var(--white-color1);
     
 }
 

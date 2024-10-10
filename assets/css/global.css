@@ -10,6 +10,7 @@
     --white-color1: #FBFBFB;
     --white-color2: #F8F8F8;
     --orange-color1: #D34A00;
+    --orange-color2: #fc732a;
 }
 
 * {
@@ -43,9 +44,8 @@
 }
 
 #text-degrade {
-    background: linear-gradient(to right, var(--orange-color1), #d34a00);
+    background: linear-gradient(to right, #fc732a, #ff6715, #ff5900, #D34A00);
     background-clip: text;
-    /* Clipa o fundo para o texto */
     color: transparent;
 }
 
