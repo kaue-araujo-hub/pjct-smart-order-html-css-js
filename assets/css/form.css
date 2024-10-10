@@ -14,14 +14,12 @@
     width: 100%;
     display: flex;
     gap: 2em;
-
 }
 
 .fields-align-servico {
     display: flex;
     flex-direction: column;
 }
-
 
 #tipo-servico {
     width: 600px;
@@ -35,19 +33,12 @@
     width: 100%;
     padding: 0.5rem;
     font-size: 1rem;
-    color: #a0a0a0;
+    color: var(--gray-color3);
     border-radius: 4px;
     margin-top: 1em;
     border: none;
-    border-bottom: 1px solid #121212
+    border-bottom: 1px solid var(--black-color1);
 }
-
-
-
-
-
-
-
 
 .cliente-group {
     margin: 6em;
@@ -66,7 +57,6 @@
     display: flex;
     gap: 2em;
 }
-
 
 .fields-align-cliente {
     display: flex;
@@ -101,22 +91,12 @@
     width: 100%;
     padding: 0.5rem;
     font-size: 1rem;
-    color: #a0a0a0;
+    color: var(--gray-color3);
     border-radius: 4px;
     margin-top: 1em;
     border: none;
-    border-bottom: 1px solid #121212
+    border-bottom: 1px solid var(--black-color1);
 }
-
-
-
-
-
-
-
-
-
-
 
 .equipamento-group {
     margin: 6em;
@@ -153,19 +133,16 @@
     width: 300px;
 }
 
-.equipamento-group1 .inputbox-equip{
+.equipamento-group1 .inputbox-equip {
     width: 100%;
     padding: 0.5rem;
     font-size: 1rem;
-    color: #a0a0a0;
+    color: var(--gray-color3);
     border-radius: 4px;
     margin-top: 1em;
     border: none;
-    border-bottom: 1px solid #121212
+    border-bottom: 1px solid var(--black-color1);
 }
-
-
-
 
 .equipamento-group2 {
     width: 100%;
@@ -173,12 +150,9 @@
     gap: 2rem;
 }
 
-
-
 .fields-align-equip-modalidade {
     display: flex;
     flex-direction: column;
-    
 }
 
 .modalidade-titulo {
@@ -186,8 +160,7 @@
 }
 
 .checkbox-group {
-    accent-color: #d34a00;
-    
+    accent-color: var(--orange-color1);
 }
 
 .modalidade-box {
@@ -204,41 +177,30 @@
     vertical-align: middle;
 }
 
-
-
-
 .fields-align-equip-status {
     display: flex;
     flex-direction: column;
-    
 }
 
 .status-equip {
     margin-bottom: 1em;
-    color: #121212;
+    color: var(--black-color1);
 }
 
 .inputbox-status-equip {
     width: 350px;
     border: none;
     border-radius: 4px;
-    border-bottom: 1px solid #121212;
-    color: #a0a0a0;
+    border-bottom: 1px solid var(--black-color1);
+    color: var(--gray-color3);
     padding: 0.5rem;
     font-size: 16px;
 }
 
-
-
-
-
-
-
-
 .deslocamento-group {
     width: 100%;
     max-width: 100vw;
-    background-color: #f7f7f7;
+    background-color: var(--white-color2);
     padding-top: 60px;
     padding-bottom: 80px;
     display: flex;
@@ -253,7 +215,7 @@
 .desloc-titulo {
     font-size: 2em;
     margin-bottom: 1em;
-    color: #121212;
+    color: var(--black-color1);
 }
 
 .deslocamento-ida {
@@ -272,7 +234,7 @@
     background-color: transparent;
     border: none;
     border-radius: 4px;
-    border-bottom: 1px solid #121212;
+    border-bottom: 1px solid var(--black-color1);
     padding: 0.5rem;
     font-size: 16px;
 }
@@ -280,25 +242,22 @@
 #label-data-ida, #label-hora-inicio-ida, #label-hora-chegada-ida, 
 #label-local-origem-ida, #label-local-destino-ida {
     margin-bottom: 1em;
-    color: #121212;
+    color: var(--black-color1);
 }
 
 #hora-inicio-ida, #hora-chegada-ida {
     width: 80px;
-    color: #121212;
+    color: var(--black-color1);
 }
 
 #local-origem-ida, #local-destino-ida {
     width: 385px;
-    color: #121212;
+    color: var(--black-color1);
 }
-
 
 #data-ida, #data-volta {
-    color: #121212;
+    color: var(--black-color1);
 }
-
-
 
 .deslocamento-volta {
     width: 100%;
@@ -316,30 +275,25 @@
     background-color: transparent;
     border: none;
     border-radius: 4px;
-    border-bottom: 1px solid #121212;
+    border-bottom: 1px solid var(--black-color1);
     padding: 0.5rem;
     font-size: 16px;
 }
 
 #label-data-volta, #label-hora-inicio-volta, #label-hora-chegada-volta, #label-local-origem-volta, #label-local-destino-volta {
     margin-bottom: 1em;
-    color: #121212;
+    color: var(--black-color1);
 }
 
 #hora-inicio-volta, #hora-chegada-volta {
     width: 80px;
-    color: #121212;
+    color: var(--black-color1);
 }
 
 #local-origem-volta, #local-destino-volta {
     width: 385px;
-    color: #121212;
+    color: var(--black-color1);
 }
-
-
-
-
-
 
 .tempo-servico {
     display: flex;
@@ -360,13 +314,12 @@
     flex-direction: column;
 }
 
-
 #inputbox-inicio-servico, #inputbox-termino-servico, .inputbox-status-atend, #inputbox-obs {
     width: 100%;
     background-color: transparent;
     border: none;
     border-radius: 4px;
-    border-bottom: 1px solid #121212;
+    border-bottom: 1px solid var(--black-color1);
     padding: 0.5rem;
     font-size: 16px;
 }
@@ -381,16 +334,11 @@
 
 .inputbox-status-atend {
     width: 400px;
-
 }
 
 #inputbox-obs {
     width: 555px;
 }
-
-
-
-
 
 .description {
     display: flex;
@@ -415,11 +363,10 @@ textarea {
     background-color: transparent;
     border: none;
     border-radius: 4px;
-    border-bottom: 1px solid #121212;
+    border-bottom: 1px solid var(--black-color1);
     padding: 0.5rem;
     font-size: 16px;
 }
-
 
 .buttons-group {
     margin: 6em;
@@ -429,51 +376,26 @@ textarea {
     justify-content: space-between;
 }
 
-
 #btn-reset {
     font-size: 1em;
-    padding: 1em;
-    width: 300px;
-    border-radius: 20px;
-    
-    transition: background-color 0.3s ease-in-out;
-    
-    border: 1px solid #808080;
-    background-color: transparent;
-    
-}
-
-
-
-#btn-reset:hover {
-    background-color: #242424;
-    color: #fbfbfb;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    
-}
-
-
-#btn-pdf {
-    font-size: 1em;
-    padding: 1em;
-    width: 300px;
-    border-radius: 20px;
-    transition: background-color 0.3s ease-in-out;
-    transition: box-shadow 0.3s ease-in-out;
+    color: var(--white-color1);
+    background-color: var(--orange-color1);
+    padding: 0.5rem 1rem;
     border: none;
-    background-color: #fc732a;
-    color: #fbfbfb;
-    
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-#btn-pdf:hover {
-    background-color: #fd5900;
-    color: #fbfbfb;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 0.3s ease-in-out;
-    
+#btn-submit {
+    font-size: 1em;
+    color: var(--white-color1);
+    background-color: var(--orange-color1);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-
-
-
+#btn-submit:hover, #btn-reset:hover {
+    background-color: var(--black-color1);
+}

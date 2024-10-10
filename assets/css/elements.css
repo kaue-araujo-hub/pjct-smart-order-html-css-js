@@ -6,31 +6,7 @@
     margin: 6em;
 }
 
-.card1 {
-    width: 568px;
-    height: 300px;
-    padding: 32px;
-    background-color: #2b2b2b;
-    display: flex;
-    flex-direction: column;
-    /* Alinhar conteúdo na vertical */
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    border: 1px solid #8a8a8a;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-
-.card1:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    /* Efeito de hover opcional */
-}
-
-
-.card2 {
+.option-card {
     width: 568px;
     height: 300px;
     padding: 32px;
@@ -41,24 +17,35 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    border: 1px solid #8a8a8a;
+    border: 1px solid var(--gray-color2);
     box-sizing: border-box;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 
+.option-card.selected {
+    width: 568px;
+    height: 300px;
+    padding: 32px;
+    background-color: var(--gray-color1);
+    display: flex;
+    flex-direction: column;
+    /* Alinhar conteúdo na vertical */
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid var(--gray-color2);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
 
-.card2:hover {
+.option-card:hover {
     background-color: rgba(255, 255, 255, 0.1);
     /* Efeito de hover opcional */
 }
 
-
-
-
-
-
-.card1 img, .card2 img {
+.option-card img {
     max-width: 100%;
     /* Limitar o tamanho das imagens */
     max-height: 100%;
@@ -68,10 +55,10 @@
     align-self: flex-start;
 }
 
-.card1 p, .card2 p {
+.option-card p {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
-    color: #fbfbfb;
+    color: var(--white-color1);
     padding-left: 1em;
     margin: 0;
     text-align: left;
