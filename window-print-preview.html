@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ordem de Serviço * Univen Page">
+    <title>Univen * Window-Preview - Ordem de Serviço</title>
+    <link rel="stylesheet" href="assets/css/global.css--">
+    </head>
+
+    <style>
+        body {
+            margin: 0;
+            margin-left: 24px;
+            margin-right: 24px;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .a4-container {
+            width: 794px;
+            height: 1123px;
+            border: #8a8a8a;
+        }
+
+        .header {
+            background-color: #242424;
+            padding-top: 24px;
+            padding-bottom: 12px;
+            border-bottom-left-radius: 32px;
+            display: flex;
+            justify-content: space-between;
+            color: #FBFBFB;
+        }
+
+        .header .header__logo {
+            margin-left: 24px;
+            width: 140px;
+            height: 40px;
+        }
+
+        .header .header__cel {
+            margin-right: 42px;
+        }
+
+        .banner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        #titulo-principal {
+            font-size: 24px;
+        }
+
+        .servico-group {
+            border: none;
+            margin-bottom: 12px;
+        }
+
+        #servico-titulo {
+            font-size: 18px;
+        }
+
+        .servico-fields {
+            display: flex;
+            width: 100%;
+            gap: 32px;
+        }
+
+        .fields-align-servico {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .label-servico {
+            font-size: 14px;
+        }
+
+
+
+        #data-servico {
+            width: 100px;
+        }
+
+        #tipo-servico {
+            width: 288px;
+        }
+
+        #fabricante {
+            width: 288px;
+        }
+
+        .servico-fields .inputbox-servico {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            color: #2B2B2B;
+            font-size: 14px;
+            border-radius: 4px;
+            margin-top: 1em;
+            border: none;
+            border-bottom: 1px solid #121212;
+        }
+
+    </style>
+
+<body>
+    <section class="a4-container">
+        <nav class="header">
+            <img src="img-icons/Logo-branco Univen-140x40.png" alt="logo-univen" class="header__logo">
+            <p class="header__web">univen.com.br</p>
+            <p class="header__cel">41 9616-1271</p>
+        </nav>
+        <section class="banner">
+            <div id="titulo-principal">
+                <h1>Ordem de Serviço</h1>
+            </div>
+        </section>
+        <main>
+            <section class="form">
+                <form action="">
+                    <fieldset class="servico-group">
+                        <legend id="servico-titulo"><strong>Serviço</strong></legend>
+                        <div class="servico-fields">
+                            
+                            <div id="fields-align-servico">
+                                <label for="data-servico" class="label-servico">Data</label>
+                                <input type="date" class="inputbox-servico" id="data-servico" name="data-servico" required>
+                            </div>
+
+                            <div id="fields-align-servico">
+                                <label for="tipo-servico" class="label-servico">Serviço</label>
+                                <select class="inputbox-servico" id="tipo-servico">
+                                    <option selected disabled value required>Selecione</option>
+                                    <option>Instalação</option>
+                                    <option>Reinstalação</option>
+                                    <option>Manutenção Corretiva</option>
+                                    <option>Manutenção Preventiva</option>
+                                    <option>Revisão/Desinstalação</option>
+                                    <option>Instalação de Demonstração</option>
+                                    <option>Aplicação/Treinamento</option>
+                                    <option>Acompanhamento</option>
+                                </select>
+                            </div>
+
+                            <div id="fields-align-servico">
+                                <label for="fabricante" class="label-servico">Fabricante</label>
+                                <select class="inputbox-servico" id="fabricante">
+                                    <option selected disabled value required>Selecione</option>
+                                    <option>GE</option>
+                                    <option>LOTUS</option>
+                                    <option>DRTECH</option>
+                                    <option>FUJIFILM</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="cliente-group">
+                            <legend id="cliente-titulo"><strong>Cliente</strong></legend>
+                            <div class="cliente-group1">
+                                <div class="fields-align-cliente">
+                                    <label for="nome-cliente">Nome da Instituição</label>
+                                    <input type="text" class="inputbox-cliente" id="nome-cliente" name="nome-cliente" placeholder="Nome do Hospital, Clínica ou Laboratório" required>
+                                </div>
+                                <div class="fields-align-cliente">
+                                    <label for="contato-cliente">Contato</label>
+                                    <input type="text" class="inputbox-cliente" id="contato-cliente" name="contato-cliente" placeholder="Nome do Responsável" required>
+                                </div>
+                                <div class="fields-align-cliente">
+                                    <label for="cel-tel-cliente">Cel/Tel</label>
+                                    <input type="text" class="inputbox-cliente" id="cel-tel-cliente" name="cel-tel-cliente" placeholder="(xx) xxxxx-xxxx" required>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="cliente-group2">
+                                <div class="fields-align-cliente">
+                                    <label for="endereco">Endereço</label>
+                                    <input type="text" class="inputbox-cliente" id="endereco-cliente" name="endereco-cliente" placeholder="Rua / Avenida das Flores, 123 - Bairro" required>
+                                </div>
+                                <div class="fields-align-cliente">
+                                    <label for="municipio">Municipio</label>
+                                    <input type="text" class="inputbox-cliente" id="municipio-cliente" name="municipio-cliente" placeholder="Cidade" required>
+                                </div>
+                                <div class="fields-align-cliente">
+                                    <label for="uf">UF</label>
+                                    <select name="uf" class="inputbox-cliente" id="uf" required>
+                                        <option>AC</option>
+                                        <option>AL</option>
+                                        <option>AP</option>
+                                        <option>AM</option>
+                                        <option>BA</option>
+                                        <option>CE</option>
+                                        <option>DF</option>
+                                        <option>ES</option>
+                                        <option>GO</option>
+                                        <option>MA</option>
+                                        <option>MT</option>
+                                        <option>MS</option>
+                                        <option>MG</option>
+                                        <option>PA</option>
+                                        <option>PB</option>
+                                        <option>PR</option>
+                                        <option>PE</option>
+                                        <option>PI</option>
+                                        <option>RJ</option>
+                                        <option>RN</option>
+                                        <option>RS</option>
+                                        <option>RO</option>
+                                        <option>RR</option>
+                                        <option>SC</option>
+                                        <option>SP</option>
+                                        <option>SE</option>
+                                        <option>TO</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                    </fieldset>
+                    <fieldset class="equipamento-group">
+                        <legend id="equip-titulo"><strong>Equipamento</strong></legend>
+                        <div class="equipamento-group1">
+                            <div class="fields-align-equip">
+                                <label for="n-serie">Nº de Série</label>
+                                <input type="text" class="inputbox-equip" id="n-serie" name="n-serie" placeholder="SN 12345678" required>
+                            </div>
+                            <div class="fields-align-equip">
+                                <label for="nome-equipamento">Nome do Equipamento</label>
+                                <input type="text" class="inputbox-equip" id="nome-equipamento" name="nome-equipamento" placeholder="Modelo / Marca do Equipamento" required>
+                            </div>
+                            <div class="fields-align-equip">
+                                <label for="n-chamado">Nº de Chamado</label>
+                                <input type="text" class="inputbox-equip" id="n-chamado" name="n-chamado" placeholder="CH 12345678" required>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    
+                        <div class="equipamento-group2">
+                            <div class="fields-align-equip-modalidade">
+                                <label for="modalidade-titulo" class="modalidade-titulo">Modalidade</label>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" class="modalidade-box" id="rx-check" name="equip-check">
+                                    <label for="radiologia" class="rx">Radiologia</label>
+                                    
+                                    <input type="checkbox" class="modalidade-box" id="mg-check" name="equip-check">
+                                    <label for="mamografia" class="mg">Mamografia</label>
+                                    
+                                    <input type="checkbox" class="modalidade-box" id="ul-check" name="equip-check">
+                                    <label for="ultrassonografia" class="ul">Ultrassonografia</label>
+                                    
+                                    <input type="checkbox" class="modalidade-box" id="odonto-check" name="equip-check">
+                                    <label for="odontologia" class="odonto">Odontologia</label>
+                                    
+                                    <input type="checkbox" class="modalidade-box" id="vet-check" name="equip-check">
+                                    <label for="veterinaria" class="vet">Veterinária</label>  
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="fields-align-equip-status">
+                                <label for="equip-status" class="status-equip">Status do Equipamento</label>
+                                <select name="equip-status" class="inputbox-status-equip" id="equip-status">
+                                    <option selected required>Operante/Normal</option>
+                                    <option>Inoperante/Parado</option>
+                                    <option>Funcionando Parcialmente</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                
+                        <fieldset class="deslocamento-group">
+                            <div id="legend-desloc">
+                                <legend class="desloc-titulo"><strong>Deslocamento</strong></legend>
+                            </div>
+                            <div class="deslocamento-ida">
+                                <div class="fields-align-desloc-ida">
+                                    <label for="data" id="label-data-ida">Data de Ida</label>
+                                    <input type="date" class="inputbox-desloc-ida" id="data-ida" name="data-ida" required>
+                                </div>
+                                <div class="fields-align-desloc-ida">
+                                    <label for="hora-inicio" id="label-hora-inicio-ida">Início</label>
+                                    <input type="text" class="inputbox-desloc-ida" id="hora-inicio-ida" name="hora-inicio" placeholder="08h00" required>
+                                </div>
+                                <div class="fields-align-desloc-ida">
+                                    <label for="hora-chegada" id="label-hora-chegada-ida">Chegada</label>
+                                    <input type="text" class="inputbox-desloc-ida" id="hora-chegada-ida" name="hora-chegada" placeholder="10h00" required>
+                                </div>
+                                <div class="fields-align-desloc-ida">
+                                    <label for="local-origem" id="label-local-origem-ida">Origem</label>
+                                    <input type="text" class="inputbox-desloc-ida" id="local-origem-ida" name="local-origem" placeholder="Casa ou Hotel" required>
+                                </div>
+                                <div class="fields-align-desloc-ida">
+                                    <label for="local-chegada" id="label-local-destino-ida">Destino</label>
+                                    <input type="text" class="inputbox-desloc-ida" id="local-destino-ida" name="local-cdestino" placeholder="Local de Atendimento" required>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="deslocamento-volta">
+                                <div class="fields-align-desloc-volta">
+                                    <label for="data-volta" id="label-data-volta">Data de Volta</label>
+                                    <input type="date" class="inputbox-desloc-volta" id="data-volta" name="data-volta" required>
+                                </div>
+                                <div class="fields-align-desloc-volta">
+                                    <label for="hora-inicio" id="label-hora-inicio-volta">Início</label>
+                                    <input type="text" class="inputbox-desloc-volta" id="hora-inicio-volta" name="hora-inicio-volta" placeholder="16h00" required>
+                                </div>
+                                <div class="fields-align-desloc-volta">
+                                    <label for="hora-chegada" id="label-hora-chegada-volta">Chegada</label>
+                                    <input type="text" class="inputbox-desloc-volta" id="hora-chegada-volta" name="hora-chegada-volta" placeholder="18h00" required>
+                                </div>
+                                <div class="fields-align-desloc-volta">
+                                    <label for="local-origem" id="label-local-origem-volta">Origem</label>
+                                    <input type="text" class="inputbox-desloc-volta" id="local-origem-volta" name="local-origem-volta" placeholder="Local de Atendimento" required>
+                                </div>
+                                <div class="fields-align-desloc-volta">
+                                    <label for="local-chegada" id="label-local-destino-volta">Destino</label>
+                                    <input type="text" class="inputbox-desloc-volta" id="local-destino-volta" name="local-destino-volta" placeholder="Casa ou Hotel" required>
+                                </div>
+                            </div>
+                            
+                    </fieldset>
+
+                    <fieldset class="tempo-servico">
+                        <Legend id="tempo-titulo"><strong>Tempo de Serviço</strong></Legend>
+                        <div class="fields-align-time">
+                            <label for="hora-inicio" id="label-inicio-time">Início</label>
+                            <input type="text" id="inputbox-inicio-servico" name="hora-inicio-tempo" placeholder="13h00" required>
+                        </div>
+                        <div class="fields-align-time">
+                            <label for="hora-termino" id="label-termino-time">Término</label>
+                            <input type="text" id="inputbox-termino-servico" name="hora-termino-tempo" placeholder="16h00" required>
+                        </div>
+                        <div class="fields-align-time">
+                            <label for="status-atend" id="label-status-atend">Status de Atendimento</label>
+                            <select class="inputbox-status-atend">
+                                <option selected required>Concluído</option>
+                                <option>Não foi possível concluir</option>
+                                <option>Em andamento</option>
+                                <option>Cancelado</option>
+                            </select>
+                        </div>
+                        <div class="fields-align-time">
+                            <label for="obs" id="label-obs">Observações</label>
+                            <input type="text" id="inputbox-obs" name="obs-tempo" placeholder="Apontamentos relevantes">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="description"> 
+                        <legend id="descricao-titulo"><strong>Descrição do Serviço</strong></legend>
+                        <textarea rows="6" id="desc-servico" name="desc-servico" placeholder="Descreva o serviço executado com o máximo de detalhes possível" required></textarea>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer class="footer-infos">
+            <p id="dev-web-k">&copy Todos os direitos reservados. Desenvolvido por: Kauê Araujo</p>
+        </footer>
+
+        <script src="assets/js/select-card.js" defer></script>
+        <script src="assets/js/generate-preview.js" defer></script>
+        <script src="assets/js/auto-growing-textarea.js" defer></script>
+    </section>
+</body>
+</html>
