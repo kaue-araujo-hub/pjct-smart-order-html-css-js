@@ -18,15 +18,16 @@
         }
 
         .a4-container {
+            max-width: 794px;
+            max-height: 1123px;
             width: 794px;
             height: 1123px;
-            border: #8a8a8a;
         }
 
         .header {
             background-color: #242424;
-            padding-top: 24px;
-            padding-bottom: 12px;
+            padding-top: 20px;
+            padding-bottom: 8px;
             border-bottom-left-radius: 32px;
             display: flex;
             justify-content: space-between;
@@ -40,7 +41,7 @@
         }
 
         .header .header__cel {
-            margin-right: 42px;
+            margin-right: 48px;
         }
 
         .banner {
@@ -52,8 +53,12 @@
         }
 
         #titulo-principal {
-            font-size: 24px;
+            font-size: 20px;
         }
+
+
+
+
 
         .servico-group {
             border: none;
@@ -100,10 +105,108 @@
             color: #2B2B2B;
             font-size: 14px;
             border-radius: 4px;
-            margin-top: 1em;
+            margin-top: 6px;
             border: none;
             border-bottom: 1px solid #121212;
         }
+
+
+
+
+        .info-clients-fields {
+            width: 100%;
+            background-color: #f2f2f2c2;
+            padding-top: 24px;
+            padding-bottom: 12px;
+        }
+
+
+
+        .cliente-group {
+            border: none;
+            margin-bottom: 12px;
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        #cliente-titulo {
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+
+        .cliente-group1, .cliente-group2 {
+            display: flex;
+            width: 100%;
+            gap: 32px;
+            
+        }
+
+        .fields-align-cliente {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+        }
+
+
+
+        .label-nome-inst-cliente, 
+        .label-contato-cliente, 
+        .label-cel-tel-cliente {
+            font-size: 14px;
+        }
+
+        #nome-cliente {
+            width: 400px;
+        }
+
+        #contato-cliente {
+            width: 150px;
+        }
+
+        #cel-tel-cliente {
+            width: 100px;
+        }
+
+
+
+
+        .label-end-cliente, 
+        .label-municipio-cliente, 
+        .label-uf-cliente {
+            font-size: 14px;
+        }
+
+        #endereco-cliente {
+            width: 400px;
+        }
+
+        #municipio-cliente {
+            width: 200px;
+        }
+
+        #uf {
+            width: 60px;
+        }
+
+        .cliente-group1 .inputbox-cliente, .cliente-group2 .inputbox-cliente {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 14px;
+            color: #2b2b2b;
+            border-radius: 4px;
+            margin-top: 6px;
+            border: none;
+            border-bottom: 1px solid #121212;
+            background-color: transparent;
+        }
+
+
+
+
+
+
+
 
     </style>
 
@@ -158,70 +261,71 @@
                             </div>
                         </div>
                     </fieldset>
+                    <div class="info-clients-fields">
+                        <fieldset class="cliente-group">
+                                <legend id="cliente-titulo"><strong>Cliente</strong></legend>
+                                <div class="cliente-group1">
+                                    <div class="fields-align-cliente">
+                                        <label for="nome-cliente" class="label-nome-inst-cliente">Nome da Instituição</label>
+                                        <input type="text" class="inputbox-cliente" id="nome-cliente" name="nome-cliente" placeholder="Nome do Hospital, Clínica ou Laboratório" required>
+                                    </div>
+                                    <div class="fields-align-cliente">
+                                        <label for="contato-cliente" class="label-contato-cliente">Contato</label>
+                                        <input type="text" class="inputbox-cliente" id="contato-cliente" name="contato-cliente" placeholder="Nome do Responsável" required>
+                                    </div>
+                                    <div class="fields-align-cliente">
+                                        <label for="cel-tel-cliente" class="label-cel-tel-cliente">Cel/Tel</label>
+                                        <input type="text" class="inputbox-cliente" id="cel-tel-cliente" name="cel-tel-cliente" placeholder="(xx) xxxxx-xxxx" required>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="cliente-group2">
+                                    <div class="fields-align-cliente">
+                                        <label for="endereco" class="label-end-cliente">Endereço</label>
+                                        <input type="text" class="inputbox-cliente" id="endereco-cliente" name="endereco-cliente" placeholder="Rua / Avenida das Flores, 123 - Bairro" required>
+                                    </div>
+                                    <div class="fields-align-cliente">
+                                        <label for="municipio" class="label-municipio-cliente">Municipio</label>
+                                        <input type="text" class="inputbox-cliente" id="municipio-cliente" name="municipio-cliente" placeholder="Cidade" required>
+                                    </div>
+                                    <div class="fields-align-cliente">
+                                        <label for="uf" class="label-uf-cliente">UF</label>
+                                        <select name="uf" class="inputbox-cliente" id="uf" required>
+                                            <option>AC</option>
+                                            <option>AL</option>
+                                            <option>AP</option>
+                                            <option>AM</option>
+                                            <option>BA</option>
+                                            <option>CE</option>
+                                            <option>DF</option>
+                                            <option>ES</option>
+                                            <option>GO</option>
+                                            <option>MA</option>
+                                            <option>MT</option>
+                                            <option>MS</option>
+                                            <option>MG</option>
+                                            <option>PA</option>
+                                            <option>PB</option>
+                                            <option>PR</option>
+                                            <option>PE</option>
+                                            <option>PI</option>
+                                            <option>RJ</option>
+                                            <option>RN</option>
+                                            <option>RS</option>
+                                            <option>RO</option>
+                                            <option>RR</option>
+                                            <option>SC</option>
+                                            <option>SP</option>
+                                            <option>SE</option>
+                                            <option>TO</option>
+                                        </select>
+                                    </div>
+                                </div>
 
-                    <fieldset class="cliente-group">
-                            <legend id="cliente-titulo"><strong>Cliente</strong></legend>
-                            <div class="cliente-group1">
-                                <div class="fields-align-cliente">
-                                    <label for="nome-cliente">Nome da Instituição</label>
-                                    <input type="text" class="inputbox-cliente" id="nome-cliente" name="nome-cliente" placeholder="Nome do Hospital, Clínica ou Laboratório" required>
-                                </div>
-                                <div class="fields-align-cliente">
-                                    <label for="contato-cliente">Contato</label>
-                                    <input type="text" class="inputbox-cliente" id="contato-cliente" name="contato-cliente" placeholder="Nome do Responsável" required>
-                                </div>
-                                <div class="fields-align-cliente">
-                                    <label for="cel-tel-cliente">Cel/Tel</label>
-                                    <input type="text" class="inputbox-cliente" id="cel-tel-cliente" name="cel-tel-cliente" placeholder="(xx) xxxxx-xxxx" required>
-                                </div>
-                            </div>
-                            <br>
-                            <br>
-                            <br>
-                            <div class="cliente-group2">
-                                <div class="fields-align-cliente">
-                                    <label for="endereco">Endereço</label>
-                                    <input type="text" class="inputbox-cliente" id="endereco-cliente" name="endereco-cliente" placeholder="Rua / Avenida das Flores, 123 - Bairro" required>
-                                </div>
-                                <div class="fields-align-cliente">
-                                    <label for="municipio">Municipio</label>
-                                    <input type="text" class="inputbox-cliente" id="municipio-cliente" name="municipio-cliente" placeholder="Cidade" required>
-                                </div>
-                                <div class="fields-align-cliente">
-                                    <label for="uf">UF</label>
-                                    <select name="uf" class="inputbox-cliente" id="uf" required>
-                                        <option>AC</option>
-                                        <option>AL</option>
-                                        <option>AP</option>
-                                        <option>AM</option>
-                                        <option>BA</option>
-                                        <option>CE</option>
-                                        <option>DF</option>
-                                        <option>ES</option>
-                                        <option>GO</option>
-                                        <option>MA</option>
-                                        <option>MT</option>
-                                        <option>MS</option>
-                                        <option>MG</option>
-                                        <option>PA</option>
-                                        <option>PB</option>
-                                        <option>PR</option>
-                                        <option>PE</option>
-                                        <option>PI</option>
-                                        <option>RJ</option>
-                                        <option>RN</option>
-                                        <option>RS</option>
-                                        <option>RO</option>
-                                        <option>RR</option>
-                                        <option>SC</option>
-                                        <option>SP</option>
-                                        <option>SE</option>
-                                        <option>TO</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                    </fieldset>
+                        </fieldset>
+                    </div>
                     <fieldset class="equipamento-group">
                         <legend id="equip-titulo"><strong>Equipamento</strong></legend>
                         <div class="equipamento-group1">
