@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ordem de Serviço * Univen Page">
     <title>Univen * Window-Preview - Ordem de Serviço</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/window-print-preview/style.css">
     </head>
 <body>
+    <script>
+        document.getElementById('preview-data-servico').textContent = localStorage.getItem('data-servico');
+        document.getElementById('preview-tipo-servico').textContent = localStorage.getItem('tipo-servico');
+        document.getElementById('preview-fabricante').textContent = localStorage.getItem('fabricante');
+    </script>
     <section class="a4-container">
         <nav class="header">
-            <img src="Logo-branco Univen-140x40.png" alt="logo-univen" class="header__logo">
+            <img src="assets/window-print-preview/Logo-branco Univen-140x40.png" alt="logo-univen" class="header__logo">
             <p class="header__web">univen.com.br</p>
             <p class="header__cel">41 9616-1271</p>
         </nav>
@@ -28,33 +33,17 @@
                             
                             <div id="fields-align-servico">
                                 <label for="data-servico" class="label-servico">Data</label>
-                                <input type="date" class="inputbox-servico" id="data-servico" name="data-servico" required>
+                                <span class="inputbox-servico" id="preview-data-servico" name="data-servico"></span>
                             </div>
 
                             <div id="fields-align-servico">
                                 <label for="tipo-servico" class="label-servico">Serviço</label>
-                                <select class="inputbox-servico" id="tipo-servico">
-                                    <option selected disabled value required>Selecione</option>
-                                    <option>Instalação</option>
-                                    <option>Reinstalação</option>
-                                    <option>Manutenção Corretiva</option>
-                                    <option>Manutenção Preventiva</option>
-                                    <option>Revisão/Desinstalação</option>
-                                    <option>Instalação de Demonstração</option>
-                                    <option>Aplicação/Treinamento</option>
-                                    <option>Acompanhamento</option>
-                                </select>
+                                <span class="inputbox-servico" id="preview-tipo-servico"></span>
                             </div>
 
                             <div id="fields-align-servico">
                                 <label for="fabricante" class="label-servico">Fabricante</label>
-                                <select class="inputbox-servico" id="fabricante">
-                                    <option selected disabled value required>Selecione</option>
-                                    <option>GE</option>
-                                    <option>LOTUS</option>
-                                    <option>DRTECH</option>
-                                    <option>FUJIFILM</option>
-                                </select>
+                                <span class="inputbox-servico" id="preview-fabricante"></span>
                             </div>
                         </div>
                     </fieldset>
@@ -273,9 +262,7 @@
         </footer>
 
 
-        <script src="assets/js/select-card.js" defer></script>
-        <script src="assets/js/generate-preview.js" defer></script>
-        <script src="assets/js/auto-growing-textarea.js" defer></script>
+        
     </section>
 </body>
 </html>
