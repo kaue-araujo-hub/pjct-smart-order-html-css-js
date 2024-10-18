@@ -74,6 +74,7 @@ body {
     font-size: 14px;
 }
 
+
 #preview-data-servico {
     width: 100px;
 }
@@ -88,6 +89,7 @@ body {
 
 
 .servico-fields .inputbox-servico {
+    display: block;
     width: 100%;
     padding: 0.5rem;
     font-size: 1rem;
@@ -96,7 +98,7 @@ body {
     border-radius: 4px;
     margin-top: 6px;
     border: none;
-    border-bottom: 1px solid #121212;
+    border-bottom: 1px solid #c9c9c9;
     padding-left: 2px;
 } 
 

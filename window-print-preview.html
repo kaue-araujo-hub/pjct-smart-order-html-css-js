@@ -8,11 +8,7 @@
     <link rel="stylesheet" href="assets/window-print-preview/style.css">
     </head>
 <body>
-    <script>
-        document.getElementById('preview-data-servico').textContent = localStorage.getItem('data-servico');
-        document.getElementById('preview-tipo-servico').textContent = localStorage.getItem('tipo-servico');
-        document.getElementById('preview-fabricante').textContent = localStorage.getItem('fabricante');
-    </script>
+    
     <section class="a4-container">
         <nav class="header">
             <img src="assets/window-print-preview/Logo-branco Univen-140x40.png" alt="logo-univen" class="header__logo">
@@ -33,7 +29,7 @@
                             
                             <div id="fields-align-servico">
                                 <label for="data-servico" class="label-servico">Data</label>
-                                <span class="inputbox-servico" id="preview-data-servico" name="data-servico"></span>
+                                <span class="inputbox-servico" id="preview-data-servico"></span>
                             </div>
 
                             <div id="fields-align-servico">
@@ -260,9 +256,13 @@
         <footer class="footer-infos">
             <p id="dir-reserv">&copy Todos os direitos reservados.</p>
         </footer>
-
-
-        
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('preview-data-servico').textContent = localStorage.getItem('data-servico');
+            document.getElementById('preview-tipo-servico').textContent = localStorage.getItem('tipo-servico');
+            document.getElementById('preview-fabricante').textContent = localStorage.getItem('fabricante');
+        });
+    </script>
 </body>
 </html>

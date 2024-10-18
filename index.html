@@ -287,11 +287,16 @@
 
     <script>
         function openPrintPreview() {
-
             const dataServico = document.getElementById('data-servico').value;
             const tipoServico = document.getElementById('tipo-servico').value;
             const fabricante = document.getElementById('fabricante').value;
 
+            // Verifique se os valores estão sendo capturados corretamente
+            console.log("Data Serviço:", dataServico);
+            console.log("Tipo Serviço:", tipoServico);
+            console.log("Fabricante:", fabricante);
+
+            // Armazene os valores no localStorage
             localStorage.setItem('data-servico', dataServico);
             localStorage.setItem('tipo-servico', tipoServico);
             localStorage.setItem('fabricante', fabricante);
