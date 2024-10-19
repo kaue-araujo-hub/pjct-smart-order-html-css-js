@@ -287,19 +287,29 @@
 
     <script>
         function openPrintPreview() {
+            // Variaveis 1º bloco do formulário 
             const dataServico = document.getElementById('data-servico').value;
             const tipoServico = document.getElementById('tipo-servico').value;
             const fabricante = document.getElementById('fabricante').value;
-
-            // Verifique se os valores estão sendo capturados corretamente
+            // Armazenando os valores no localStorage
+            localStorage.setItem('data-servico', dataServico);
+            localStorage.setItem('tipo-servico', tipoServico);
+            localStorage.setItem('fabricante', fabricante);
+            // Saída para debugging (depuração do código)
             console.log("Data Serviço:", dataServico);
             console.log("Tipo Serviço:", tipoServico);
             console.log("Fabricante:", fabricante);
 
-            // Armazene os valores no localStorage
-            localStorage.setItem('data-servico', dataServico);
-            localStorage.setItem('tipo-servico', tipoServico);
-            localStorage.setItem('fabricante', fabricante);
+
+
+            // Variaveis 2º bloco do formulário
+            const nomeCliente = document.getElementById('nome-cliente').value;
+            const contatoCliente = document.getElementById('contato-cliente').value;
+            const celTelCliente = document.getElementById('cel-tel-cliente').value;
+            // Armazenando os valores no localStorage
+            localStorage.setItem('nome-cliente', nomeCliente);
+            localStorage.setItem('contato-cliente', contatoCliente);
+            localStorage.setItem('cel-tel-cliente', celTelCliente);
 
             window.open('window-print-preview.html');
         }

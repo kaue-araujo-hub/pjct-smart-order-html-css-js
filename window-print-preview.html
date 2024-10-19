@@ -49,15 +49,15 @@
                                 <div class="cliente-group1">
                                     <div class="fields-align-cliente">
                                         <label for="nome-cliente" class="label-nome-inst-cliente">Nome da Instituição</label>
-                                        <input type="text" class="inputbox-cliente" id="nome-cliente" name="nome-cliente" placeholder="Nome do Hospital, Clínica ou Laboratório" required>
+                                        <span type="text" class="inputbox-cliente" id="preview-nome-cliente" name="nome-cliente" placeholder="Nome do Hospital, Clínica ou Laboratório" required></span>
                                     </div>
                                     <div class="fields-align-cliente">
                                         <label for="contato-cliente" class="label-contato-cliente">Contato</label>
-                                        <input type="text" class="inputbox-cliente" id="contato-cliente" name="contato-cliente" placeholder="Nome do Responsável" required>
+                                        <span type="text" class="inputbox-cliente" id="preview-contato-cliente" name="contato-cliente" placeholder="Nome do Responsável" required></span>
                                     </div>
                                     <div class="fields-align-cliente">
                                         <label for="cel-tel-cliente" class="label-cel-tel-cliente">Cel/Tel</label>
-                                        <input type="text" class="inputbox-cliente" id="cel-tel-cliente" name="cel-tel-cliente" placeholder="(xx) xxxxx-xxxx" required>
+                                        <span type="text" class="inputbox-cliente" id="preview-cel-tel-cliente" name="cel-tel-cliente" placeholder="(xx) xxxxx-xxxx" required></span>
                                     </div>
                                 </div>
                                 <br>
@@ -65,43 +65,16 @@
                                 <div class="cliente-group2">
                                     <div class="fields-align-cliente">
                                         <label for="endereco" class="label-end-cliente">Endereço</label>
-                                        <input type="text" class="inputbox-cliente" id="endereco-cliente" name="endereco-cliente" placeholder="Rua / Avenida das Flores, 123 - Bairro" required>
+                                        <span type="text" class="inputbox-cliente" id="preview-endereco-cliente" name="endereco-cliente" placeholder="Rua / Avenida das Flores, 123 - Bairro Jardim" required></span>
                                     </div>
                                     <div class="fields-align-cliente">
                                         <label for="municipio" class="label-municipio-cliente">Municipio</label>
-                                        <input type="text" class="inputbox-cliente" id="municipio-cliente" name="municipio-cliente" placeholder="Cidade" required>
+                                        <span type="text" class="inputbox-cliente" id="preview-municipio-cliente" name="municipio-cliente" placeholder="Cidade" required></span>
                                     </div>
                                     <div class="fields-align-cliente">
                                         <label for="uf" class="label-uf-cliente">UF</label>
-                                        <select name="uf" class="inputbox-cliente" id="uf" required>
-                                            <option>AC</option>
-                                            <option>AL</option>
-                                            <option>AP</option>
-                                            <option>AM</option>
-                                            <option>BA</option>
-                                            <option>CE</option>
-                                            <option>DF</option>
-                                            <option>ES</option>
-                                            <option>GO</option>
-                                            <option>MA</option>
-                                            <option>MT</option>
-                                            <option>MS</option>
-                                            <option>MG</option>
-                                            <option>PA</option>
-                                            <option>PB</option>
-                                            <option>PR</option>
-                                            <option>PE</option>
-                                            <option>PI</option>
-                                            <option>RJ</option>
-                                            <option>RN</option>
-                                            <option>RS</option>
-                                            <option>RO</option>
-                                            <option>RR</option>
-                                            <option>SC</option>
-                                            <option>SP</option>
-                                            <option>SE</option>
-                                            <option>TO</option>
-                                        </select>
+                                        <span name="uf" class="inputbox-cliente" id="preview-uf" required></span>
+                                            
                                     </div>
                                 </div>
 
@@ -262,6 +235,10 @@
             document.getElementById('preview-data-servico').textContent = localStorage.getItem('data-servico');
             document.getElementById('preview-tipo-servico').textContent = localStorage.getItem('tipo-servico');
             document.getElementById('preview-fabricante').textContent = localStorage.getItem('fabricante');
+
+            document.getElementById('preview-nome-cliente').textContent = localStorage.getItem('nome-cliente');
+            document.getElementById('preview-contato-cliente').textContent = localStorage.getItem('contato-cliente');
+            document.getElementById('preview-cel-tel-cliente').textContent = localStorage.getItem('cel-tel-cliente');
         });
     </script>
 </body>

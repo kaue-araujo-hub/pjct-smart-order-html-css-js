@@ -108,7 +108,7 @@ body {
 
 .info-clients-fields {
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: transparent;
     padding-top: 24px;
     padding-bottom: 12px;
 }
@@ -118,7 +118,7 @@ body {
     margin-bottom: 12px;
     margin-right: 0;
     margin-left: 0;
-    background-color: #f8f8f8;
+    background-color: transparent;
     
 }
 
@@ -147,15 +147,15 @@ body {
     font-size: 14px;
 }
 
-#nome-cliente {
+#preview-nome-cliente {
     width: 400px;
 }
 
-#contato-cliente {
+#preview-contato-cliente {
     width: 150px;
 }
 
-#cel-tel-cliente {
+#preview-cel-tel-cliente {
     width: 115px;
 }
 
@@ -165,15 +165,15 @@ body {
     font-size: 14px;
 }
 
-#endereco-cliente {
+#preview-endereco-cliente {
     width: 420px;
 }
 
-#municipio-cliente {
+#preview-municipio-cliente {
     width: 200px;
 }
 
-#uf {
+#preview-uf {
     width: 50px;
 }
 
@@ -185,7 +185,7 @@ body {
     border-radius: 4px;
     margin-top: 6px;
     border: none;
-    border-bottom: 1px solid #121212;
+    border-bottom: 1px solid #c9c9c9;
     background-color: transparent;
     padding-left: 2px;
 }
