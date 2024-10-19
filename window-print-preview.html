@@ -85,15 +85,15 @@
                         <div class="equipamento-group1">
                             <div class="fields-align-equip">
                                 <label for="n-serie" class="label-n-serie">Nº de Série</label>
-                                <input type="text" class="inputbox-equip" id="n-serie" name="n-serie" placeholder="SN 12345678" required>
+                                <span type="text" class="inputbox-equip" id="preview-n-serie" name="n-serie" placeholder="SN 12345678" required></span>
                             </div>
                             <div class="fields-align-equip">
                                 <label for="nome-equipamento" class="label-nome-equip">Nome do Equipamento</label>
-                                <input type="text" class="inputbox-equip" id="nome-equipamento" name="nome-equipamento" placeholder="Modelo / Marca do Equipamento" required>
+                                <span type="text" class="inputbox-equip" id="preview-nome-equipamento" name="nome-equipamento" placeholder="Modelo / Marca do Equipamento" required></span>
                             </div>
                             <div class="fields-align-equip">
                                 <label for="n-chamado" class="label-n-chamado">Nº de Chamado</label>
-                                <input type="text" class="inputbox-equip" id="n-chamado" name="n-chamado" placeholder="CH 12345678" required>
+                                <span type="text" class="inputbox-equip" id="preview-n-chamado" name="n-chamado" placeholder="CH 12345678" required> </span>
                             </div>
                         </div>
                         <br>
@@ -239,6 +239,14 @@
             document.getElementById('preview-nome-cliente').textContent = localStorage.getItem('nome-cliente');
             document.getElementById('preview-contato-cliente').textContent = localStorage.getItem('contato-cliente');
             document.getElementById('preview-cel-tel-cliente').textContent = localStorage.getItem('cel-tel-cliente');
+
+            document.getElementById('preview-endereco-cliente').textContent = localStorage.getItem('endereco-cliente');
+            document.getElementById('preview-municipio-cliente').textContent = localStorage.getItem('municipio-cliente');
+            document.getElementById('preview-uf').textContent = localStorage.getItem('uf');
+
+            document.getElementById('preview-n-serie').textContent = localStorage.getItem('n-serie');
+            document.getElementById('preview-nome-equipamento').textContent = localStorage.getItem('nome-equipamento');
+            document.getElementById('preview-n-chamado').textContent = localStorage.getItem('n-chamado');
         });
     </script>
 </body>

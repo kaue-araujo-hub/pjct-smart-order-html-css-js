@@ -291,7 +291,7 @@
             const dataServico = document.getElementById('data-servico').value;
             const tipoServico = document.getElementById('tipo-servico').value;
             const fabricante = document.getElementById('fabricante').value;
-            // Armazenando os valores no localStorage
+            // Armazenando os valores no localStorage 1º bloco
             localStorage.setItem('data-servico', dataServico);
             localStorage.setItem('tipo-servico', tipoServico);
             localStorage.setItem('fabricante', fabricante);
@@ -306,10 +306,34 @@
             const nomeCliente = document.getElementById('nome-cliente').value;
             const contatoCliente = document.getElementById('contato-cliente').value;
             const celTelCliente = document.getElementById('cel-tel-cliente').value;
-            // Armazenando os valores no localStorage
+            // Armazenando os valores no localStorage 2º bloco
             localStorage.setItem('nome-cliente', nomeCliente);
             localStorage.setItem('contato-cliente', contatoCliente);
             localStorage.setItem('cel-tel-cliente', celTelCliente);
+
+
+
+            // Variaveis 3º bloco do formulário
+            const endCliente = document.getElementById('endereco-cliente').value;
+            const municipioCliente = document.getElementById('municipio-cliente').value;
+            const ufCliente = document.getElementById('uf').value;
+            // Armazenando os valores no localStorage 3º bloco
+            localStorage.setItem('endereco-cliente', endCliente);
+            localStorage.setItem('municipio-cliente', municipioCliente);
+            localStorage.setItem('uf', ufCliente);
+
+
+
+
+            // Variaveis 4º bloco do formulário
+            const nSerie = document.getElementById('n-serie').value;
+            const nomeEquipamento = document.getElementById('nome-equipamento').value;
+            const nChamado = document.getElementById('n-chamado').value;
+            // Armazenando os valores no localStorage 4º bloco
+            localStorage.setItem('n-serie', nSerie);
+            localStorage.setItem('nome-equipamento', nomeEquipamento);
+            localStorage.setItem('n-chamado', nChamado);
+
 
             window.open('window-print-preview.html');
         }
