@@ -103,19 +103,19 @@
                             <div class="fields-align-equip-modalidade">
                                 <label for="modalidade-titulo" class="modalidade-titulo">Modalidade</label>
                                 <div class="checkbox-group">
-                                    <input type="checkbox" class="modalidade-box" id="rx-check" name="equip-check">
+                                    <span type="checkbox" class="modalidade-box" id="preview-rx-check" name="equip-check"></span>
                                     <label for="radiologia" class="rx">Radiologia</label>
                                     
-                                    <input type="checkbox" class="modalidade-box" id="mg-check" name="equip-check">
+                                    <span type="checkbox" class="modalidade-box" id="preview-mg-check" name="equip-check"></span>
                                     <label for="mamografia" class="mg">Mamografia</label>
                                     
-                                    <input type="checkbox" class="modalidade-box" id="ul-check" name="equip-check">
+                                    <span type="checkbox" class="modalidade-box" id="preview-ul-check" name="equip-check"></span>
                                     <label for="ultrassonografia" class="ul">Ultrassonografia</label>
                                     
-                                    <input type="checkbox" class="modalidade-box" id="odonto-check" name="equip-check">
+                                    <span type="checkbox" class="modalidade-box" id="preview-odonto-check" name="equip-check"></span>
                                     <label for="odontologia" class="odonto">Odontologia</label>
                                     
-                                    <input type="checkbox" class="modalidade-box" id="vet-check" name="equip-check">
+                                    <span type="checkbox" class="modalidade-box" id="preview-vet-check" name="equip-check"></span>
                                     <label for="veterinaria" class="vet">Veterinária</label>  
                                 </div>
                             </div>
@@ -123,10 +123,8 @@
                             
                             <div class="fields-align-equip-status">
                                 <label for="equip-status" class="label-status-equip">Status do Equipamento</label>
-                                <select name="equip-status" class="inputbox-status-equip" id="equip-status">
-                                    <option selected required>Operante/Normal</option>
-                                    <option>Inoperante/Parado</option>
-                                    <option>Funcionando Parcialmente</option>
+                                <span name="equip-status" class="inputbox-status-equip" id="preview-equip-status"></span>
+                                    
                                 </select>
                             </div>
                         </div>
@@ -232,6 +230,12 @@
     </section>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // Obtendo valores dos inputs da entrada -> index.html usando DOM
+            /*
+                Os IDs nomeados com: preview-alguma-coisa recebem os valores
+                valores estes que estão armazenados no localStorage do Web Storage do Google Chrome.
+                esses valores são obtidos a partir do ID do doc de entrada de dados index.html
+            */
             document.getElementById('preview-data-servico').textContent = localStorage.getItem('data-servico');
             document.getElementById('preview-tipo-servico').textContent = localStorage.getItem('tipo-servico');
             document.getElementById('preview-fabricante').textContent = localStorage.getItem('fabricante');
@@ -247,6 +251,14 @@
             document.getElementById('preview-n-serie').textContent = localStorage.getItem('n-serie');
             document.getElementById('preview-nome-equipamento').textContent = localStorage.getItem('nome-equipamento');
             document.getElementById('preview-n-chamado').textContent = localStorage.getItem('n-chamado');
+
+            document.getElementById('preview-rx-check').textContent = localStorage.getItem('rx-check');
+            document.getElementById('preview-mg-check').textContent = localStorage.getItem('mg-check');
+            document.getElementById('preview-ul-check').textContent = localStorage.getItem('ul-check');
+            document.getElementById('preview-odonto-check').textContent = localStorage.getItem('odont-check');
+            document.getElementById('preview-vet-check').textContent = localStorage.getItem('vet-check');
+            document.getElementById('preview-equip-status').textContent = localStorage.getItem('equip-status');
+
         });
     </script>
 </body>

@@ -335,6 +335,23 @@
             localStorage.setItem('n-chamado', nChamado);
 
 
+
+            // Variaveis 5º bloco do formulário
+            const rxCheck = document.getElementById('rx-check').value;
+            const mgCheck = document.getElementById('mg-check').value;
+            const ulCheck = document.getElementById('ul-check').value;
+            const odontoCheck = document.getElementById('odonto-check').value;
+            const vetCheck = document.getElementById('vet-check').value;
+            const statusEquip = document.getElementById('equip-status').value;
+            // Armazenando os valores no localStorage 5º bloco
+            localStorage.setItem('rx-check', rxCheck);
+            localStorage.setItem('mg-check', mgCheck);
+            localStorage.setItem('ul-check', ulCheck);
+            localStorage.setItem('odonto-check', odontoCheck);
+            localStorage.setItem('vet-check', vetCheck);
+            localStorage.setItem('equip-status', statusEquip);
+
+
             window.open('window-print-preview.html');
         }
     </script>
