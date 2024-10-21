@@ -352,6 +352,21 @@
             localStorage.setItem('equip-status', statusEquip);
 
 
+
+            // Variaveis 6º bloco do formulário
+            const dataIda = document.getElementById('data-ida').value;
+            const horaInicioIda = document.getElementById('hora-inicio-ida').value;
+            const horaChegadaIda = document.getElementById('hora-chegada-ida').value;
+            const localOrigemIda = document.getElementById('local-origem-ida').value;
+            const localDestinoIda = document.getElementById('local-destino-ida').value;
+            // Armazenando os valores no localStorage 6º bloco
+            localStorage.setItem('data-ida', dataIda);
+            localStorage.setItem('hora-inicio-ida', horaInicioIda);
+            localStorage.setItem('hora-chegada-ida', horaChegadaIda);
+            localStorage.setItem('local-origem-ida', localOrigemIda);
+            localStorage.setItem('local-destino-ida', localDestinoIda);
+
+
             window.open('window-print-preview.html');
         }
     </script>

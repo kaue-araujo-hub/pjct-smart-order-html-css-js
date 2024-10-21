@@ -348,7 +348,7 @@ body {
     background-color: transparent;
     border: none;
     border-radius: 4px;
-    border-bottom: 1px solid #121212;
+    border-bottom: 1px solid #c9c9c9;
     padding: 0.5rem;
     padding-left: 2px;
     font-size: 14px;
@@ -359,17 +359,17 @@ body {
     font-size: 14px;
 }
 
-#hora-inicio-ida, #hora-chegada-ida {
+#preview-hora-inicio-ida, #preview-hora-chegada-ida {
     width: 50px;
     color: #121212;
 }
 
-#local-origem-ida, #local-destino-ida {
+#preview-local-origem-ida, #preview-local-destino-ida {
     width: 195px;
     color: #121212;
 }
 
-#data-ida, #data-volta {
+#preview-data-ida, #preview-data-volta {
     width: 100px;
     color: #121212;
 }
