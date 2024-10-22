@@ -367,6 +367,23 @@
             localStorage.setItem('local-destino-ida', localDestinoIda);
 
 
+        
+            // Variaveis 7º bloco do formulário
+            const dataVolta = document.getElementById('data-volta').value;
+            const horaInicioVolta = document.getElementById('hora-inicio-volta').value;
+            const horaChegadaVolta = document.getElementById('hora-chegada-volta').value;
+            const localOrigemVolta = document.getElementById('local-origem-volta').value;
+            const localDestinoVolta = document.getElementById('local-destino-volta').value;
+            // Armazenando os valores no localStorage 7º bloco
+            localStorage.setItem('data-volta', dataVolta);
+            localStorage.setItem('hora-inicio-volta', horaInicioVolta);
+            localStorage.setItem('hora-chegada-volta', horaChegadaVolta);
+            localStorage.setItem('local-origem-volta', localOrigemVolta);
+            localStorage.setItem('local-destino-volta', localDestinoVolta);
+
+
+
+
             window.open('window-print-preview.html');
         }
     </script>

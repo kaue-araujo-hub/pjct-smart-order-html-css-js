@@ -137,46 +137,46 @@
                             <div class="deslocamento-ida">
                                 <div class="fields-align-desloc-ida">
                                     <label for="data" id="label-data-ida">Data de Ida</label>
-                                    <input type="date" class="inputbox-desloc-ida" id="preview-data-ida" name="data-ida" required>
+                                    <span type="date" class="inputbox-desloc-ida" id="preview-data-ida" name="data-ida" required></span>
                                 </div>
                                 <div class="fields-align-desloc-ida">
                                     <label for="hora-inicio" id="label-hora-inicio-ida">Início</label>
-                                    <input type="text" class="inputbox-desloc-ida" id="preview-hora-inicio-ida" name="hora-inicio" placeholder="08h00" required>
+                                    <span type="text" class="inputbox-desloc-ida" id="preview-hora-inicio-ida" name="hora-inicio" placeholder="08h00" required></span>
                                 </div>
                                 <div class="fields-align-desloc-ida">
                                     <label for="hora-chegada" id="label-hora-chegada-ida">Chegada</label>
-                                    <input type="text" class="inputbox-desloc-ida" id="preview-hora-chegada-ida" name="hora-chegada" placeholder="10h00" required>
+                                    <span type="text" class="inputbox-desloc-ida" id="preview-hora-chegada-ida" name="hora-chegada" placeholder="10h00" required></span>
                                 </div>
                                 <div class="fields-align-desloc-ida">
                                     <label for="local-origem" id="label-local-origem-ida">Origem</label>
-                                    <input type="text" class="inputbox-desloc-ida" id="preview-local-origem-ida" name="local-origem" placeholder="Casa ou Hotel" required>
+                                    <span type="text" class="inputbox-desloc-ida" id="preview-local-origem-ida" name="local-origem" placeholder="Casa ou Hotel" required></span>
                                 </div>
                                 <div class="fields-align-desloc-ida">
                                     <label for="local-chegada" id="label-local-destino-ida">Destino</label>
-                                    <input type="text" class="inputbox-desloc-ida" id="preview-local-destino-ida" name="local-cdestino" placeholder="Local de Atendimento" required>
+                                    <span type="text" class="inputbox-desloc-ida" id="preview-local-destino-ida" name="local-cdestino" placeholder="Local de Atendimento" required></span>
                                 </div>
                             </div>
                             <br>
                             <div class="deslocamento-volta">
                                 <div class="fields-align-desloc-volta">
                                     <label for="data-volta" id="label-data-volta">Data de Volta</label>
-                                    <input type="date" class="inputbox-desloc-volta" id="data-volta" name="data-volta" required>
+                                    <span type="date" class="inputbox-desloc-volta" id="preview-data-volta" name="data-volta" required></span>
                                 </div>
                                 <div class="fields-align-desloc-volta">
                                     <label for="hora-inicio" id="label-hora-inicio-volta">Início</label>
-                                    <input type="text" class="inputbox-desloc-volta" id="hora-inicio-volta" name="hora-inicio-volta" placeholder="16h00" required>
+                                    <span type="text" class="inputbox-desloc-volta" id="preview-hora-inicio-volta" name="hora-inicio-volta" placeholder="16h00" required></span>
                                 </div>
                                 <div class="fields-align-desloc-volta">
                                     <label for="hora-chegada" id="label-hora-chegada-volta">Chegada</label>
-                                    <input type="text" class="inputbox-desloc-volta" id="hora-chegada-volta" name="hora-chegada-volta" placeholder="18h00" required>
+                                    <span type="text" class="inputbox-desloc-volta" id="preview-hora-chegada-volta" name="hora-chegada-volta" placeholder="18h00" required></span>
                                 </div>
                                 <div class="fields-align-desloc-volta">
                                     <label for="local-origem" id="label-local-origem-volta">Origem</label>
-                                    <input type="text" class="inputbox-desloc-volta" id="local-origem-volta" name="local-origem-volta" placeholder="Local de Atendimento" required>
+                                    <span type="text" class="inputbox-desloc-volta" id="preview-local-origem-volta" name="local-origem-volta" placeholder="Local de Atendimento" required></span>
                                 </div>
                                 <div class="fields-align-desloc-volta">
                                     <label for="local-chegada" id="label-local-destino-volta">Destino</label>
-                                    <input type="text" class="inputbox-desloc-volta" id="local-destino-volta" name="local-destino-volta" placeholder="Casa ou Hotel" required>
+                                    <span type="text" class="inputbox-desloc-volta" id="preview-local-destino-volta" name="local-destino-volta" placeholder="Casa ou Hotel" required></span>
                                 </div>
                             </div>
                     </fieldset>
@@ -264,6 +264,14 @@
             document.getElementById('preview-hora-chegada-ida').textContent = localStorage.getItem('hora-chegada-ida');
             document.getElementById('preview-local-origem-ida').textContent = localStorage.getItem('local-origem-ida');
             document.getElementById('preview-local-destino-ida').textContent = localStorage.getItem('local-destino-ida');
+
+            document.getElementById('preview-data-volta').textContent = localStorage.getItem('data-volta');
+            document.getElementById('preview-hora-inicio-volta').textContent = localStorage.getItem('hora-inicio-volta');
+            document.getElementById('preview-hora-chegada-volta').textContent = localStorage.getItem('hora-chegada-volta');
+            document.getElementById('preview-local-origem-volta').textContent = localStorage.getItem('local-origem-volta');
+            document.getElementById('preview-local-destino-volta').textContent = localStorage.getItem('local-destino-volta');
+
+
 
         });
     </script>
