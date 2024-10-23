@@ -438,12 +438,12 @@ body {
     flex-direction: column;
 }
 
-#inputbox-inicio-servico, #inputbox-termino-servico, .inputbox-status-atend, #inputbox-obs {
+#preview-inputbox-inicio-servico, #preview-inputbox-termino-servico, .inputbox-status-atend, #inputbox-obs {
     width: 100%;
     background-color: transparent;
     border: none;
     border-radius: 4px;
-    border-bottom: 1px solid #121212;
+    border-bottom: 1px solid #c9c9c9;
     padding: 0.5rem;
     padding-left: 2px;
     font-size: 14px;
@@ -457,11 +457,11 @@ body {
     font-size: 14px;
 }
 
-.inputbox-status-atend {
+#preview-status-atend {
     width: 185px;
 }
 
-#inputbox-obs {
+#preview-inputbox-obs {
     width: 355px;
 }
 

@@ -249,7 +249,7 @@
                     </div>
                     <div class="fields-align-time">
                         <label for="status-atend" id="label-status-atend">Status de Atendimento</label>
-                        <select class="inputbox-status-atend" required>
+                        <select class="inputbox-status-atend" id="status-atend" required>
                             <option selected>Concluído</option>
                             <option>Não foi possível concluir</option>
                             <option>Em andamento</option>
@@ -382,6 +382,17 @@
             localStorage.setItem('local-destino-volta', localDestinoVolta);
 
 
+
+            // Variaveis 7º bloco do formulário
+            const inicioServico = document.getElementById('inputbox-inicio-servico').value;
+            const terminoServico = documen.getElementById('inputbox-termino-servico').value;
+            const statusAtend = document.getElementById('status-atend').value;
+            const obsServico = document.getElementById('inputbox-obs').value;
+            // Armazenando os valores no localStorage 7º bloco
+            localStorage.setItem('inputbox-inicio-servico' inicioServico);
+            localStorage.setItem('inputbox-termino-servico', terminoServico);
+            localStorage.setItem('status-atend' statusAtend);
+            localStorage.setItem('inputbox-obs', obsServico);
 
 
             window.open('window-print-preview.html');

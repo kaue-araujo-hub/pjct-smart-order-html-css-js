@@ -185,24 +185,20 @@
                         <Legend id="tempo-titulo"><strong>Tempo de Serviço</strong></Legend>
                         <div class="fields-align-time">
                             <label for="hora-inicio" id="label-inicio-time">Início</label>
-                            <input type="text" id="inputbox-inicio-servico" name="hora-inicio-tempo" placeholder="13h00" required>
+                            <span type="text" id="preview-inputbox-inicio-servico" name="hora-inicio-tempo" placeholder="13h00" required></span>
                         </div>
                         <div class="fields-align-time">
                             <label for="hora-termino" id="label-termino-time">Término</label>
-                            <input type="text" id="inputbox-termino-servico" name="hora-termino-tempo" placeholder="16h00" required>
+                            <span type="text" id="-preview-inputbox-termino-servico" name="hora-termino-tempo" placeholder="16h00" required></span>
                         </div>
                         <div class="fields-align-time">
                             <label for="status-atend" id="label-status-atend">Status de Atendimento</label>
-                            <select class="inputbox-status-atend">
-                                <option selected required>Concluído</option>
-                                <option>Não foi possível concluir</option>
-                                <option>Em andamento</option>
-                                <option>Cancelado</option>
-                            </select>
+                            <span class="inputbox-status-atend" id="preview-status-atend" required></span>
+
                         </div>
                         <div class="fields-align-time">
                             <label for="obs" id="label-obs">Observações</label>
-                            <input type="text" id="inputbox-obs" name="obs-tempo" placeholder="Apontamentos relevantes">
+                            <span type="text" id="preview-inputbox-obs" name="obs-tempo" placeholder="Apontamentos relevantes"></span>
                         </div>
                     </fieldset>
 
@@ -270,6 +266,11 @@
             document.getElementById('preview-hora-chegada-volta').textContent = localStorage.getItem('hora-chegada-volta');
             document.getElementById('preview-local-origem-volta').textContent = localStorage.getItem('local-origem-volta');
             document.getElementById('preview-local-destino-volta').textContent = localStorage.getItem('local-destino-volta');
+
+            document.getElementById('preview-inputbox-inicio-servico').textContent = localStorage.getItem('inputbox-inicio-servico');
+            document.getElementById('preview-inputbox-termino-servico').textContent = localStorage.getItem('inputbox-termino-servico');
+            document.getElementById('preview-status-atend').textContent = localStorage.getItem('status-atend');
+            document.getElementById('preview-inputbox-obs').textContent = localStorage.getItem('inputbox-obs');
 
 
 
