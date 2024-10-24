@@ -264,7 +264,7 @@
 
                 <fieldset class="description"> 
                     <legend id="descricao-titulo"><strong>Descrição do Serviço</strong></legend>
-                    <textarea rows="6" id="desc-servico" name="desc-servico" placeholder="Descreva o serviço executado com o máximo de detalhes possível..." required></textarea>
+                    <textarea rows="3" id="desc-servico" name="desc-servico" placeholder="Descreva o serviço executado com o máximo de detalhes possível..." required></textarea>
                 </fieldset>
 
                 <div class="buttons-group">
@@ -336,6 +336,13 @@
 
 
 
+            let isCheckedRx = document.getElementById('rx-check').checked;
+            let isCheckedMg = document.getElementById('mg-check').checked;
+            let isCheckedUl = document.getElementById('ul-check').checked;
+            let isCheckedOdonto = document.getElementById('odonto-check').checked;
+            let isCheckedVet = document.getElementById('vet-check').checked;
+
+            /*
             // Variaveis 5º bloco do formulário
             const rxCheck = document.getElementById('rx-check').value;
             const mgCheck = document.getElementById('mg-check').value;
@@ -350,7 +357,7 @@
             localStorage.setItem('odonto-check', odontoCheck);
             localStorage.setItem('vet-check', vetCheck);
             localStorage.setItem('equip-status', statusEquip);
-
+            */
 
 
             // Variaveis 6º bloco do formulário
@@ -389,10 +396,17 @@
             const statusAtend = document.getElementById('status-atend').value;
             const obsServico = document.getElementById('inputbox-obs').value;
             // Armazenando os valores no localStorage 7º bloco
-            localStorage.setItem('inputbox-inicio-servico' inicioServico);
+            localStorage.setItem('inputbox-inicio-servico', inicioServico);
             localStorage.setItem('inputbox-termino-servico', terminoServico);
-            localStorage.setItem('status-atend' statusAtend);
+            localStorage.setItem('status-atend', statusAtend);
             localStorage.setItem('inputbox-obs', obsServico);
+
+
+
+            // Variaveis 8º bloco do formulário
+            const descricaoServico = document.getElementById('desc-servico').value;
+            // Armazenando os valores no localStorage 8º bloco
+            localStorage.setItem('desc-servico', descricaoServico);
 
 
             window.open('window-print-preview.html');

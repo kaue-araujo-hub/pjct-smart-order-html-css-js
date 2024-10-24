@@ -204,7 +204,7 @@
 
                     <fieldset class="description"> 
                         <legend id="descricao-titulo"><strong>Descrição do Serviço</strong></legend>
-                        <textarea rows="3" id="desc-servico" name="desc-servico" placeholder="Descreva o serviço executado com o máximo de detalhes possível" required></textarea>
+                        <span id="preview-desc-servico" name="desc-servico" required></span>
                     </fieldset>
                 </form>
             </section>
@@ -228,9 +228,9 @@
         document.addEventListener("DOMContentLoaded", function() {
             // Obtendo valores dos inputs da entrada -> index.html usando DOM
             /*
-                Os IDs nomeados com: preview-alguma-coisa recebem os valores
-                valores estes que estão armazenados no localStorage do Web Storage do Google Chrome.
-                esses valores são obtidos a partir do ID do doc de entrada de dados index.html
+                Os IDs nomeados com: preview-alguma-coisa recebem valores.
+                Valores estes que estão armazenados no localStorage do Web Storage do Google Chrome.
+                Esses valores são obtidos a partir do ID do doc de entrada de dados index.html
             */
             document.getElementById('preview-data-servico').textContent = localStorage.getItem('data-servico');
             document.getElementById('preview-tipo-servico').textContent = localStorage.getItem('tipo-servico');
@@ -248,12 +248,22 @@
             document.getElementById('preview-nome-equipamento').textContent = localStorage.getItem('nome-equipamento');
             document.getElementById('preview-n-chamado').textContent = localStorage.getItem('n-chamado');
 
+
+            document.getElementById('preview-rx-check').innerHTML = isCheckedRx ? '✓' : '';
+            document.getElementById('preview-mg-check').innerHTML = isCheckedMg ? '✓' : '';
+            document.getElementById('preview-ul-check').innerHTML = isCheckedUl ? '✓' : '';
+            document.getElementById('preview-odonto-check').innerHTML = isCheckedOdonto ? '✓' : '';
+            document.getElementById('preview-vet-check').innerHTML = isCheckedVet ? '✓' : '';
+
+
+            /*
             document.getElementById('preview-rx-check').textContent = localStorage.getItem('rx-check');
             document.getElementById('preview-mg-check').textContent = localStorage.getItem('mg-check');
             document.getElementById('preview-ul-check').textContent = localStorage.getItem('ul-check');
             document.getElementById('preview-odonto-check').textContent = localStorage.getItem('odont-check');
             document.getElementById('preview-vet-check').textContent = localStorage.getItem('vet-check');
             document.getElementById('preview-equip-status').textContent = localStorage.getItem('equip-status');
+            */
 
             document.getElementById('preview-data-ida').textContent = localStorage.getItem('data-ida');
             document.getElementById('preview-hora-inicio-ida').textContent = localStorage.getItem('hora-inicio-ida');
@@ -272,7 +282,7 @@
             document.getElementById('preview-status-atend').textContent = localStorage.getItem('status-atend');
             document.getElementById('preview-inputbox-obs').textContent = localStorage.getItem('inputbox-obs');
 
-
+            document.getElementById('preview-desc-servico').textContent = localStorage.getItem('desc-servico');
 
         });
     </script>
