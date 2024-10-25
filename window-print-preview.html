@@ -189,7 +189,7 @@
                         </div>
                         <div class="fields-align-time">
                             <label for="hora-termino" id="label-termino-time">Término</label>
-                            <span type="text" id="-preview-inputbox-termino-servico" name="hora-termino-tempo" placeholder="16h00" required></span>
+                            <span type="text" id="preview-inputbox-termino-servico" name="hora-termino-tempo" placeholder="16h00" required></span>
                         </div>
                         <div class="fields-align-time">
                             <label for="status-atend" id="label-status-atend">Status de Atendimento</label>
@@ -249,12 +249,28 @@
             document.getElementById('preview-n-chamado').textContent = localStorage.getItem('n-chamado');
 
 
+            let isCheckedRx = localStorage.getItem('isCheckedRx') === 'true'; // Convertendo de string para boolean
+            document.getElementById('preview-rx-check').innerHTML = isCheckedRx ? '✓' : '';
+
+            let isCheckedMg = localStorage.getItem('isCheckedMg') === 'true'; // Convertendo de string para boolean
+            document.getElementById('preview-mg-check').innerHTML = isCheckedMg ? '✓' : '';
+
+            let isCheckedUl = localStorage.getItem('isCheckedUl') === 'true'; // Convertendo de string para boolean
+            document.getElementById('preview-ul-check').innerHTML = isCheckedUl ? '✓' : '';
+
+            let isCheckedOdonto = localStorage.getItem('isCheckedOdonto') === 'true'; // Convertendo de string para boolean
+            document.getElementById('preview-odonto-check').innerHTML = isCheckedOdonto ? '✓' : '';
+
+            let isCheckedVet = localStorage.getItem('isCheckedVet') === 'true'; // Convertendo de string para boolean
+            document.getElementById('preview-vet-check').innerHTML = isCheckedVet ? '✓' : '';
+
+            /*
             document.getElementById('preview-rx-check').innerHTML = isCheckedRx ? '✓' : '';
             document.getElementById('preview-mg-check').innerHTML = isCheckedMg ? '✓' : '';
             document.getElementById('preview-ul-check').innerHTML = isCheckedUl ? '✓' : '';
             document.getElementById('preview-odonto-check').innerHTML = isCheckedOdonto ? '✓' : '';
             document.getElementById('preview-vet-check').innerHTML = isCheckedVet ? '✓' : '';
-
+            
 
             /*
             document.getElementById('preview-rx-check').textContent = localStorage.getItem('rx-check');
@@ -262,8 +278,9 @@
             document.getElementById('preview-ul-check').textContent = localStorage.getItem('ul-check');
             document.getElementById('preview-odonto-check').textContent = localStorage.getItem('odont-check');
             document.getElementById('preview-vet-check').textContent = localStorage.getItem('vet-check');
-            document.getElementById('preview-equip-status').textContent = localStorage.getItem('equip-status');
+            
             */
+            document.getElementById('preview-equip-status').textContent = localStorage.getItem('equip-status');
 
             document.getElementById('preview-data-ida').textContent = localStorage.getItem('data-ida');
             document.getElementById('preview-hora-inicio-ida').textContent = localStorage.getItem('hora-inicio-ida');

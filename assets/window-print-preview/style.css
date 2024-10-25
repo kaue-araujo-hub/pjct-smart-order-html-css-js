@@ -177,7 +177,8 @@ body {
     width: 50px;
 }
 
-.cliente-group1 .inputbox-cliente, .cliente-group2 .inputbox-cliente {
+.cliente-group1 .inputbox-cliente, 
+.cliente-group2 .inputbox-cliente {
     width: 100%;
     padding: 0.5rem;
     font-size: 14px;
@@ -294,10 +295,7 @@ body {
     color: #121212;
 }
 
-.inputbox-status-equip {
-    
-
-
+#preview-equip-status {
     width: 200px;
     padding: 0.5rem;
     font-size: 14px;
@@ -346,6 +344,7 @@ body {
 .inputbox-desloc-ida {
     width: 100%;
     background-color: transparent;
+    margin-top: 6px;
     border: none;
     border-radius: 4px;
     border-bottom: 1px solid #c9c9c9;
@@ -354,22 +353,28 @@ body {
     font-size: 14px;
 }
 
-#label-data-ida, #label-hora-inicio-ida, #label-hora-chegada-ida, 
-#label-local-origem-ida, #label-local-destino-ida {
+#label-data-ida, 
+#label-hora-inicio-ida, 
+#label-hora-chegada-ida, 
+#label-local-origem-ida, 
+#label-local-destino-ida {
     font-size: 14px;
 }
 
-#preview-hora-inicio-ida, #preview-hora-chegada-ida {
+#preview-hora-inicio-ida, 
+#preview-hora-chegada-ida {
     width: 50px;
     color: #121212;
 }
 
-#preview-local-origem-ida, #preview-local-destino-ida {
+#preview-local-origem-ida, 
+#preview-local-destino-ida {
     width: 195px;
     color: #121212;
 }
 
-#preview-data-ida, #preview-data-volta {
+#preview-data-ida, 
+#preview-data-volta {
     width: 100px;
     color: #121212;
 }
@@ -400,16 +405,22 @@ body {
     font-size: 14px;
 }
 
-#label-data-volta, #label-hora-inicio-volta, #label-hora-chegada-volta, #label-local-origem-volta, #label-local-destino-volta {
+#label-data-volta, 
+#label-hora-inicio-volta, 
+#label-hora-chegada-volta, 
+#label-local-origem-volta, 
+#label-local-destino-volta {
     font-size: 14px;
 }
 
-#preview-hora-inicio-volta, #preview-hora-chegada-volta {
+#preview-hora-inicio-volta, 
+#preview-hora-chegada-volta {
     width: 50px;
     color: #121212;
 }
 
-#preview-local-origem-volta, #preview-local-destino-volta {
+#preview-local-origem-volta, 
+#preview-local-destino-volta {
     width: 195px;
     color: #121212;
 }
@@ -438,9 +449,13 @@ body {
     flex-direction: column;
 }
 
-#preview-inputbox-inicio-servico, #preview-inputbox-termino-servico, .inputbox-status-atend, #inputbox-obs {
+#preview-inputbox-inicio-servico, 
+#preview-inputbox-termino-servico, 
+#preview-status-atend, 
+#inputbox-obs {
     width: 100%;
     background-color: transparent;
+    margin-top: 6px;
     border: none;
     border-radius: 4px;
     border-bottom: 1px solid #c9c9c9;
@@ -449,16 +464,21 @@ body {
     font-size: 14px;
 }
 
-#inputbox-inicio-servico, #inputbox-termino-servico {
+#inputbox-inicio-servico, 
+#inputbox-termino-servico {
     width: 50px;
 }
 
-#label-inicio-time, #label-termino-time, #label-status-atend, #label-obs {
+#label-inicio-time, 
+#label-termino-time, 
+#label-status-atend, 
+#label-obs {
     font-size: 14px;
 }
 
 #preview-status-atend {
     width: 185px;
+    
 }
 
 #preview-inputbox-obs {

@@ -38,7 +38,7 @@
                         
                         <div id="fields-align-servico">
                             <label for="data-servico" class="label-servico">Data</label>
-                            <input type="date" class="inputbox-servico" id="data-servico" name="data-servico" required>
+                            <input for="data-servico" type="date"  class="inputbox-servico" id="data-servico" name="data-servico" required>
                         </div>
 
                         <div id="fields-align-servico">
@@ -156,19 +156,19 @@
                         <div class="fields-align-equip-modalidade">
                             <label for="modalidade-titulo" class="modalidade-titulo">Modalidade</label>
                             <div class="checkbox-group">
-                                <input type="checkbox" class="modalidade-box" id="rx-check" name="equip-check">
+                                <input for="radiologia" type="checkbox" class="modalidade-box" id="rx-check" name="equip-check">
                                 <label for="radiologia" class="rx">Radiologia</label>
                                 
-                                <input type="checkbox" class="modalidade-box" id="mg-check" name="equip-check">
+                                <input for="mamografia" type="checkbox" class="modalidade-box" id="mg-check" name="equip-check">
                                 <label for="mamografia" class="mg">Mamografia</label>
                                 
-                                <input type="checkbox" class="modalidade-box" id="ul-check" name="equip-check">
+                                <input for="ultrassonografia" type="checkbox" class="modalidade-box" id="ul-check" name="equip-check">
                                 <label for="ultrassonografia" class="ul">Ultrassonografia</label>
                                 
-                                <input type="checkbox" class="modalidade-box" id="odonto-check" name="equip-check">
+                                <input for="odontologia" type="checkbox" class="modalidade-box" id="odonto-check" name="equip-check">
                                 <label for="odontologia" class="odonto">Odontologia</label>
                                 
-                                <input type="checkbox" class="modalidade-box" id="vet-check" name="equip-check">
+                                <input for="veterinaria" type="checkbox" class="modalidade-box" id="vet-check" name="equip-check">
                                 <label for="veterinaria" class="vet">Veterinária</label>  
                             </div>
                         </div>
@@ -192,7 +192,7 @@
                         <div class="deslocamento-ida">
                             <div class="fields-align-desloc-ida">
                                 <label for="data" id="label-data-ida">Data de Ida</label>
-                                <input type="date" class="inputbox-desloc-ida" id="data-ida" name="data-ida" required>
+                                <input for="data" type="date" class="inputbox-desloc-ida" id="data-ida" name="data-ida" required>
                             </div>
                             <div class="fields-align-desloc-ida">
                                 <label for="hora-inicio" id="label-hora-inicio-ida">Início</label>
@@ -215,7 +215,7 @@
                         <div class="deslocamento-volta">
                             <div class="fields-align-desloc-volta">
                                 <label for="data-volta" id="label-data-volta">Data de Volta</label>
-                                <input type="date" class="inputbox-desloc-volta" id="data-volta" name="data-volta" required>
+                                <input for="data-volta" type="date" class="inputbox-desloc-volta" id="data-volta" name="data-volta" required>
                             </div>
                             <div class="fields-align-desloc-volta">
                                 <label for="hora-inicio" id="label-hora-inicio-volta">Início</label>
@@ -335,30 +335,33 @@
             localStorage.setItem('n-chamado', nChamado);
 
 
-
-            let isCheckedRx = document.getElementById('rx-check').checked;
-            let isCheckedMg = document.getElementById('mg-check').checked;
-            let isCheckedUl = document.getElementById('ul-check').checked;
-            let isCheckedOdonto = document.getElementById('odonto-check').checked;
-            let isCheckedVet = document.getElementById('vet-check').checked;
+            console.log("Execução chegou até o 4º bloco de código: OK");
 
             /*
-            // Variaveis 5º bloco do formulário
             const rxCheck = document.getElementById('rx-check').value;
             const mgCheck = document.getElementById('mg-check').value;
             const ulCheck = document.getElementById('ul-check').value;
             const odontoCheck = document.getElementById('odonto-check').value;
             const vetCheck = document.getElementById('vet-check').value;
-            const statusEquip = document.getElementById('equip-status').value;
-            // Armazenando os valores no localStorage 5º bloco
-            localStorage.setItem('rx-check', rxCheck);
-            localStorage.setItem('mg-check', mgCheck);
-            localStorage.setItem('ul-check', ulCheck);
-            localStorage.setItem('odonto-check', odontoCheck);
-            localStorage.setItem('vet-check', vetCheck);
-            localStorage.setItem('equip-status', statusEquip);
             */
 
+            // Variaveis 5º bloco do formulário
+            let isCheckedRx = document.getElementById('rx-check').checked;
+            let isCheckedMg = document.getElementById('mg-check').checked;
+            let isCheckedUl = document.getElementById('ul-check').checked;
+            let isCheckedOdonto = document.getElementById('odonto-check').checked;
+            let isCheckedVet = document.getElementById('vet-check').checked;
+            const statusEquip = document.getElementById('equip-status').value;
+
+            // Armazenando os valores no localStorage 5º bloco
+            localStorage.setItem('rx-check', isCheckedRx);
+            localStorage.setItem('mg-check', isCheckedMg);
+            localStorage.setItem('ul-check', isCheckedUl);
+            localStorage.setItem('odonto-check', isCheckedOdonto);
+            localStorage.setItem('vet-check', isCheckedVet);
+            localStorage.setItem('equip-status', statusEquip);
+            
+            console.log("Execução passou o 5º bloco de código: OK");
 
             // Variaveis 6º bloco do formulário
             const dataIda = document.getElementById('data-ida').value;
@@ -390,12 +393,12 @@
 
 
 
-            // Variaveis 7º bloco do formulário
+            // Variaveis 8º bloco do formulário
             const inicioServico = document.getElementById('inputbox-inicio-servico').value;
             const terminoServico = documen.getElementById('inputbox-termino-servico').value;
             const statusAtend = document.getElementById('status-atend').value;
             const obsServico = document.getElementById('inputbox-obs').value;
-            // Armazenando os valores no localStorage 7º bloco
+            // Armazenando os valores no localStorage 8º bloco
             localStorage.setItem('inputbox-inicio-servico', inicioServico);
             localStorage.setItem('inputbox-termino-servico', terminoServico);
             localStorage.setItem('status-atend', statusAtend);
