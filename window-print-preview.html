@@ -271,15 +271,13 @@
             document.getElementById('preview-odonto-check').innerHTML = isCheckedOdonto ? '✓' : '';
             document.getElementById('preview-vet-check').innerHTML = isCheckedVet ? '✓' : '';
             
-
-            /*
             document.getElementById('preview-rx-check').textContent = localStorage.getItem('rx-check');
             document.getElementById('preview-mg-check').textContent = localStorage.getItem('mg-check');
             document.getElementById('preview-ul-check').textContent = localStorage.getItem('ul-check');
             document.getElementById('preview-odonto-check').textContent = localStorage.getItem('odont-check');
             document.getElementById('preview-vet-check').textContent = localStorage.getItem('vet-check');
-            
             */
+            
             document.getElementById('preview-equip-status').textContent = localStorage.getItem('equip-status');
 
             document.getElementById('preview-data-ida').textContent = localStorage.getItem('data-ida');
@@ -298,8 +296,10 @@
             document.getElementById('preview-inputbox-termino-servico').textContent = localStorage.getItem('inputbox-termino-servico');
             document.getElementById('preview-status-atend').textContent = localStorage.getItem('status-atend');
             document.getElementById('preview-inputbox-obs').textContent = localStorage.getItem('inputbox-obs');
+            
 
-            document.getElementById('preview-desc-servico').textContent = localStorage.getItem('desc-servico');
+            const previewDescricaoServico = localStorage.getItem('desc-servico');
+            document.getElementById('preview-desc-servico').innerText = previewDescricaoServico;
 
         });
     </script>
