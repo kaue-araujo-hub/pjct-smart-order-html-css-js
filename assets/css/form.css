@@ -21,6 +21,10 @@
     flex-direction: column;
 }
 
+#data-servico {
+    cursor: pointer;
+}
+
 #tipo-servico {
     width: 600px;
 }
@@ -257,6 +261,7 @@
 
 #data-ida, #data-volta {
     color: var(--black-color1);
+    cursor: pointer;
 }
 
 .deslocamento-volta {

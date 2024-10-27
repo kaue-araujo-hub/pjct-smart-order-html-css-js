@@ -279,13 +279,33 @@
         </section>
     </main>
     <footer class="footer-infos">
-        <p id="dev-web-k">&copy Todos os direitos reservados. Desenvolvido por: Kauê Araujo</p>
+        <p id="dev-web-k">&copy Todos os direitos reservados.</p>
     </footer>
 
     <script src="assets/js/select-card.js" defer></script>
     <script src="assets/js/auto-growing-textarea.js" defer></script>
 
     <script>
+
+        /*
+            Aumentando a área de contato de todos os inputs date
+            Utilizando função anônima com método showPicker
+            
+        */
+
+        document.getElementById("data-servico").addEventListener("click", function() {
+            this.showPicker(); 
+        });
+
+        document.getElementById("data-ida").addEventListener("click", function() {
+            this.showPicker(); 
+        });
+
+        document.getElementById("data-volta").addEventListener("click", function() {
+            this.showPicker(); 
+        });
+
+
         function openPrintPreview() {
             // Variaveis 1º bloco do formulário 
             const dataServico = document.getElementById('data-servico').value;
@@ -395,7 +415,7 @@
 
             // Variaveis 8º bloco do formulário
             const inicioServico = document.getElementById('inputbox-inicio-servico').value;
-            const terminoServico = documen.getElementById('inputbox-termino-servico').value;
+            const terminoServico = document.getElementById('inputbox-termino-servico').value;
             const statusAtend = document.getElementById('status-atend').value;
             const obsServico = document.getElementById('inputbox-obs').value;
             // Armazenando os valores no localStorage 8º bloco

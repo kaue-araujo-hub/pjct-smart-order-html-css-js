@@ -452,7 +452,7 @@ body {
 #preview-inputbox-inicio-servico, 
 #preview-inputbox-termino-servico, 
 #preview-status-atend, 
-#inputbox-obs {
+#preview-inputbox-obs {
     width: 100%;
     background-color: transparent;
     margin-top: 6px;

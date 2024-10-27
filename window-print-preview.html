@@ -249,34 +249,21 @@
             document.getElementById('preview-n-chamado').textContent = localStorage.getItem('n-chamado');
 
 
-            let isCheckedRx = localStorage.getItem('isCheckedRx') === 'true'; // Convertendo de string para boolean
+            let isCheckedRx = localStorage.getItem('rx-check') === 'true'; // Convertendo de string para boolean
             document.getElementById('preview-rx-check').innerHTML = isCheckedRx ? '✓' : '';
 
-            let isCheckedMg = localStorage.getItem('isCheckedMg') === 'true'; // Convertendo de string para boolean
+            let isCheckedMg = localStorage.getItem('mg-check') === 'true'; // Convertendo de string para boolean
             document.getElementById('preview-mg-check').innerHTML = isCheckedMg ? '✓' : '';
 
-            let isCheckedUl = localStorage.getItem('isCheckedUl') === 'true'; // Convertendo de string para boolean
+            let isCheckedUl = localStorage.getItem('ul-check') === 'true'; // Convertendo de string para boolean
             document.getElementById('preview-ul-check').innerHTML = isCheckedUl ? '✓' : '';
 
-            let isCheckedOdonto = localStorage.getItem('isCheckedOdonto') === 'true'; // Convertendo de string para boolean
+            let isCheckedOdonto = localStorage.getItem('odonto-check') === 'true'; // Convertendo de string para boolean
             document.getElementById('preview-odonto-check').innerHTML = isCheckedOdonto ? '✓' : '';
 
-            let isCheckedVet = localStorage.getItem('isCheckedVet') === 'true'; // Convertendo de string para boolean
+            let isCheckedVet = localStorage.getItem('vet-check') === 'true'; // Convertendo de string para boolean
             document.getElementById('preview-vet-check').innerHTML = isCheckedVet ? '✓' : '';
 
-            /*
-            document.getElementById('preview-rx-check').innerHTML = isCheckedRx ? '✓' : '';
-            document.getElementById('preview-mg-check').innerHTML = isCheckedMg ? '✓' : '';
-            document.getElementById('preview-ul-check').innerHTML = isCheckedUl ? '✓' : '';
-            document.getElementById('preview-odonto-check').innerHTML = isCheckedOdonto ? '✓' : '';
-            document.getElementById('preview-vet-check').innerHTML = isCheckedVet ? '✓' : '';
-            
-            document.getElementById('preview-rx-check').textContent = localStorage.getItem('rx-check');
-            document.getElementById('preview-mg-check').textContent = localStorage.getItem('mg-check');
-            document.getElementById('preview-ul-check').textContent = localStorage.getItem('ul-check');
-            document.getElementById('preview-odonto-check').textContent = localStorage.getItem('odont-check');
-            document.getElementById('preview-vet-check').textContent = localStorage.getItem('vet-check');
-            */
             
             document.getElementById('preview-equip-status').textContent = localStorage.getItem('equip-status');
 
