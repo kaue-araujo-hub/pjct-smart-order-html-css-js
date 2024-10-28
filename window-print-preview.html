@@ -236,6 +236,18 @@
             document.getElementById('preview-tipo-servico').textContent = localStorage.getItem('tipo-servico');
             document.getElementById('preview-fabricante').textContent = localStorage.getItem('fabricante');
 
+            // Pegando o valor do localStorage e formatando
+            let dataServico = localStorage.getItem('data-servico');
+
+            // Verifica se a data foi armazenada e está no formato aaaa-mm-dd
+            if (dataServico) {
+                // Divide a data em [ano, mês, dia]
+                let [ano, mes, dia] = dataServico.split('-');
+                
+                // Reorganiza e exibe no formato dd/mm/aaaa
+                document.getElementById('preview-data-servico').textContent = `${dia}/${mes}/${ano}`;
+            }
+
             document.getElementById('preview-nome-cliente').textContent = localStorage.getItem('nome-cliente');
             document.getElementById('preview-contato-cliente').textContent = localStorage.getItem('contato-cliente');
             document.getElementById('preview-cel-tel-cliente').textContent = localStorage.getItem('cel-tel-cliente');
@@ -250,19 +262,29 @@
 
 
             let isCheckedRx = localStorage.getItem('rx-check') === 'true'; // Convertendo de string para boolean
-            document.getElementById('preview-rx-check').innerHTML = isCheckedRx ? '✓' : '';
+            document.getElementById('preview-rx-check').innerHTML = isCheckedRx 
+            ? '<img src="assets/window-print-preview/checked-icon.png" alt="checked">'         /*'✓'*/
+            : '<img src="assets/window-print-preview/unchecked-icon.png" alt="unchecked">';         /*''*/
 
-            let isCheckedMg = localStorage.getItem('mg-check') === 'true'; // Convertendo de string para boolean
-            document.getElementById('preview-mg-check').innerHTML = isCheckedMg ? '✓' : '';
+            let isCheckedMg = localStorage.getItem('mg-check') === 'true'; 
+            document.getElementById('preview-mg-check').innerHTML = isCheckedMg 
+            ? '<img src="assets/window-print-preview/checked-icon.png" alt="checked">'         
+            : '<img src="assets/window-print-preview/unchecked-icon.png" alt="unchecked">';         
 
-            let isCheckedUl = localStorage.getItem('ul-check') === 'true'; // Convertendo de string para boolean
-            document.getElementById('preview-ul-check').innerHTML = isCheckedUl ? '✓' : '';
+            let isCheckedUl = localStorage.getItem('ul-check') === 'true'; 
+            document.getElementById('preview-ul-check').innerHTML = isCheckedUl 
+            ? '<img src="assets/window-print-preview/checked-icon.png" alt="checked">'        
+            : '<img src="assets/window-print-preview/unchecked-icon.png" alt="unchecked">';         
 
-            let isCheckedOdonto = localStorage.getItem('odonto-check') === 'true'; // Convertendo de string para boolean
-            document.getElementById('preview-odonto-check').innerHTML = isCheckedOdonto ? '✓' : '';
+            let isCheckedOdonto = localStorage.getItem('odonto-check') === 'true'; 
+            document.getElementById('preview-odonto-check').innerHTML = isCheckedOdonto 
+            ? '<img src="assets/window-print-preview/checked-icon.png" alt="checked">'         
+            : '<img src="assets/window-print-preview/unchecked-icon.png" alt="unchecked">';         
 
-            let isCheckedVet = localStorage.getItem('vet-check') === 'true'; // Convertendo de string para boolean
-            document.getElementById('preview-vet-check').innerHTML = isCheckedVet ? '✓' : '';
+            let isCheckedVet = localStorage.getItem('vet-check') === 'true'; 
+            document.getElementById('preview-vet-check').innerHTML = isCheckedVet 
+            ? '<img src="assets/window-print-preview/checked-icon.png" alt="checked">'         
+            : '<img src="assets/window-print-preview/unchecked-icon.png" alt="unchecked">';     
 
             
             document.getElementById('preview-equip-status').textContent = localStorage.getItem('equip-status');
@@ -273,17 +295,43 @@
             document.getElementById('preview-local-origem-ida').textContent = localStorage.getItem('local-origem-ida');
             document.getElementById('preview-local-destino-ida').textContent = localStorage.getItem('local-destino-ida');
 
+            let dataIda = localStorage.getItem('data-ida');
+
+            // Verifica se a data foi armazenada e está no formato aaaa-mm-dd
+            if (dataIda) {
+                // Divide a data em [ano, mês, dia]
+                let [ano, mes, dia] = dataIda.split('-');
+                
+                // Reorganiza e exibe no formato dd/mm/aaaa
+                document.getElementById('preview-data-ida').textContent = `${dia}/${mes}/${ano}`;
+            }
+
             document.getElementById('preview-data-volta').textContent = localStorage.getItem('data-volta');
             document.getElementById('preview-hora-inicio-volta').textContent = localStorage.getItem('hora-inicio-volta');
             document.getElementById('preview-hora-chegada-volta').textContent = localStorage.getItem('hora-chegada-volta');
             document.getElementById('preview-local-origem-volta').textContent = localStorage.getItem('local-origem-volta');
             document.getElementById('preview-local-destino-volta').textContent = localStorage.getItem('local-destino-volta');
 
+            let dataVolta = localStorage.getItem('data-volta');
+
+            // Verifica se a data foi armazenada e está no formato aaaa-mm-dd
+            if (dataVolta) {
+                // Divide a data em [ano, mês, dia]
+                let [ano, mes, dia] = dataVolta.split('-');
+                
+                // Reorganiza e exibe no formato dd/mm/aaaa
+                document.getElementById('preview-data-volta').textContent = `${dia}/${mes}/${ano}`;
+            }
+
             document.getElementById('preview-inputbox-inicio-servico').textContent = localStorage.getItem('inputbox-inicio-servico');
             document.getElementById('preview-inputbox-termino-servico').textContent = localStorage.getItem('inputbox-termino-servico');
             document.getElementById('preview-status-atend').textContent = localStorage.getItem('status-atend');
             document.getElementById('preview-inputbox-obs').textContent = localStorage.getItem('inputbox-obs');
             
+
+            /*
+            Utilizando innerText para o input do tipo textarea
+            */
 
             const previewDescricaoServico = localStorage.getItem('desc-servico');
             document.getElementById('preview-desc-servico').innerText = previewDescricaoServico;

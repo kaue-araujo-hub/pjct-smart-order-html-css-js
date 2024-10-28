@@ -288,7 +288,7 @@
     <script>
 
         /*
-            Aumentando a área de contato de todos os inputs date
+            Aumentando a área de contato de todos os inputs do tipo date
             Utilizando função anônima com método showPicker
             
         */
@@ -315,10 +315,6 @@
             localStorage.setItem('data-servico', dataServico);
             localStorage.setItem('tipo-servico', tipoServico);
             localStorage.setItem('fabricante', fabricante);
-            // Saída para debugging (depuração do código)
-            console.log("Data Serviço:", dataServico);
-            console.log("Tipo Serviço:", tipoServico);
-            console.log("Fabricante:", fabricante);
 
 
 
@@ -344,7 +340,6 @@
 
 
 
-
             // Variaveis 4º bloco do formulário
             const nSerie = document.getElementById('n-serie').value;
             const nomeEquipamento = document.getElementById('nome-equipamento').value;
@@ -355,15 +350,6 @@
             localStorage.setItem('n-chamado', nChamado);
 
 
-            console.log("Execução chegou até o 4º bloco de código: OK");
-
-            /*
-            const rxCheck = document.getElementById('rx-check').value;
-            const mgCheck = document.getElementById('mg-check').value;
-            const ulCheck = document.getElementById('ul-check').value;
-            const odontoCheck = document.getElementById('odonto-check').value;
-            const vetCheck = document.getElementById('vet-check').value;
-            */
 
             // Variaveis 5º bloco do formulário
             let isCheckedRx = document.getElementById('rx-check').checked;
@@ -372,7 +358,6 @@
             let isCheckedOdonto = document.getElementById('odonto-check').checked;
             let isCheckedVet = document.getElementById('vet-check').checked;
             const statusEquip = document.getElementById('equip-status').value;
-
             // Armazenando os valores no localStorage 5º bloco
             localStorage.setItem('rx-check', isCheckedRx);
             localStorage.setItem('mg-check', isCheckedMg);
@@ -380,8 +365,8 @@
             localStorage.setItem('odonto-check', isCheckedOdonto);
             localStorage.setItem('vet-check', isCheckedVet);
             localStorage.setItem('equip-status', statusEquip);
-            
-            console.log("Execução passou o 5º bloco de código: OK");
+
+
 
             // Variaveis 6º bloco do formulário
             const dataIda = document.getElementById('data-ida').value;
@@ -397,7 +382,7 @@
             localStorage.setItem('local-destino-ida', localDestinoIda);
 
 
-        
+
             // Variaveis 7º bloco do formulário
             const dataVolta = document.getElementById('data-volta').value;
             const horaInicioVolta = document.getElementById('hora-inicio-volta').value;
