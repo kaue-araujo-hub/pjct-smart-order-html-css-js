@@ -1,6 +1,9 @@
 @import url(form.css);
 @import url(elements.css);
 
+/*
+    Global variables
+*/
 :root {
     --black-color1: #121212;
     --black-color2: #242424;
@@ -13,12 +16,20 @@
     --orange-color2: #fc732a;
 }
 
+
+
+
+/*
+    RESET Selector
+*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+
 
 .logo {
     width: 100%;
@@ -34,6 +45,9 @@
     height: 600px;
 }
 
+
+
+
 #titulo-principal {
     font-size: 34px;
     color: var(--white-color1);
@@ -48,6 +62,9 @@
     background-clip: text;
     color: transparent;
 }
+
+
+
 
 .footer-infos {
     width: 100%;
