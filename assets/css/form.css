@@ -39,10 +39,13 @@
     font-size: 1rem;
     color: var(--gray-color1);
     border-radius: 4px;
-    margin-top: 1em;
+    margin-top: 0.5em;
     border: none;
     border-bottom: 1px solid var(--black-color1);
 }
+
+
+
 
 .cliente-group {
     margin: 6em;
@@ -97,10 +100,13 @@
     font-size: 1rem;
     color: var(--gray-color1);
     border-radius: 4px;
-    margin-top: 1em;
+    margin-top: 0.5em;
     border: none;
     border-bottom: 1px solid var(--black-color1);
 }
+
+
+
 
 .equipamento-group {
     margin: 6em;
@@ -143,7 +149,7 @@
     font-size: 1rem;
     color: var(--gray-color1);
     border-radius: 4px;
-    margin-top: 1em;
+    margin-top: 0.5em;
     border: none;
     border-bottom: 1px solid var(--black-color1);
 }
@@ -187,7 +193,7 @@
 }
 
 .status-equip {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     color: var(--black-color1);
 }
 
@@ -200,6 +206,9 @@
     padding: 0.5rem;
     font-size: 16px;
 }
+
+
+
 
 .deslocamento-group {
     width: 100%;
@@ -245,7 +254,7 @@
 
 #label-data-ida, #label-hora-inicio-ida, #label-hora-chegada-ida, 
 #label-local-origem-ida, #label-local-destino-ida {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     color: var(--black-color1);
 }
 
@@ -285,20 +294,29 @@
     font-size: 16px;
 }
 
-#label-data-volta, #label-hora-inicio-volta, #label-hora-chegada-volta, #label-local-origem-volta, #label-local-destino-volta {
-    margin-bottom: 1em;
+#label-data-volta, 
+#label-hora-inicio-volta, 
+#label-hora-chegada-volta, 
+#label-local-origem-volta, 
+#label-local-destino-volta {
+    margin-bottom: 0.5em;
     color: var(--black-color1);
 }
 
-#hora-inicio-volta, #hora-chegada-volta {
+#hora-inicio-volta, 
+#hora-chegada-volta {
     width: 80px;
     color: var(--black-color1);
 }
 
-#local-origem-volta, #local-destino-volta {
+#local-origem-volta, 
+#local-destino-volta {
     width: 385px;
     color: var(--black-color1);
 }
+
+
+
 
 .tempo-servico {
     display: flex;
@@ -319,7 +337,10 @@
     flex-direction: column;
 }
 
-#inputbox-inicio-servico, #inputbox-termino-servico, .inputbox-status-atend, #inputbox-obs {
+#inputbox-inicio-servico, 
+#inputbox-termino-servico, 
+.inputbox-status-atend, 
+#inputbox-obs {
     width: 100%;
     background-color: transparent;
     border: none;
@@ -329,12 +350,16 @@
     font-size: 16px;
 }
 
-#inputbox-inicio-servico, #inputbox-termino-servico {
+#inputbox-inicio-servico, 
+#inputbox-termino-servico {
     width: 80px;
 }
 
-#label-inicio-time, #label-termino-time, #label-status-atend, #label-obs {
-    margin-bottom: 1em;
+#label-inicio-time, 
+#label-termino-time, 
+#label-status-atend, 
+#label-obs {
+    margin-bottom: 0.5em;
 }
 
 .inputbox-status-atend {
@@ -373,6 +398,9 @@ textarea {
     padding: 0.5rem;
     font-size: 16px;
 }
+
+
+
 
 .buttons-group {
     margin: 6em;
