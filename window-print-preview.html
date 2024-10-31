@@ -23,47 +23,57 @@
         <main>
             <section class="form">
                 <form action="">
-                    <fieldset class="servico-group">
-                        <legend id="servico-titulo"><strong>Serviço</strong></legend>
-                        <div class="servico-fields">
+
+                    <!--
+                    Form
+                    Service information block/scope
+                    -->
+                    <fieldset class="service-group">
+                        <legend id="service-title"><strong>Serviço</strong></legend>
+                        <div class="service-fields">
                             
-                            <div id="fields-align-servico">
-                                <label for="data-servico" class="label-servico">Data</label>
-                                <span class="inputbox-servico" id="preview-data-servico"></span>
+                            <div id="fields-align-service">
+                                <label for="data-service" class="label-service">Data</label>
+                                <span class="inputbox-service" id="preview-data-service"></span>
                             </div>
 
-                            <div id="fields-align-servico">
-                                <label for="tipo-servico" class="label-servico">Serviço</label>
-                                <span class="inputbox-servico" id="preview-tipo-servico"></span>
+                            <div id="fields-align-service">
+                                <label for="type-service" class="label-service">Serviço</label>
+                                <span class="inputbox-service" id="preview-type-service"></span>
                             </div>
 
-                            <div id="fields-align-servico">
-                                <label for="fabricante" class="label-servico">Fabricante</label>
-                                <span class="inputbox-servico" id="preview-fabricante"></span>
+                            <div id="fields-align-service">
+                                <label for="fabricante" class="label-service">Fabricante</label>
+                                <span class="inputbox-service" id="preview-fabricante"></span>
                             </div>
                         </div>
                     </fieldset>
-                    <div class="info-clients-fields">
-                        <fieldset class="cliente-group">
-                                <legend id="cliente-titulo"><strong>Cliente</strong></legend>
-                                <div class="cliente-group1">
-                                    <div class="fields-align-cliente">
-                                        <label for="nome-cliente" class="label-nome-inst-cliente">Nome da Instituição</label>
-                                        <span type="text" class="inputbox-cliente" id="preview-nome-cliente" name="nome-cliente" placeholder="Nome do Hospital, Clínica ou Laboratório" required></span>
+
+                    <!--
+                    Form
+                    Customer information block/scope
+                    -->
+                    <div class="info-customer-fields">
+                        <fieldset class="customer-group">
+                                <legend id="customer-title"><strong>Cliente</strong></legend>
+                                <div class="customer-group1">
+                                    <div class="fields-align-customer">
+                                        <label for="customer-name" class="customer-inst-name-label">Nome da Instituição</label>
+                                        <span type="text" class="inputbox-customer" id="preview-customer-name" name="nome-cliente" placeholder="Nome do Hospital, Clínica ou Laboratório" required></span>
                                     </div>
-                                    <div class="fields-align-cliente">
-                                        <label for="contato-cliente" class="label-contato-cliente">Contato</label>
-                                        <span type="text" class="inputbox-cliente" id="preview-contato-cliente" name="contato-cliente" placeholder="Nome do Responsável" required></span>
+                                    <div class="fields-align-customer">
+                                        <label for="customer-contact" class="customer-contact-label">Contato</label>
+                                        <span type="text" class="inputbox-customer" id="preview-customer-contact" name="contato-cliente" placeholder="Nome do Responsável" required></span>
                                     </div>
-                                    <div class="fields-align-cliente">
-                                        <label for="cel-tel-cliente" class="label-cel-tel-cliente">Cel/Tel</label>
-                                        <span type="text" class="inputbox-cliente" id="preview-cel-tel-cliente" name="cel-tel-cliente" placeholder="(xx) xxxxx-xxxx" required></span>
+                                    <div class="fields-align-customer">
+                                        <label for="customer-cel-tel" class="customer-cel-tel-label">Cel/Tel</label>
+                                        <span type="text" class="inputbox-customer" id="preview-customer-cel-tel" name="cel-tel-cliente" placeholder="(xx) xxxxx-xxxx" required></span>
                                     </div>
                                 </div>
                                 <br>
                                 
-                                <div class="cliente-group2">
-                                    <div class="fields-align-cliente">
+                                <div class="customer-group2">
+                                    <div class="fields-align-customer">
                                         <label for="endereco" class="label-end-cliente">Endereço</label>
                                         <span type="text" class="inputbox-cliente" id="preview-endereco-cliente" name="endereco-cliente" placeholder="Rua / Avenida das Flores, 123 - Bairro Jardim" required></span>
                                     </div>
@@ -232,8 +242,8 @@
                 Valores estes que estão armazenados no localStorage do Web Storage do Google Chrome.
                 Esses valores são obtidos a partir do ID do doc de entrada de dados index.html
             */
-            document.getElementById('preview-data-servico').textContent = localStorage.getItem('data-servico');
-            document.getElementById('preview-tipo-servico').textContent = localStorage.getItem('tipo-servico');
+            document.getElementById('preview-data-service').textContent = localStorage.getItem('data-servico');
+            document.getElementById('preview-type-service').textContent = localStorage.getItem('tipo-servico');
             document.getElementById('preview-fabricante').textContent = localStorage.getItem('fabricante');
 
             // Pegando o valor do localStorage e formatando
@@ -245,12 +255,12 @@
                 let [ano, mes, dia] = dataServico.split('-');
                 
                 // Reorganiza e exibe no formato dd/mm/aaaa
-                document.getElementById('preview-data-servico').textContent = `${dia}/${mes}/${ano}`;
+                document.getElementById('preview-data-service').textContent = `${dia}/${mes}/${ano}`;
             }
 
-            document.getElementById('preview-nome-cliente').textContent = localStorage.getItem('nome-cliente');
-            document.getElementById('preview-contato-cliente').textContent = localStorage.getItem('contato-cliente');
-            document.getElementById('preview-cel-tel-cliente').textContent = localStorage.getItem('cel-tel-cliente');
+            document.getElementById('preview-customer-name').textContent = localStorage.getItem('nome-cliente');
+            document.getElementById('preview-customer-contact').textContent = localStorage.getItem('contato-cliente');
+            document.getElementById('preview-customer-cel-tel').textContent = localStorage.getItem('cel-tel-cliente');
 
             document.getElementById('preview-endereco-cliente').textContent = localStorage.getItem('endereco-cliente');
             document.getElementById('preview-municipio-cliente').textContent = localStorage.getItem('municipio-cliente');

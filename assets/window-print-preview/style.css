@@ -87,36 +87,36 @@ body {
     Form
     Service information block/scope
 */
-.servico-group {
+.service-group {
     border: none;
     margin-bottom: 12px;
 }
 
-#servico-titulo {
+#service-title {
     font-size: 18px;
 }
 
-.servico-fields {
+.service-fields {
     display: flex;
     width: 100%;
     gap: 32px;
 }
 
-.fields-align-servico {
+.fields-align-service {
     display: flex;
     flex-direction: column;
 }
 
-.label-servico {
+.label-service {
     font-size: 14px;
 }
 
 
-#preview-data-servico {
+#preview-data-service {
     width: 100px;
 }
 
-#preview-tipo-servico {
+#preview-type-service {
     width: 288px;
 }
 
@@ -124,7 +124,7 @@ body {
     width: 288px;
 }
 
-.servico-fields .inputbox-servico {
+.service-fields .inputbox-service {
     display: block;
     width: 100%;
     padding: 0.5rem;
@@ -145,14 +145,14 @@ body {
     Form
     Customer information block/scope
 */
-.info-clients-fields {
+.info-customer-fields {
     width: 100%;
     background-color: transparent;
     padding-top: 24px;
     padding-bottom: 12px;
 }
 
-.cliente-group {
+.customer-group {
     border: none;
     margin-bottom: 12px;
     margin-right: 0;
@@ -161,40 +161,40 @@ body {
     
 }
 
-#cliente-titulo {
+#customer-title {
     font-size: 18px;
     margin-bottom: 2px;
 }
 
-.cliente-group1, .cliente-group2 {
+.customer-group1, .customer-group2 {
     display: flex;
     width: 100%;
     gap: 32px;
     
 }
 
-.fields-align-cliente {
+.fields-align-customer {
     display: flex;
     flex-direction: column;
     width: 100%;
     
 }
 
-.label-nome-inst-cliente, 
-.label-contato-cliente, 
-.label-cel-tel-cliente {
+.customer-inst-name-label, 
+.customer-contact-label, 
+.customer-cel-tel-label {
     font-size: 14px;
 }
 
-#preview-nome-cliente {
+#preview-customer-name {
     width: 400px;
 }
 
-#preview-contato-cliente {
+#preview-customer-contact {
     width: 150px;
 }
 
-#preview-cel-tel-cliente {
+#preview-customer-cel-tel {
     width: 115px;
 }
 
