@@ -49,7 +49,7 @@ body {
     border-bottom-left-radius: 32px;
     display: flex;
     justify-content: space-between;
-    color: var(--white-color);
+    color: var(--white-color1);
 }
 
 .header .header__logo {
@@ -198,26 +198,26 @@ body {
     width: 115px;
 }
 
-.label-end-cliente, 
-.label-municipio-cliente, 
-.label-uf-cliente {
+.customer-address-label, 
+.customer-municipality-label, 
+.customer-uf-label {
     font-size: 14px;
 }
 
-#preview-endereco-cliente {
+#preview-customer-address {
     width: 420px;
 }
 
-#preview-municipio-cliente {
+#preview-customer-municipality {
     width: 200px;
 }
 
-#preview-uf {
+#preview-customer-uf {
     width: 50px;
 }
 
-.cliente-group1 .inputbox-cliente, 
-.cliente-group2 .inputbox-cliente {
+.customer-group1 .inputbox-customer, 
+.customer-group2 .inputbox-customer {
     width: 100%;
     padding: 0.5rem;
     font-size: 14px;

@@ -74,16 +74,16 @@
                                 
                                 <div class="customer-group2">
                                     <div class="fields-align-customer">
-                                        <label for="endereco" class="label-end-cliente">Endereço</label>
-                                        <span type="text" class="inputbox-cliente" id="preview-endereco-cliente" name="endereco-cliente" placeholder="Rua / Avenida das Flores, 123 - Bairro Jardim" required></span>
+                                        <label for="customer-address" class="customer-address-label">Endereço</label>
+                                        <span type="text" class="inputbox-customer" id="preview-customer-address" name="endereco-cliente" placeholder="Avenida das Flores, 123 - Bairro Jardim das Rosas" required></span>
                                     </div>
-                                    <div class="fields-align-cliente">
-                                        <label for="municipio" class="label-municipio-cliente">Municipio</label>
-                                        <span type="text" class="inputbox-cliente" id="preview-municipio-cliente" name="municipio-cliente" placeholder="Cidade" required></span>
+                                    <div class="fields-align-customer">
+                                        <label for="customer-municipality" class="customer-municipality-label">Municipio</label>
+                                        <span type="text" class="inputbox-customer" id="preview-customer-municipality" name="municipio-cliente" placeholder="Cidade" required></span>
                                     </div>
-                                    <div class="fields-align-cliente">
-                                        <label for="uf" class="label-uf-cliente">UF</label>
-                                        <span name="uf" class="inputbox-cliente" id="preview-uf" required></span>
+                                    <div class="fields-align-customer">
+                                        <label for="customer-uf" class="customer-uf-label">UF</label>
+                                        <span name="uf" class="inputbox-customer" id="preview-customer-uf" required></span>
                                             
                                     </div>
                                 </div>
@@ -262,9 +262,9 @@
             document.getElementById('preview-customer-contact').textContent = localStorage.getItem('contato-cliente');
             document.getElementById('preview-customer-cel-tel').textContent = localStorage.getItem('cel-tel-cliente');
 
-            document.getElementById('preview-endereco-cliente').textContent = localStorage.getItem('endereco-cliente');
-            document.getElementById('preview-municipio-cliente').textContent = localStorage.getItem('municipio-cliente');
-            document.getElementById('preview-uf').textContent = localStorage.getItem('uf');
+            document.getElementById('preview-customer-address').textContent = localStorage.getItem('endereco-cliente');
+            document.getElementById('preview-customer-municipality').textContent = localStorage.getItem('municipio-cliente');
+            document.getElementById('preview-customer-uf').textContent = localStorage.getItem('uf');
 
             document.getElementById('preview-n-serie').textContent = localStorage.getItem('n-serie');
             document.getElementById('preview-nome-equipamento').textContent = localStorage.getItem('nome-equipamento');
