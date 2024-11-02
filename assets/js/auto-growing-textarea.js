@@ -1,3 +1,8 @@
+/*
+Aumentando a área de textarea da descrição do serviço
+Utilizando função anônima com método style.height
+*/
+
 const textarea = document.getElementById('desc-servico');
 
 textarea.addEventListener('input', function() {
