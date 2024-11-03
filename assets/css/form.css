@@ -10,6 +10,8 @@
     margin-left: 22em;
     margin-right: 22em;
     border: none;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
 }
 
 #servico-titulo {
@@ -62,6 +64,8 @@
     margin-left: 22em;
     margin-right: 22em;
     border: none;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
 }
 
 #cliente-titulo {
@@ -126,6 +130,8 @@
     margin-left: 22em;
     margin-right: 22em;
     border: none;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;   
 }
 
 #equip-titulo {
@@ -239,6 +245,8 @@
     margin-right: 22em;
     padding-left: 22em;
     border: none;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400; 
 }
 
 .desloc-titulo {
@@ -344,11 +352,14 @@
 */
 .tempo-servico {
     display: flex;
+    flex-direction: row;
     border: none;
     margin: 6em;
     margin-left: 22em;
     margin-right: 22em;
     gap: 2em;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400; 
 }
 
 #tempo-titulo {
@@ -409,6 +420,8 @@
     margin-left: 22em;
     margin-right: 22em;
     gap: 2em;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;   
 }
 
 #descricao-titulo {

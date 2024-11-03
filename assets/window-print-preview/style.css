@@ -236,18 +236,18 @@ body {
     Form
     Equipment block/scope
 */
-.equipamento-group {
+.equipment-group {
     border: none;
     margin-top: 24px;
 }
 
-#equip-titulo {
+#equip-title {
     font-size: 18px;
     margin-bottom: 2px;
 
 }
 
-.equipamento-group1 {
+.equipment-group1 {
     width: 100%;
     display: flex;
     gap: 32px;
@@ -260,25 +260,25 @@ body {
     
 }
 
-.label-n-serie, 
-.label-nome-equip, 
-.label-n-chamado {
+.serial-number-label, 
+.equip-name-label, 
+.os-number-label {
     font-size: 14px;
 }
 
-#preview-n-serie {
+#preview-serial-number {
     width: 150px;
 }
 
-#preview-nome-equipamento {
+#preview-equip-name {
     width: 370px;
 }
 
-#preview-n-chamado {
+#preview-os-number {
     width: 150px;
 }
 
-.equipamento-group1 .inputbox-equip {
+.equipment-group1 .inputbox-equip {
     width: 100%;
     padding: 0.5rem;
     font-size: 14px;
@@ -291,7 +291,7 @@ body {
     padding-left: 2px;
 }
 
-.equipamento-group2 {
+.equipment-group2 {
     width: 100%;
     display: flex;
 }

@@ -26,7 +26,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;  
+     
 }
 
 
@@ -49,16 +49,26 @@
 
 
 #main-title {
-    font-size: 34px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+}
+
+#text {
+    font-size: 48px;
     color: var(--white-color1);
     text-align: center;
+    font-weight: 100;
 }
 
 #text-degrade {
+    font-size: 48px;
     background: linear-gradient(to right, #fc732a, #ff6715, #ff5900, #D34A00);
     background-clip: text;
     color: transparent;
+    font-weight: 500;
 }
+
+
 
 
 
@@ -71,5 +81,6 @@
     text-align: center;
     justify-content: center;
     padding: 50px 0;
-    
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 100;
 }
