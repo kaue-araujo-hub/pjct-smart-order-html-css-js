@@ -13,6 +13,7 @@
     --gray-color4: #c9c9c9; 
     --white-color1: #FBFBFB;
     --white-color2: #F8F8F8;
+    
 }
 
 
@@ -27,12 +28,19 @@ body {
     margin-right: 24px;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .a4-container {
     max-width: 794px;
     width: 794px;
     height: 1123px;
+    /* background-color: #F8F8F8; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+
 }
 
 
@@ -296,13 +304,13 @@ body {
     display: flex;
 }
 
-.fields-align-equip-modalidade {
+.fields-align-equip-modality {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.modalidade-titulo {
+.modality-title {
     font-size: 14px;
     margin-bottom: 14px;
 }
@@ -311,7 +319,7 @@ body {
     accent-color: var(--black-color2);
 }
 
-.modalidade-box {
+.modality-box {
     margin-left: 0px;
     gap: 10px;
     font-size: 14px;
@@ -325,12 +333,14 @@ body {
     font-size: 14px;
 }
 
+
+
 .fields-align-equip-status {
     display: flex;
     flex-direction: column;
 }
 
-.label-status-equip {
+.status-equip-label {
 
     font-size: 14px;
     color: var(--black-color1);
@@ -356,7 +366,7 @@ body {
     Displacement to go and displacement to return block/scope
 */
 .deslocamento-group {
-    background-color: var(--white-color2);
+    /* background-color: var(--white-color2); */
     width: 100%;
     border: none;
     display: flex;

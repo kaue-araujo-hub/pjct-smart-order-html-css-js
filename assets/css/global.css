@@ -62,7 +62,7 @@
 
 #text-degrade {
     font-size: 48px;
-    background: linear-gradient(to right, #fc732a, #ff6715, #ff5900, #D34A00);
+    background: linear-gradient(to right, #fd945b, #ff8f52, #fd8848, #fd823f, #fc7a34, #fc732a, #ff6715, #ff5900, #D34A00);
     background-clip: text;
     color: transparent;
     font-weight: 500;

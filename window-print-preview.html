@@ -127,29 +127,29 @@
                         
                     
                         <div class="equipment-group2">
-                            <div class="fields-align-equip-modalidade">
-                                <label for="modalidade-titulo" class="modalidade-titulo">Modalidade</label>
+                            <div class="fields-align-equip-modality">
+                                <label for="modalidade-titulo" class="modality-title">Modalidade</label>
                                 <div class="checkbox-group">
-                                    <span type="checkbox" class="modalidade-box" id="preview-rx-check" name="equip-check"></span>
+                                    <span type="checkbox" class="modality-box" id="preview-rx-check" name="equip-check"></span>
                                     <label for="radiologia" class="rx">Radiologia</label>
                                     
-                                    <span type="checkbox" class="modalidade-box" id="preview-mg-check" name="equip-check"></span>
+                                    <span type="checkbox" class="modality-box" id="preview-mg-check" name="equip-check"></span>
                                     <label for="mamografia" class="mg">Mamografia</label>
                                     
-                                    <span type="checkbox" class="modalidade-box" id="preview-ul-check" name="equip-check"></span>
+                                    <span type="checkbox" class="modality-box" id="preview-ul-check" name="equip-check"></span>
                                     <label for="ultrassonografia" class="ul">Ultrassonografia</label>
                                     
-                                    <span type="checkbox" class="modalidade-box" id="preview-odonto-check" name="equip-check"></span>
+                                    <span type="checkbox" class="modality-box" id="preview-odonto-check" name="equip-check"></span>
                                     <label for="odontologia" class="odonto">Odontologia</label>
                                     
-                                    <span type="checkbox" class="modalidade-box" id="preview-vet-check" name="equip-check"></span>
+                                    <span type="checkbox" class="modality-box" id="preview-vet-check" name="equip-check"></span>
                                     <label for="veterinaria" class="vet">Veterinária</label>  
                                 </div>
                             </div>
                             
                             
                             <div class="fields-align-equip-status">
-                                <label for="equip-status" class="label-status-equip">Status do Equipamento</label>
+                                <label for="equip-status" class="status-equip-label">Status do Equipamento</label>
                                 <span name="equip-status" class="inputbox-status-equip" id="preview-equip-status"></span>
                                     
                                 </select>
@@ -157,6 +157,10 @@
                         </div>
                     </fieldset>
                 
+                        <!--
+                        Form
+                        Displacement to go and displacement to return block/scope
+                        -->
                         <fieldset class="deslocamento-group">
                             <div id="legend-desloc">
                                 <legend class="desloc-titulo"><strong>Deslocamento</strong></legend>
@@ -207,7 +211,10 @@
                                 </div>
                             </div>
                     </fieldset>
-
+                    <!--
+                    Form
+                    Time of service block/scope
+                    -->
                     <fieldset class="tempo-servico">
                         <Legend id="tempo-titulo"><strong>Tempo de Serviço</strong></Legend>
                         <div class="fields-align-time">
@@ -228,25 +235,28 @@
                             <span type="text" id="preview-inputbox-obs" name="obs-tempo" placeholder="Apontamentos relevantes"></span>
                         </div>
                     </fieldset>
-
+                    <!--
+                    Form
+                    Description of service block/scope
+                    -->
                     <fieldset class="description"> 
                         <legend id="descricao-titulo"><strong>Descrição do Serviço</strong></legend>
                         <span id="preview-desc-servico" name="desc-servico" required></span>
                     </fieldset>
                 </form>
             </section>
+            <section class="signatures__group">
+                <div class="signatures__group__fields">
+                    <input type="text" name="inputbox-tech-name" class="signatures__inputbox">
+                    <label for="label-tech-name" class="signatures__labels">assinatura do técnico</label>
+                </div>
+                <div class="signatures__group__fields">
+                    <input type="text" name="inputbox-cliente-name" class="signatures__inputbox">
+                    <label for="label-cliente-name" class="signatures__labels">assinatura do cliente</label>
+                </div>
+            </section>
+            <br><br>
         </main>
-        <section class="signatures__group">
-            <div class="signatures__group__fields">
-                <input type="text" name="inputbox-tech-name" class="signatures__inputbox">
-                <label for="label-tech-name" class="signatures__labels">assinatura do técnico</label>
-            </div>
-            <div class="signatures__group__fields">
-                <input type="text" name="inputbox-cliente-name" class="signatures__inputbox">
-                <label for="label-cliente-name" class="signatures__labels">assinatura do cliente</label>
-            </div>
-        </section>
-        <br><br>
         <footer class="footer-infos">
             <p id="dir-reserv">&copy Todos os direitos reservados.</p>
         </footer>
@@ -287,8 +297,8 @@
             document.getElementById('preview-equip-name').textContent = localStorage.getItem('nome-equipamento');
             document.getElementById('preview-os-number').textContent = localStorage.getItem('n-chamado');
 
-
-            let isCheckedRx = localStorage.getItem('rx-check') === 'true'; // Convertendo de string para boolean
+                                                    // Convertendo de string para boolean
+            let isCheckedRx = localStorage.getItem('rx-check') === 'true'; 
             document.getElementById('preview-rx-check').innerHTML = isCheckedRx 
             ? '<img src="assets/window-print-preview/checked-icon.png" alt="checked">'         /*'✓'*/
             : '<img src="assets/window-print-preview/unchecked-icon.png" alt="unchecked">';         /*''*/
