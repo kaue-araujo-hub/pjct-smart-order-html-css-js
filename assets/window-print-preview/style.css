@@ -19,6 +19,53 @@
 
 
 
+.a4-container .printer-btn  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.printer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid var(--gray-color2);
+    background-color: transparent;
+    width: 200px;
+    height: 300px;
+    padding: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.printer-btn:hover {
+    background-color: rgba(228, 228, 228, 0.1);
+    /* Efeito de hover opcional */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
     RESET Selector
 */
