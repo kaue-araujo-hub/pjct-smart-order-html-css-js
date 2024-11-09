@@ -258,14 +258,20 @@
             </section>
         </main>
         <br><br>
-        <div id="printer" class="printer-btn">
-            <img src="img-icons/Icone de impressora-75x93.svg" alt="printer-img">
-            <p>Imprimir</p>
-        </div>
+        <button class="printer-page-btn" onclick="printPage()">Imprimir
+            <div id="printer" class="printer-btn">
+                <img src="img-icons/Icone de impressora-75x93.svg" alt="printer-img">
+                <p>Imprimir</p>
+            </div>
+        </button>
         <br><br>
     </section>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+
+            function printPage() {
+                alert("Isso é um alerta");
+            }
             // Obtendo valores dos inputs da entrada -> index.html usando DOM
             /*
                 Os IDs nomeados com: preview-alguma-coisa recebem valores.
@@ -275,6 +281,10 @@
             document.getElementById('preview-data-service').textContent = localStorage.getItem('data-servico');
             document.getElementById('preview-type-service').textContent = localStorage.getItem('tipo-servico');
             document.getElementById('preview-fabricante').textContent = localStorage.getItem('fabricante');
+
+
+            
+
 
             // Pegando o valor do localStorage e formatando
             let dataServico = localStorage.getItem('data-servico');
