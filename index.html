@@ -313,17 +313,30 @@
                         <button type="reset" id="btn-reset">Limpar formulário</button>
                     </div>
                     <div class="buttons-align">
-                        <button type="submit" id="btn-pdf" onclick="openPrintPreview()">Preview</button>
+                        <button type="submit" id="previewButton" onclick="saveDataPreview()">Preview</button>
                     </div>
+
                 </div>
             </form>
         </section>
     </main>
+
+    <div id="previewModal" class="modal">
+        <div class="modal-content">
+            <iframe id="previewFrame" src="window-print-preview.html"></iframe>
+            <div id="modal-buttons">
+                <button id="printButton">Imprimir</button>
+                <button id="closeButton">Fechar preview</button>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer-infos">
         <p id="dev-web-k">&copy Todos os direitos reservados.</p>
     </footer>
 
     <script src="assets/js/select-card.js" defer></script>
+    <script src="assets/js/preview-modal.js" defer></script>
     <script src="assets/js/generate-preview.js" defer></script>
     <script src="assets/js/auto-growing-textarea.js" defer></script>
     <script src="assets/js/contact-area-of-date-input.js" defer></script>

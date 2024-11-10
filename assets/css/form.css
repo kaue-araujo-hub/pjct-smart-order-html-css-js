@@ -475,7 +475,7 @@ textarea {
     
 }
 
-#btn-pdf {
+#previewButton {
     font-size: 1em;
     padding: 1em;
     width: 300px;
@@ -488,7 +488,7 @@ textarea {
     
 }
 
-#btn-pdf:hover {
+#previewButton:hover {
     background-color: #fd5900;
     color: #fbfbfb;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);

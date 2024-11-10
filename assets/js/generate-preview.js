@@ -6,7 +6,7 @@ Pegando o valor dos inputs e armazenando no localStorage
 
 */
 
-function openPrintPreview() {
+function saveDataPreview() {
     // Variaveis 1º bloco do formulário 
     const dataServico = document.getElementById('data-servico').value;
     const tipoServico = document.getElementById('tipo-servico').value;
@@ -117,7 +117,7 @@ function openPrintPreview() {
     localStorage.setItem('desc-servico', descricaoServico);
 
 
-    window.open('window-print-preview.html');
+    // window.open('window-print-preview.html');
 }
 
 
