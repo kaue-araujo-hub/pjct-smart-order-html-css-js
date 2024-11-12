@@ -5,6 +5,7 @@
 const presencial = document.getElementById('atendimento-presencial');
 const remoto = document.getElementById('atendimento-remoto');
 const deslocamentoBlock = document.querySelector('.deslocamento-group');
+const previewDeslocamentoBlock = document.querySelector('.preview-deslocamento-group');
 
 // Função Condicional para trocar o estado de atendimento
 // Função -> Nome da Função -> Parâmetro
@@ -15,10 +16,12 @@ function selecionarAtendimento(opcao) {
         presencial.classList.add('selected');
         remoto.classList.remove('selected');
         deslocamentoBlock.style.display = 'block'; // Mostrar o bloco de deslocamento
+        previewDeslocamentoBlock.style.display ='block';
     } else { // Condicional false: Remoto
         remoto.classList.add('selected');
         presencial.classList.remove('selected');
-        deslocamentoBlock.style.display = 'none'; // Esconder o bloco de deslocamento 
+        deslocamentoBlock.style.display = 'none'; // Esconder o bloco de deslocamento
+        previewDeslocamentoBlock.style.display = 'none'; 
     }
 }
 

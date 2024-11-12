@@ -161,6 +161,26 @@
 
 
 
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Efeito de escurecimento */
+    backdrop-filter: blur(5px); /* Efeito de desfoque */
+    display: none; /* Inicialmente oculto */
+    z-index: 9; /* Colocado atrás do modal */
+}
+
+
+
+
+
+
+
+
 .footer-infos {
     width: 100%;
     height: 80px;

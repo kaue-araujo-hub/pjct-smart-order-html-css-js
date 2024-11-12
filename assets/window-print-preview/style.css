@@ -32,8 +32,10 @@ body {
     margin: 0;
     margin-left: 24px;
     margin-right: 24px;
+    margin-bottom: 24px;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
 }
 
 .form {
@@ -89,7 +91,7 @@ body {
     Style page
     Header style block/scope
 */
-.header {
+#header__banner {
     background-color: var(--black-color2);
     padding-top: 20px;
     padding-bottom: 8px;
@@ -109,22 +111,22 @@ body {
     margin-right: 48px;
 }
 
+@media print {
+    .header {
+        background-color: var(--black-color2) !important; /* Força o fundo preto na impressão */
+        -webkit-print-color-adjust: exact; /* Para alguns navegadores */
+    }
+}
 
 
 /*
     Style page
     Banner
 */
-.banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 12px;
-}
-
 #titulo-principal {
     font-size: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -404,7 +406,7 @@ body {
     Form
     Displacement to go and displacement to return block/scope
 */
-.deslocamento-group {
+.preview-deslocamento-group {
     /* background-color: var(--white-color2); */
     width: 100%;
     border: none;
@@ -633,12 +635,14 @@ body {
     font-size: 14px;
     margin-left: 48px;
     gap: 100px;
+    
 }
 
 .signatures__group__fields {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 48px;
 }
 
 
@@ -648,6 +652,7 @@ body {
     border-radius: 4px;
     border-bottom: 1px solid var(--gray-color3);
     margin-top: 64px;
+    
 }
 
 .signatures__labels {
