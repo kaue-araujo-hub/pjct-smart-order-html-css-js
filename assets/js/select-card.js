@@ -1,3 +1,7 @@
+
+
+function selectBlock(){
+
 // Pegando os elementos de atendimento presencial e remoto
 // Variaveis utilizando DOM dos elementos que serão manipulados
 // getElementById -> método DOM de pegar elemento HTML com base no ID
@@ -41,3 +45,4 @@ presencial.addEventListener('click', function() {
 remoto.addEventListener('click', function() {
     selecionarAtendimento('remoto');
 });
+}
