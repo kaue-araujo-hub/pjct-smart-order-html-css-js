@@ -1,6 +1,6 @@
 
 
-function selectBlock(){
+
 
 // Pegando os elementos de atendimento presencial e remoto
 // Variaveis utilizando DOM dos elementos que serão manipulados
@@ -45,4 +45,3 @@ presencial.addEventListener('click', function() {
 remoto.addEventListener('click', function() {
     selecionarAtendimento('remoto');
 });
-}
