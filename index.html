@@ -323,7 +323,15 @@
 
     <div id="deleteModal" class="modalDelete" style="display: none;">
         <div class="modal-content-delete">
-            <iframe id="deleteModal" src="window-delete-modal.html"></iframe>
+            
+            <div id="modal-img">
+                <img src="img-icons/alert-icon-56x56.png.png" alt="alert-icon">
+            </div>
+            <br><br>
+            <div id="modal-delete-question">
+                <p id="modal-delete-txt"><strong>Deseja excluir os dados inseridos?</strong></p>
+            </div>
+            <br><br>
             <div id="modal-delete-buttons">
                 <button id="cancelDeleteButton">Cancelar</button>
                 <button type="reset" id="confirmDeleteButton" onclick="activateResetButton()">Confirmar</button>
@@ -347,52 +355,12 @@
         <p id="dev-web-k">&copy Todos os direitos reservados.</p>
     </footer>
 
-    <script>
-        
-        const deleteModal = document.getElementById("deleteModal");
-        
-        const resetButton = document.getElementById("btn-reset");
-        resetButton.addEventListener('click', showDeleteModal);
-
-        function showDeleteModal() {
-            deleteModal.style.display = 'block';
-        }
-
-
-
-        const cancelButton = document.getElementById("cancelDeleteButton");
-        cancelButton.addEventListener('click', closeDeleteModal);
-
-        function closeDeleteModal() {
-            deleteModal.style.display = 'none';
-        }
-
-
-
-        const confirmButton = document.getElementById("confirmDeleteButton");
-        confirmButton.addEventListener('click', activateResetButton);
-
-        function activateResetButton() {
-            const formFields = document.getElementById("form");
-            // confirmButton.reset();
-            formFields.reset();
-            
-            deleteModal.style.display = "none";
-        }
-
-
-
-
-
-    </script>
-
-
-
     <script src="assets/js/select-card.js" defer></script>
-    <script src="assets/js/preview-modal.js" defer></script>
     <script src="assets/js/generate-preview.js" defer></script>
     <script src="assets/js/auto-growing-textarea.js" defer></script>
     <script src="assets/js/contact-area-of-date-input.js" defer></script>
+    <script src="assets/js/modalBox__delete-functions.js" defer></script>
+    <script src="assets/js/modalBox__preview-functions.js" defer></script>
 
 </body>
 </html>
