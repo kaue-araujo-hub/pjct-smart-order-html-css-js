@@ -6,7 +6,9 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 999;
     background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,6 +16,9 @@
 }
 
 .modal-content-delete {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
     padding: 10px;
     border-radius: 5px;
