@@ -14,10 +14,10 @@
     font-weight: 400;
 }
 
-#servico-titulo {
+/* #servico-titulo {
     font-size: 2em;
     margin-bottom: 1em;
-}
+} */
 
 .servico-fields {
     width: 100%;
@@ -70,7 +70,7 @@
 
 #cliente-titulo {
     font-size: 2em;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 
 .cliente-group1, .cliente-group2 {

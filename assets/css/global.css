@@ -72,6 +72,38 @@
 
 
 
+
+.section-title {
+    font-size: 1em;
+}
+
+
+
+
+
+.main-content-buttons {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.btn-custom{
+    background-color: #ff6715; 
+    color: white;
+    border: none; 
+    transform: 1s;
+}
+
+.btn-custom:hover {
+    background-color: #e0580e; 
+    color: white;
+}
+
+
+
+
+
 .footer-infos {
     width: 100%;
     height: 80px;
