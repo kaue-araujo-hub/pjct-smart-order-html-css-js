@@ -8,24 +8,24 @@ Pegando o valor dos inputs e armazenando no localStorage
 
 function saveDataPreview() {
     // Variaveis 1º bloco do formulário 
-    const dataServico = document.getElementById('data-servico').value;
-    const tipoServico = document.getElementById('tipo-servico').value;
-    const fabricante = document.getElementById('fabricante').value;
+    const dataServico = document.getElementById('dateOfService').value;
+    const tipoServico = document.getElementById('typeOfService').value;
+    const fabricante = document.getElementById('equipmentBrand').value;
     // Armazenando os valores no localStorage 1º bloco
-    localStorage.setItem('data-servico', dataServico);
-    localStorage.setItem('tipo-servico', tipoServico);
-    localStorage.setItem('fabricante', fabricante);
+    localStorage.setItem('dateOfService', dataServico);
+    localStorage.setItem('typeOfService', tipoServico);
+    localStorage.setItem('equipmentBrand', fabricante);
 
 
 
     // Variaveis 2º bloco do formulário
-    const nomeCliente = document.getElementById('nome-cliente').value;
-    const contatoCliente = document.getElementById('contato-cliente').value;
-    const celTelCliente = document.getElementById('cel-tel-cliente').value;
+    const nomeCliente = document.getElementById('institutionName').value;
+    const contatoCliente = document.getElementById('customerContactName').value;
+    const celTelCliente = document.getElementById('customerContactNumber').value;
     // Armazenando os valores no localStorage 2º bloco
-    localStorage.setItem('nome-cliente', nomeCliente);
-    localStorage.setItem('contato-cliente', contatoCliente);
-    localStorage.setItem('cel-tel-cliente', celTelCliente);
+    localStorage.setItem('institutionName', nomeCliente);
+    localStorage.setItem('customerContactName', contatoCliente);
+    localStorage.setItem('customerContactNumber', celTelCliente);
 
 
 
