@@ -3,7 +3,7 @@
 
 const deleteModal = document.getElementById("deleteModal");
         
-const resetButton = document.getElementById("btn-reset");
+const resetButton = document.getElementById("showDeleteModal__button");
 resetButton.addEventListener('click', showDeleteModal);
 
 function showDeleteModal() {
@@ -12,7 +12,7 @@ function showDeleteModal() {
 
 
 
-const cancelButton = document.getElementById("cancelDeleteButton");
+const cancelButton = document.getElementById("cancelResetForm__button");
 cancelButton.addEventListener('click', closeDeleteModal);
 
 function closeDeleteModal() {
@@ -21,11 +21,11 @@ function closeDeleteModal() {
 
 
 
-const confirmButton = document.getElementById("confirmDeleteButton");
+const confirmButton = document.getElementById("confirmResetForm__button");
 confirmButton.addEventListener('click', activateResetButton);
 
 function activateResetButton() {
-    const formFields = document.getElementById("form");
+    const formFields = document.getElementById("osForm");
     // confirmButton.reset();
     formFields.reset();
     

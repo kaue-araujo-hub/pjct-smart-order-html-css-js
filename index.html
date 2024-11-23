@@ -67,7 +67,7 @@
                 <p>Atendimento <strong>Remoto</strong></p>
             </div>
         </div> -->
-    </section>
+    <!-- </section> -->
 
     <!--
     Form
@@ -81,7 +81,7 @@
     <br><br><br><br>
 
     <div class="container">
-        <form>
+        <form id="osForm">
 
             <!--
             Form
@@ -149,50 +149,29 @@
             <section class="customer__section">
                 <div class="container ">
                     <legend class="section__title" id="customer__section-title"><strong>Cliente</strong></legend>
-                    <div class="row g-2">
-                        <div class="col-12">
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
                             <div class="form-floating mb-2 justify-content-center">
                                 <input type="text" class="form-control" id="institutionNameInput">
                                 <label for="institutionNameLabel">Nome da Instituição</label>
                             </div>
                         </div>
-                    
 
-                    
-                        <div class="col-7">
-                            <div class="form-floating mb-2">
-                                <input type="text" class="form-control" id="customerContactNameInput">
-                                <label for="customerContactNameLabel">Contato</label>
-                            </div>
-                        </div>
-                    
-
-                    
-                        <div class="col-5">
-                            <div class="form-floating mb-2">
-                                <input type="text" class="form-control" id="customerContactNumberInput">
-                                <label for="customerContactNumberLabel">Cel/Tel</label>
-                            </div>
-                        </div>
-                    
-            
-
-                    
-                        <div class="col-12">
+                        <div class="col-12 col-sm-6">
                             <div class="form-floating mb-2">
                                 <input type="text" class="form-control" id="addressCustomerInput">
                                 <label for="addressCustomerLabel">Endereço</label>
                             </div>
                         </div>
 
-                        <div class="col-9">
+                        <div class="col-9 col-sm-4">
                             <div class="form-floating mb-2">
                                 <input type="text" class="form-control" id="municipalityInput">
                                 <label for="municipalityLabel">Municipio</label>
                             </div>
                         </div>
 
-                        <div class="col-3">
+                        <div class="col-3 col-sm-2">
                             <div class="form-floating">
                                 <select class="form-select" id="ufStatesInput">
                                     <option selected value required>AC</option>
@@ -222,9 +201,22 @@
                                     <option value="25">SP</option>
                                     <option value="26">SE</option>
                                     <option value="27">TO</option>
-                                    
                                 </select>
                                 <label for="ufStatesLabel">UF</label>
+                            </div>
+                        </div>
+
+                        <div class="col-7 col-sm-3">
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="customerContactNameInput">
+                                <label for="customerContactNameLabel">Contato</label>
+                            </div>
+                        </div>
+
+                        <div class="col-5 col-sm-3">
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="customerContactNumberInput">
+                                <label for="customerContactNumberLabel">Cel/Tel</label>
                             </div>
                         </div>
                     </div>
@@ -239,57 +231,36 @@
             <section class="equipment__section">
                 <div class="container">
                     <legend class="section__title" id="equipment__section-title"><strong>Equipamento</strong></legend>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="serialNumberInput">
-                                <label for="serialNumberLabel">Nº de Série</label>
-                            </div>
-                        </div>
-
-                        <div class="col-8">
-                            <div class="form-floating mb-3">
+                    <div class="row g-3">
+                        <div class="col-8 col-sm-8 col-md-8">
+                            <div class="form-floating mb-2">
                                 <input type="text" class="form-control" id="nameOfEquipmentInput">
                                 <label for="nameOfEquipmentLabel">Nome do Equipamento</label>
                             </div>
                         </div>
 
-                        <div class="col-2">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="numberOfOrderInput">
-                                <label for="numberOfOrderLabel">Nº do Chamado</label>
+                        <div class="col-4 col-sm-4 col-md-4">
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="serialNumberInput">
+                                <label for="serialNumberLabel">Nº de Série</label>
                             </div>
                         </div>
-                    </div>
 
-
-                    <div class="row">
-                        <div class="col-" >
-                            <div class="form-check form-check-inline" >
-                                <input class="form-check-input" type="checkbox" id="rxCheckBoxInput" value="option1">
-                                <label class="form-check-label" for="rxCheckBoxLabel">Radiologia</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="mammoCheckBoxInput" value="option2">
-                                <label class="form-check-label" for="mammoCheckBoxLabel">Mamografia</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="ulCheckBoxInput" value="option3">
-                                <label class="form-check-label" for="ulCheckBoxLabel">Ultrassonografia</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="odontoCheckBoxInput" value="option4">
-                                <label class="form-check-label" for="odontoCheckBoxLabel">Odontologia</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="vetCheckBoxInput" value="option5">
-                                <label class="form-check-label" for="vetCheckBoxLabel">Veterinária</label>
+                        <div class="col-12 col-sm-6 col-md-6">
+                            <div class="form-floating mb-2">
+                                <select class="form-select" id="equipmentBrandInput">
+                                    <option selected disabled value required>Selecione</option>
+                                    <option value="1">Radiologia</option>
+                                    <option value="2">Mamografia</option>
+                                    <option value="3">Ultrassonografia</option>
+                                    <option value="4">Odontologia</option>
+                                    <option value="5">Veterinária</option>
+                                </select>
+                                <label for="equipmentBrandLabel">Modalidade</label>
                             </div>
                         </div>
-                    </div>
-                
-                    <div class="row">
-                        <div class="col-4">
+
+                        <div class="col-12 col-sm-6 col-md-6">
                             <div class="form-floating">
                                 <select class="form-select" id="euipStatusInput">
                                     <option selected disabled value required>Selecione</option>
@@ -315,43 +286,43 @@
                     <!-- displacement__section-to-go -->
                     <div class="displacement__section-to-go">  
                         <legend class="section__title" id="displacement__section-title"><strong>Deslocamento</strong></legend>
-                        <div class="row g-4">
+                        <div class="row g-3">
 
                             <!-- departureDateField to GO -->
-                            <div class="col-2">
-                                <div class="form-floating mb-3">
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                <div class="form-floating mb-2">
                                     <input type="date" class="form-control" id="departureDateInput">
                                     <label for="departureDateLabel">Data de Ida</label>
                                 </div>
                             </div>
 
                             <!-- departureTimeField to GO -->
-                            <div class="col-2">
-                                <div class="form-floating mb-3">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                <div class="form-floating mb-2">
                                     <input type="text" class="form-control" id="departureTimeToGoInput">
                                     <label for="departureTimeToGoLabel">Hora de Saída</label>
                                 </div>
                             </div>
 
                             <!-- arrivalTimeField to GO -->
-                            <div class="col-2">
-                                <div class="form-floating mb-3">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                <div class="form-floating mb-2">
                                     <input type="text" class="form-control" id="arrivalTimeToGoInput">
                                     <label for="arrivalTimeToGoLabel">Hora de Chegada</label>
                                 </div>
                             </div>
 
                             <!-- departureLocationField to GO -->
-                            <div class="col-3">
-                                <div class="form-floating mb-3">
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                                <div class="form-floating mb-2">
                                     <input type="text" class="form-control" id="departureLocationToGoInput">
                                     <label for="departureLocationToGoLabel">Local de Origem</label>
                                 </div>
                             </div>
 
                             <!-- arrivalLocationField to GO -->
-                            <div class="col-3">
-                                <div class="form-floating mb-3">
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                                <div class="form-floating mb-5">
                                     <input type="text" class="form-control" id="arrivalLocationToGoInput">
                                     <label for="arrivalLocationToGoLabel">Local de Destino</label>
                                 </div>
@@ -363,43 +334,43 @@
 
                     <!-- displacement__section-to-return -->
                     <div class="displacement__section-to-return"> 
-                        <div class="row g-4">
+                        <div class="row g-3">
 
                             <!-- departureDateField to RETURN -->
-                            <div class="col-2">
-                                <div class="form-floating mb-3">
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                <div class="form-floating mb-2">
                                     <input type="date" class="form-control" id="returnDateInput">
                                     <label for="returnDateLabel">Data de Volta</label>
                                 </div>
                             </div>
 
                             <!-- departureTimeField to RETURN -->
-                            <div class="col-2">
-                                <div class="form-floating mb-3">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                <div class="form-floating mb-2">
                                     <input type="text" class="form-control" id="departureTimeToReturnInput">
                                     <label for="departureTimeToReturnLabel">Hora de Saída</label>
                                 </div>
                             </div>
 
                             <!-- arrivalTimeField to RETURN -->
-                            <div class="col-2">
-                                <div class="form-floating mb-3">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                <div class="form-floating mb-2">
                                     <input type="text" class="form-control" id="arrivalTimeToReturnInput">
                                     <label for="arrivalTimeToReturnLabel">Hora de Chegada</label>
                                 </div>
                             </div>
 
                             <!-- departureLocationField to RETURN -->
-                            <div class="col-3">
-                                <div class="form-floating mb-3">
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                                <div class="form-floating mb-2">
                                     <input type="text" class="form-control" id="departureLocationToReturnInput">
                                     <label for="departureLocationToReturnLabel">Local de Origem</label>
                                 </div>
                             </div>
 
                             <!-- arrivalLocationField to RETURN -->
-                            <div class="col-3">
-                                <div class="form-floating mb-3">
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                                <div class="form-floating">
                                     <input type="text" class="form-control" id="arrivalLocationToReturnInput">
                                     <label for="arrivalLocationToReturnLabel">Local de Destino</label>
                                 </div>
@@ -414,83 +385,113 @@
                 Form
                 Time of service block/scope
                 -->
-            <div class="container">
-                <legend class="section__title" id="section__title-timeOfService"><strong>Descrição do Serviço</strong></legend>
-                <div class="row g-4">
-                    <div class="col-2">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput">
-                            <label for="floatingInput">Hora de Início</label>
-                        </div>
-                    </div>
 
-                    <div class="col-2">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput">
-                            <label for="floatingInput">Hora de Término</label>
-                        </div>
-                    </div>
+            <section class="timeAndDescription__section">
+                <div class="container">
 
-                    <div class="col-4">
-                        <div class="form-floating">
-                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                <option selected disabled value required>Selecione</option>
-                                <option value="1">Concluído</option>
-                                <option value="2">Não foi possível concluir</option>
-                                <option value="3">Em andamento</option>
-                                <option value="4">Cancelado</option>
-                            </select>
-                            <label for="floatingSelect">Status de Atendimento</label>
+                    <legend class="section__title" id="section__title-timeOfService"><strong>Descrição do Serviço</strong></legend>
+                    <div class="row g-2">
+                        <div class="col-6 col-sm-3">
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="floatingInput">
+                                <label for="floatingInput">Hora de Início</label>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-4">
-                        <div class="form-floating">
-                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                <option selected disabled value required>Selecione</option>
-                                <option value="1">Usuário</option>
-                                <option value="2">Siteplanning</option>
-                                <option value="3">Equipamento</option>
-                            </select>
-                            <label for="floatingSelect">Causa do Problema</label>
+                        <div class="col-6 col-sm-3">
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="floatingInput">
+                                <label for="floatingInput">Hora de Término</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            <div class="form-floating mb-2">
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <option selected disabled value required>Selecione</option>
+                                    <option value="1">Concluído</option>
+                                    <option value="2">Não foi possível concluir</option>
+                                    <option value="3">Em andamento</option>
+                                    <option value="4">Cancelado</option>
+                                </select>
+                                <label for="floatingSelect">Status de Atendimento</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6" style="display: none;">
+                            <div class="form-floating mb-2">
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <option selected disabled value required>Selecione</option>
+                                    <option value="1">Usuário</option>
+                                    <option value="2">Siteplanning</option>
+                                    <option value="3">Equipamento</option>
+                                </select>
+                                <label for="floatingSelect">Causa do Problema</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
+                            <div class="form-floating mb-5">
+                                <textarea class="form-control" id="floatingTextarea" style="height: 100px"></textarea>
+                                <label for="floatingTextarea">Descrição do serviço</label>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+
+                    <!--
+                    Form
+                    Description of service block/scope
+                    -->
             
-            <!--
-            Form
-            Description of service block/scope
-            -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-floating">
-                            <textarea class="form-control" id="floatingTextarea" style="height: 100px"></textarea>
-                            <label for="floatingTextarea">Descrição do serviço</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    
 
+                    
+            
+            
             <!--
             Functions
             Buttons to clear and to send form block/scope
             -->
-            <br><br>
-            <div class="container">
-                <div class="row g-2 justify-content-center">
-                    <div class="main-content-buttons"> 
-                        <button type="button" class="btn btn-outline-dark col-6 col-sm-6 col-md-6 col-lg-6 col-xl-2 col-xxl-4" id="clear-button">Limpar formulário</button>
-                        <button type="button" class="btn btn-custom col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4" id="previewButton" onclick="saveDataPreview()">Preview</button>
+            <section>
+                <div class="container">
+                    <div class="row g-2 ">
+                        <button type="button" class="btn btn-outline-dark col-6 col-sm-6 col-md-6 col-lg-6 col-xl-2 col-xxl-4" id="showDeleteModal__button" onclick="showDeleteModal()">Limpar formulário</button>
+                        <button type="button" class="btn btn-success col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4" id="previewOS__button" onclick="saveDataPreview()">Preview</button>
                     </div>
                 </div>
-            </div>
+            </section>
         </form>
     </div>
     <br><br><br>
 
-    <div id="deleteModal" class="modalDelete" style="display: none;">
+
+        <div class="modal" tabindex="-1" id="deleteModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                        <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancelResetForm__button">Cancelar</button>
+                        <button type="button" class="btn btn-primary" id="confirmResetForm__button">Confirmar exclusão</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    <!-- <div id="deleteModal" class="modalDelete" style="display: none;">
         <div class="modal-content-delete">
             
             <div id="modal-img">
@@ -506,7 +507,7 @@
                 <button type="reset" id="confirmDeleteButton" onclick="activateResetButton()">Confirmar</button>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
