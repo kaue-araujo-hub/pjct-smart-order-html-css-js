@@ -1,0 +1,37 @@
+
+
+
+
+
+.card-header {
+    /* background-color: #F8F9FA; */
+    background-color: transparent;
+    justify-content: flex-start;
+    margin-bottom: 32px;
+    padding-top: 32px;
+    
+}
+
+
+/* Estilo padrão dos links */
+.nav-link {
+    background-color: transparent;
+    color: #242424; /* Texto padrão */
+    border: 1px solid transparent; /* Sem borda inicialmente */
+    transition: all 0.3s ease-in-out; /* Transição suave */
+}
+
+.nav-link:hover {
+    color: #ff6715;
+}
+
+.nav-item:hover {
+    color: #ff6715;
+}
+
+
+.nav-link.selected {
+    background-color: #ff6715; /* Fundo azul (Bootstrap primary) */
+    color: #fff; /* Texto branco */
+    font-weight: bold; /* Negrito */
+}

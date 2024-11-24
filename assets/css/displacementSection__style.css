@@ -1,0 +1,10 @@
+
+
+.displacement__section {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.displacement__title-and-icon {
+    display: flex; 
+}

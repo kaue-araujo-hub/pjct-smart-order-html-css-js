@@ -7,6 +7,7 @@
     <title>Univen * Ordem de Serviço</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="assets/css/global.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
     </head>
 <body>
     <!--  -->
@@ -19,17 +20,432 @@
     Banner structure
     -->
 
+    
+    <section class="inputFieldsForm">
+        <div class="card">
+            <div class="card-header">
 
-    <!-- <section class="banner">
-        <div id="main-title">
-            <h1 id="text">Escreva sua ordem de serviço</h1>
-            <h1 id="text-degrade">Com agilidade e precisão</h1>
-        </div> -->
+                <div class="container-fluid d-flex justify-content-center">
+                    <a class="navbar-brand" href="#"> <!-- logo -->
+                        <img src="img-icons/logo-univen-preto-166x39.png" alt="univen-logo" width="166" height="39" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                <br><br>
 
-        <!--
-        Cards structure
-        -->
+                <div class="main-content-title"> <!-- main-title -->
+                    <h1 class="display-5" id="text">Escreva sua ordem de serviço</h1>
+                    <h1 class="display-5" id="text-degrade">com agilidade e precisão.</h1>
+                </div>
+                <br><br>
 
+                <ul class="nav nav-tabs card-header-tabs justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="true" href="#" id="inPersonService__nav-link-option">Atendimento Presencial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="remoteService__nav-link-option">Atendimento Remoto</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card-body">
+                <div class="container">
+                    <form id="osForm">
+                        <!-- Form Service information block/scope -->
+                        <section class="typeOfService__section">
+                            <div class="container">
+                                <div class="typeOfService__title">
+                                    <legend class="section__title" id="section__title-typeOfService"><strong>Serviço</strong></legend>
+                                </div>
+                                
+                                <div class="row g-3">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                        <div class="form-floating mb-2">
+                                            <input type="date" class="form-control" id="dateOfServiceInput">
+                                            <label for="dateOfServiceLabel">Data</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="numberOfOrderInput">
+                                            <label for="numberOfOrderLabel">Nº do Chamado</label>
+                                        </div>
+                                    </div>
+            
+                                
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                        <div class="form-floating mb-2">
+                                            <select class="form-select" id="typeOfServiceInput">
+                                                <option selected disabled value required>Selecione</option>
+                                                <option value="1">Instalação</option>
+                                                <option value="2">Reinstalação</option>
+                                                <option value="3">Manutenção Corretiva</option>
+                                                <option value="4">Manutenção Preventiva</option>
+                                                <option value="5">Revisão/Desinstalação</option>
+                                                <option value="6">Instalação de Demonstração</option>
+                                                <option value="7">Aplicação/Treinamento</option>
+                                                <option value="8">Acompanhamento</option>
+                                            </select>
+                                            <label for="typeOfServiceLabel">Serviço</label>
+                                        </div>
+                                    </div>
+                                
+            
+                                
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="equipmentBrandInput">
+                                                <option selected disabled value required>Selecione</option>
+                                                <option value="1">GE</option>
+                                                <option value="2">LOTUS</option>
+                                                <option value="3">DRTECH</option>
+                                                <option value="4">FUJIFILM</option>
+                                            </select>
+                                            <label for="equipmentBrandLabel">Fabricante</label>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div> 
+                        </section> 
+                        <br><br>
+            
+            
+            
+                        <!-- Form Customer information block/scope -->
+                        <section class="customer__section">
+                            <div class="container ">
+            
+                                <div class="customer__title">
+                                    <legend class="section__title" id="customer__section-title"><strong>Cliente</strong></legend>
+                                </div>
+            
+                                <div class="row g-3">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-floating mb-2 justify-content-center">
+                                            <input type="text" class="form-control" id="institutionNameInput">
+                                            <label for="institutionNameLabel">Nome da Instituição</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="addressCustomerInput">
+                                            <label for="addressCustomerLabel">Endereço</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-9 col-sm-4">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="municipalityInput">
+                                            <label for="municipalityLabel">Municipio</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-3 col-sm-2">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="ufStatesInput">
+                                                <option selected value required>AC</option>
+                                                <option value="2">AL</option>
+                                                <option value="3">AP</option>
+                                                <option value="4">AM</option>
+                                                <option value="5">BA</option>
+                                                <option value="6">CE</option>
+                                                <option value="7">DF</option>
+                                                <option value="8">ES</option>
+                                                <option value="9">GO</option>
+                                                <option value="10">MA</option>
+                                                <option value="11">MT</option>
+                                                <option value="12">MS</option>
+                                                <option value="13">MG</option>
+                                                <option value="14">PA</option>
+                                                <option value="15">PB</option>
+                                                <option value="16">PR</option>
+                                                <option value="17">PE</option>
+                                                <option value="18">PI</option>
+                                                <option value="19">RJ</option>
+                                                <option value="20">RN</option>
+                                                <option value="21">RS</option>
+                                                <option value="22">RO</option>
+                                                <option value="23">RR</option>
+                                                <option value="24">SC</option>
+                                                <option value="25">SP</option>
+                                                <option value="26">SE</option>
+                                                <option value="27">TO</option>
+                                            </select>
+                                            <label for="ufStatesLabel">UF</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-7 col-sm-3">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="customerContactNameInput">
+                                            <label for="customerContactNameLabel">Contato</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-5 col-sm-3">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="customerContactNumberInput">
+                                            <label for="customerContactNumberLabel">Cel/Tel</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <br><br>
+            
+            
+            
+                        <!-- Form Equipment block/scope -->
+                        <section class="equipment__section">
+                            <div class="container">
+            
+                                <div class="equipment__title">
+                                    <legend class="section__title" id="equipment__section-title"><strong>Equipamento</strong></legend>
+                                </div>
+            
+                                <div class="row g-3">
+                                    <div class="col-8 col-sm-8 col-md-8">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="nameOfEquipmentInput">
+                                            <label for="nameOfEquipmentLabel">Nome do Equipamento</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-4 col-sm-4 col-md-4">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="serialNumberInput">
+                                            <label for="serialNumberLabel">Nº de Série</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <div class="form-floating mb-2">
+                                            <select class="form-select" id="equipmentBrandInput">
+                                                <option selected disabled value required>Selecione</option>
+                                                <option value="1">Radiologia</option>
+                                                <option value="2">Mamografia</option>
+                                                <option value="3">Ultrassonografia</option>
+                                                <option value="4">Odontologia</option>
+                                                <option value="5">Veterinária</option>
+                                            </select>
+                                            <label for="equipmentBrandLabel">Modalidade</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="euipStatusInput">
+                                                <option selected disabled value required>Selecione</option>
+                                                <option value="1">Operante/Normal</option>
+                                                <option value="2">Inoperante/Parado</option>
+                                                <option value="3">Funcionando Parcialmente</option>
+                                            </select>
+                                            <label for="equipStatusLabel">Status do Equipamento</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+            
+            
+            
+                        <!-- Form Displacement to go and displacement to return block/scope -->
+                        <section class="displacement__section">
+                            <div class="container">
+            
+                                <div class="displacement__title-and-icon">
+                                    <legend class="section__title" id="displacement__section-title"><strong>Deslocamento</strong></legend>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                                    </svg>
+                                </div>
+                                
+                                
+                                <!-- displacement__section-to-go -->
+                                <div class="displacement__section-to-go">
+                                    <div class="row g-3">
+                                        
+                                        <h6>Deslocamento de Ida</h6>
+                                        <!-- departureDateField to GO -->
+                                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                            <div class="form-floating mb-2">
+                                                <input type="date" class="form-control" id="departureDateInput">
+                                                <label for="departureDateLabel">Data de Ida</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- departureTimeField to GO -->
+                                        <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control" id="departureTimeToGoInput">
+                                                <label for="departureTimeToGoLabel">Hora de Saída</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- arrivalTimeField to GO -->
+                                        <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control" id="arrivalTimeToGoInput">
+                                                <label for="arrivalTimeToGoLabel">Hora de Chegada</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- departureLocationField to GO -->
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control" id="departureLocationToGoInput">
+                                                <label for="departureLocationToGoLabel">Local de Origem</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- arrivalLocationField to GO -->
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                                            <div class="form-floating mb-5">
+                                                <input type="text" class="form-control" id="arrivalLocationToGoInput">
+                                                <label for="arrivalLocationToGoLabel">Local de Destino</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+            
+            
+                                <!-- displacement__section-to-return -->
+                                <div class="displacement__section-to-return"> 
+                                    <div class="row g-3">
+            
+                                        <h6>Deslocamento de Volta</h6>
+                                        <!-- departureDateField to RETURN -->
+                                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                            <div class="form-floating mb-2">
+                                                <input type="date" class="form-control" id="returnDateInput">
+                                                <label for="returnDateLabel">Data de Volta</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- departureTimeField to RETURN -->
+                                        <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control" id="departureTimeToReturnInput">
+                                                <label for="departureTimeToReturnLabel">Hora de Saída</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- arrivalTimeField to RETURN -->
+                                        <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control" id="arrivalTimeToReturnInput">
+                                                <label for="arrivalTimeToReturnLabel">Hora de Chegada</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- departureLocationField to RETURN -->
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control" id="departureLocationToReturnInput">
+                                                <label for="departureLocationToReturnLabel">Local de Origem</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- arrivalLocationField to RETURN -->
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="arrivalLocationToReturnInput">
+                                                <label for="arrivalLocationToReturnLabel">Local de Destino</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+            
+            
+            
+                        <!-- Form Time of service block/scope -->
+                        <section class="timeAndDescription__section">
+                            <div class="container">
+            
+                                <div class="timeAndDescription__title">
+                                    <legend class="section__title" id="section__title-timeOfService"><strong>Descrição do Serviço</strong></legend>
+                                </div>
+            
+                                <div class="row g-3">
+                                    <div class="col-6 col-sm-3">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="floatingInput">
+                                            <label for="floatingInput">Hora de Início</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-6 col-sm-3">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="floatingInput">
+                                            <label for="floatingInput">Hora de Término</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-floating mb-2">
+                                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                <option selected disabled value required>Selecione</option>
+                                                <option value="1">Concluído</option>
+                                                <option value="2">Não foi possível concluir</option>
+                                                <option value="3">Em andamento</option>
+                                                <option value="4">Cancelado</option>
+                                            </select>
+                                            <label for="floatingSelect">Status de Atendimento</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-12 col-sm-6" style="display: none;">
+                                        <div class="form-floating mb-2">
+                                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                <option selected disabled value required>Selecione</option>
+                                                <option value="1">Usuário</option>
+                                                <option value="2">Siteplanning</option>
+                                                <option value="3">Equipamento</option>
+                                            </select>
+                                            <label for="floatingSelect">Causa do Problema</label>
+                                        </div>
+                                    </div>
+            
+                                    <!-- Form Description of service block/scope -->
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
+                                        <div class="form-floating mb-5">
+                                            <textarea class="form-control" id="floatingTextarea" style="height: 100px"></textarea>
+                                            <label for="floatingTextarea">Descrição do serviço</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+            
+            
+            
+                        <!-- Functions Buttons to clear and to send form block/scope -->
+                        <section class="osButtons__section">
+                            <div class="container">
+                                <div class="osButtons">
+                                
+                                    <button type="button" class="btn btn-outline-dark col-6 col-sm-6 col-md-6 col-lg-6 col-xl-2 col-xxl-4" id="showDeleteModal__button" onclick="showDeleteModal()">Limpar formulário</button>
+                                    
+                                    
+                                
+                                    <button type="button" class="btn btn-custom col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4" id="previewOS__button" onclick="saveDataPreview()">Preview</button>
+                                </div>
+                            </div>
+                        </section>
+                        <br><br>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 <!-- 
         <div class="row justify-content-center">
@@ -78,396 +494,12 @@
     5. Time of service block/scope
     6. Description of service block/scope
     -->
-    <br><br><br><br>
-
-    <div class="container">
-        <form id="osForm">
-
-            <!--
-            Form
-            Service information block/scope
-            -->
-            <section class="typeOfService__section">
-                <div class="container">
-                    <legend class="section__title" id="section__title-typeOfService"><strong>Serviço</strong></legend>
-                    <div class="row g-3">
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                            <div class="form-floating mb-2">
-                                <input type="date" class="form-control" id="dateOfServiceInput">
-                                <label for="dateOfServiceLabel">Data</label>
-                            </div>
-                        </div>
-
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                            <div class="form-floating mb-2">
-                                <input type="text" class="form-control" id="numberOfOrderInput">
-                                <label for="numberOfOrderLabel">Nº do Chamado</label>
-                            </div>
-                        </div>
-
-                    
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                            <div class="form-floating mb-2">
-                                <select class="form-select" id="typeOfServiceInput">
-                                    <option selected disabled value required>Selecione</option>
-                                    <option value="1">Instalação</option>
-                                    <option value="2">Reinstalação</option>
-                                    <option value="3">Manutenção Corretiva</option>
-                                    <option value="4">Manutenção Preventiva</option>
-                                    <option value="5">Revisão/Desinstalação</option>
-                                    <option value="6">Instalação de Demonstração</option>
-                                    <option value="7">Aplicação/Treinamento</option>
-                                    <option value="8">Acompanhamento</option>
-                                </select>
-                                <label for="typeOfServiceLabel">Serviço</label>
-                            </div>
-                        </div>
-                    
-
-                    
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                            <div class="form-floating">
-                                <select class="form-select" id="equipmentBrandInput">
-                                    <option selected disabled value required>Selecione</option>
-                                    <option value="1">GE</option>
-                                    <option value="2">LOTUS</option>
-                                    <option value="3">DRTECH</option>
-                                    <option value="4">FUJIFILM</option>
-                                </select>
-                                <label for="equipmentBrandLabel">Fabricante</label>
-                            </div>
-                        </div> 
-                    </div>
-                </div> 
-            </section> 
-            <br><br><br>
-
-            <!--
-            Form
-            Customer information block/scope
-            -->
-            <section class="customer__section">
-                <div class="container ">
-                    <legend class="section__title" id="customer__section-title"><strong>Cliente</strong></legend>
-                    <div class="row g-3">
-                        <div class="col-12 col-sm-6">
-                            <div class="form-floating mb-2 justify-content-center">
-                                <input type="text" class="form-control" id="institutionNameInput">
-                                <label for="institutionNameLabel">Nome da Instituição</label>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6">
-                            <div class="form-floating mb-2">
-                                <input type="text" class="form-control" id="addressCustomerInput">
-                                <label for="addressCustomerLabel">Endereço</label>
-                            </div>
-                        </div>
-
-                        <div class="col-9 col-sm-4">
-                            <div class="form-floating mb-2">
-                                <input type="text" class="form-control" id="municipalityInput">
-                                <label for="municipalityLabel">Municipio</label>
-                            </div>
-                        </div>
-
-                        <div class="col-3 col-sm-2">
-                            <div class="form-floating">
-                                <select class="form-select" id="ufStatesInput">
-                                    <option selected value required>AC</option>
-                                    <option value="2">AL</option>
-                                    <option value="3">AP</option>
-                                    <option value="4">AM</option>
-                                    <option value="5">BA</option>
-                                    <option value="6">CE</option>
-                                    <option value="7">DF</option>
-                                    <option value="8">ES</option>
-                                    <option value="9">GO</option>
-                                    <option value="10">MA</option>
-                                    <option value="11">MT</option>
-                                    <option value="12">MS</option>
-                                    <option value="13">MG</option>
-                                    <option value="14">PA</option>
-                                    <option value="15">PB</option>
-                                    <option value="16">PR</option>
-                                    <option value="17">PE</option>
-                                    <option value="18">PI</option>
-                                    <option value="19">RJ</option>
-                                    <option value="20">RN</option>
-                                    <option value="21">RS</option>
-                                    <option value="22">RO</option>
-                                    <option value="23">RR</option>
-                                    <option value="24">SC</option>
-                                    <option value="25">SP</option>
-                                    <option value="26">SE</option>
-                                    <option value="27">TO</option>
-                                </select>
-                                <label for="ufStatesLabel">UF</label>
-                            </div>
-                        </div>
-
-                        <div class="col-7 col-sm-3">
-                            <div class="form-floating mb-2">
-                                <input type="text" class="form-control" id="customerContactNameInput">
-                                <label for="customerContactNameLabel">Contato</label>
-                            </div>
-                        </div>
-
-                        <div class="col-5 col-sm-3">
-                            <div class="form-floating mb-2">
-                                <input type="text" class="form-control" id="customerContactNumberInput">
-                                <label for="customerContactNumberLabel">Cel/Tel</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <br><br><br>
-
-            <!--
-                Form
-                Equipment block/scope
-                -->
-            <section class="equipment__section">
-                <div class="container">
-                    <legend class="section__title" id="equipment__section-title"><strong>Equipamento</strong></legend>
-                    <div class="row g-3">
-                        <div class="col-8 col-sm-8 col-md-8">
-                            <div class="form-floating mb-2">
-                                <input type="text" class="form-control" id="nameOfEquipmentInput">
-                                <label for="nameOfEquipmentLabel">Nome do Equipamento</label>
-                            </div>
-                        </div>
-
-                        <div class="col-4 col-sm-4 col-md-4">
-                            <div class="form-floating mb-2">
-                                <input type="text" class="form-control" id="serialNumberInput">
-                                <label for="serialNumberLabel">Nº de Série</label>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-6">
-                            <div class="form-floating mb-2">
-                                <select class="form-select" id="equipmentBrandInput">
-                                    <option selected disabled value required>Selecione</option>
-                                    <option value="1">Radiologia</option>
-                                    <option value="2">Mamografia</option>
-                                    <option value="3">Ultrassonografia</option>
-                                    <option value="4">Odontologia</option>
-                                    <option value="5">Veterinária</option>
-                                </select>
-                                <label for="equipmentBrandLabel">Modalidade</label>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="euipStatusInput">
-                                    <option selected disabled value required>Selecione</option>
-                                    <option value="1">Operante/Normal</option>
-                                    <option value="2">Inoperante/Parado</option>
-                                    <option value="3">Funcionando Parcialmente</option>
-                                </select>
-                                <label for="equipStatusLabel">Status do Equipamento</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <br><br><br>
-        
-            <!--
-            Form
-            Displacement to go and displacement to return block/scope
-            -->
-            <section class="displacement__section">
-                <div class="container">
-
-                    <!-- displacement__section-to-go -->
-                    <div class="displacement__section-to-go">  
-                        <legend class="section__title" id="displacement__section-title"><strong>Deslocamento</strong></legend>
-                        <div class="row g-3">
-
-                            <!-- departureDateField to GO -->
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
-                                <div class="form-floating mb-2">
-                                    <input type="date" class="form-control" id="departureDateInput">
-                                    <label for="departureDateLabel">Data de Ida</label>
-                                </div>
-                            </div>
-
-                            <!-- departureTimeField to GO -->
-                            <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
-                                <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="departureTimeToGoInput">
-                                    <label for="departureTimeToGoLabel">Hora de Saída</label>
-                                </div>
-                            </div>
-
-                            <!-- arrivalTimeField to GO -->
-                            <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
-                                <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="arrivalTimeToGoInput">
-                                    <label for="arrivalTimeToGoLabel">Hora de Chegada</label>
-                                </div>
-                            </div>
-
-                            <!-- departureLocationField to GO -->
-                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
-                                <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="departureLocationToGoInput">
-                                    <label for="departureLocationToGoLabel">Local de Origem</label>
-                                </div>
-                            </div>
-
-                            <!-- arrivalLocationField to GO -->
-                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
-                                <div class="form-floating mb-5">
-                                    <input type="text" class="form-control" id="arrivalLocationToGoInput">
-                                    <label for="arrivalLocationToGoLabel">Local de Destino</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <br><br>
 
 
 
-                    <!-- displacement__section-to-return -->
-                    <div class="displacement__section-to-return"> 
-                        <div class="row g-3">
-
-                            <!-- departureDateField to RETURN -->
-                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
-                                <div class="form-floating mb-2">
-                                    <input type="date" class="form-control" id="returnDateInput">
-                                    <label for="returnDateLabel">Data de Volta</label>
-                                </div>
-                            </div>
-
-                            <!-- departureTimeField to RETURN -->
-                            <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
-                                <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="departureTimeToReturnInput">
-                                    <label for="departureTimeToReturnLabel">Hora de Saída</label>
-                                </div>
-                            </div>
-
-                            <!-- arrivalTimeField to RETURN -->
-                            <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
-                                <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="arrivalTimeToReturnInput">
-                                    <label for="arrivalTimeToReturnLabel">Hora de Chegada</label>
-                                </div>
-                            </div>
-
-                            <!-- departureLocationField to RETURN -->
-                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
-                                <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="departureLocationToReturnInput">
-                                    <label for="departureLocationToReturnLabel">Local de Origem</label>
-                                </div>
-                            </div>
-
-                            <!-- arrivalLocationField to RETURN -->
-                            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="arrivalLocationToReturnInput">
-                                    <label for="arrivalLocationToReturnLabel">Local de Destino</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <br><br><br>
-
-            <!--
-                Form
-                Time of service block/scope
-                -->
-
-            <section class="timeAndDescription__section">
-                <div class="container">
-
-                    <legend class="section__title" id="section__title-timeOfService"><strong>Descrição do Serviço</strong></legend>
-                    <div class="row g-2">
-                        <div class="col-6 col-sm-3">
-                            <div class="form-floating mb-2">
-                                <input type="text" class="form-control" id="floatingInput">
-                                <label for="floatingInput">Hora de Início</label>
-                            </div>
-                        </div>
-
-                        <div class="col-6 col-sm-3">
-                            <div class="form-floating mb-2">
-                                <input type="text" class="form-control" id="floatingInput">
-                                <label for="floatingInput">Hora de Término</label>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6">
-                            <div class="form-floating mb-2">
-                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                    <option selected disabled value required>Selecione</option>
-                                    <option value="1">Concluído</option>
-                                    <option value="2">Não foi possível concluir</option>
-                                    <option value="3">Em andamento</option>
-                                    <option value="4">Cancelado</option>
-                                </select>
-                                <label for="floatingSelect">Status de Atendimento</label>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6" style="display: none;">
-                            <div class="form-floating mb-2">
-                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                    <option selected disabled value required>Selecione</option>
-                                    <option value="1">Usuário</option>
-                                    <option value="2">Siteplanning</option>
-                                    <option value="3">Equipamento</option>
-                                </select>
-                                <label for="floatingSelect">Causa do Problema</label>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
-                            <div class="form-floating mb-5">
-                                <textarea class="form-control" id="floatingTextarea" style="height: 100px"></textarea>
-                                <label for="floatingTextarea">Descrição do serviço</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-                    <!--
-                    Form
-                    Description of service block/scope
-                    -->
-            
-                    
-
-                    
-            
-            
-            <!--
-            Functions
-            Buttons to clear and to send form block/scope
-            -->
-            <section>
-                <div class="container">
-                    <div class="row g-2 ">
-                        <button type="button" class="btn btn-outline-dark col-6 col-sm-6 col-md-6 col-lg-6 col-xl-2 col-xxl-4" id="showDeleteModal__button" onclick="showDeleteModal()">Limpar formulário</button>
-                        <button type="button" class="btn btn-success col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4" id="previewOS__button" onclick="saveDataPreview()">Preview</button>
-                    </div>
-                </div>
-            </section>
-        </form>
-    </div>
-    <br><br><br>
-
-
+    <!-- DeleteModal block/scope -->
+    <section class="deleteModal__section">
         <div class="modal" tabindex="-1" id="deleteModal">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -485,29 +517,12 @@
                 </div>
             </div>
         </div>
+    </section>
 
 
 
 
 
-
-    <!-- <div id="deleteModal" class="modalDelete" style="display: none;">
-        <div class="modal-content-delete">
-            
-            <div id="modal-img">
-                <img src="img-icons/alert-icon-56x56.png.png" alt="alert-icon">
-            </div>
-            <br><br>
-            <div id="modal-delete-question">
-                <p id="modal-delete-txt"><strong>Deseja excluir os dados inseridos?</strong></p>
-            </div>
-            <br><br>
-            <div id="modal-delete-buttons">
-                <button id="cancelDeleteButton">Cancelar</button>
-                <button type="reset" id="confirmDeleteButton" onclick="activateResetButton()">Confirmar</button>
-            </div>
-        </div>
-    </div> -->
 
 
 
@@ -521,11 +536,13 @@
         </div>
     </div>
 
-    <footer class="footer-infos">
+    <footer class="footer-infos d-flex justify-content-center">
         <p id="dev-web-k">&copy Todos os direitos reservados.</p>
     </footer>
+    <br>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="assets/js/select-card.js" defer></script>
+    <script src="assets/js/selectService__functions.js" defer></script>
     <script src="assets/js/auto-growing-textarea.js" defer></script>
     <script src="assets/js/saveData__windowPreview.js" defer></script>
     <script src="assets/js/contact-area-of-date-input.js" defer></script>
