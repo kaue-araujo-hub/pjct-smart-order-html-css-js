@@ -1,0 +1,19 @@
+
+
+.osButtons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+
+.btn-custom {
+    background-color: #ff6715;
+    color: white;
+    transform: 1s;
+}
+
+.btn-custom:hover {
+    background-color: #e65c12;
+    color: white;
+}
