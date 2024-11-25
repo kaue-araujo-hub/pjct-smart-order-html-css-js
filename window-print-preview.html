@@ -4,383 +4,500 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ordem de Serviço * Univen Page">
-    <title>Univen * Window-Preview - Ordem de Serviço</title>
-    <link rel="stylesheet" href="assets/window-print-preview/style.css">
+    <title>Univen * Ordem de Serviço</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
     </head>
 <body>
-    <section class="a4-container">
-        <main>
-            <section class="form">
-                <form action="">
-                    <!--
-                    Form
-                    1. Service information block/scope
-                    2. Customer information block/scope
-                    3. Equipment block/scope
-                    4. Displacement to go and displacement to return block/scope
-                    5. Time of service block/scope
-                    6. Description of service block/scope
-                    -->
+    
+    <!--
+    Form
+    1. Service information block/scope
+    2. Customer information block/scope
+    3. Equipment block/scope
+    4. Displacement to go and displacement to return block/scope
+    5. Time of service block/scope
+    6. Description of service block/scope
+    -->
 
+    <!-- Form fields -->
+    <section class="inputFieldsForm">
+        <div class="card">
+            <div class="card-header">
+                <!-- Banner logo and title -->
+                <div class="container-fluid d-flex justify-content-center">
+                    <a class="navbar-brand"> <!-- logo -->
+                        <img src="img-icons/logo-univen-preto-166x39.png" alt="univen-logo" width="166" height="39" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                <br><br>
 
-                    <!--
-                    Banner structure
-                    -->
-                    <section class="header">
-                        <div id="header__banner">
-                            <img src="assets/window-print-preview/Logo-branco Univen-140x40.png" alt="logo-univen" class="header__logo">
-                            <p class="header__web">univen.com.br</p>
-                            <p class="header__cel">41 9616-1271</p>
-                        </div>
-                    </section>
+                <div class="main-content-title"> <!-- main-title -->
+                    <h1 class="display-5" id="text">Escreva sua ordem de serviço</h1>
+                    <h1 class="display-5" id="text-degrade">com agilidade e precisão.</h1>
+                </div>
+                <br><br>
 
-                    <section class="main-title">
-                        <div id="titulo-principal">
-                            <h1>Ordem de Serviço</h1>
-                        </div>
-                    </section>
-
-                    <!--
-                    Form
-                    Service information block/scope
-                    -->
-                    <fieldset class="service-group">
-                        <legend id="service-title"><strong>Serviço</strong></legend>
-                        <div class="service-fields">
-                            
-                            <div id="fields-align-service">
-                                <label for="data-service" class="label-service">Data</label>
-                                <span class="inputbox-service" id="preview-data-service"></span>
-                            </div>
-
-                            <div id="fields-align-service">
-                                <label for="type-service" class="label-service">Serviço</label>
-                                <span class="inputbox-service" id="preview-type-service"></span>
-                            </div>
-
-                            <div id="fields-align-service">
-                                <label for="fabricante" class="label-service">Fabricante</label>
-                                <span class="inputbox-service" id="preview-fabricante"></span>
-                            </div>
-                        </div>
-                    </fieldset>
-
-                    <!--
-                    Form
-                    Customer information block/scope
-                    -->
-                    <div class="info-customer-fields">
-                        <fieldset class="customer-group">
-                                <legend id="customer-title"><strong>Cliente</strong></legend>
-                                <div class="customer-group1">
-                                    <div class="fields-align-customer">
-                                        <label for="customer-name" class="customer-inst-name-label">Nome da Instituição</label>
-                                        <span type="text" class="inputbox-customer" id="preview-customer-name" name="nome-cliente" placeholder="Nome do Hospital, Clínica ou Laboratório" required></span>
-                                    </div>
-                                    <div class="fields-align-customer">
-                                        <label for="customer-contact" class="customer-contact-label">Contato</label>
-                                        <span type="text" class="inputbox-customer" id="preview-customer-contact" name="contato-cliente" placeholder="Nome do Responsável" required></span>
-                                    </div>
-                                    <div class="fields-align-customer">
-                                        <label for="customer-cel-tel" class="customer-cel-tel-label">Cel/Tel</label>
-                                        <span type="text" class="inputbox-customer" id="preview-customer-cel-tel" name="cel-tel-cliente" placeholder="(xx) xxxxx-xxxx" required></span>
-                                    </div>
+                <ul class="nav nav-tabs card-header-tabs justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="true" href="#" id="inPersonService__nav-link-option">Atendimento Presencial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="remoteService__nav-link-option">Atendimento Remoto</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card-body">
+                <div class="container">
+                    <form id="osForm">
+                        <!-- Form Service information block/scope -->
+                        <section class="typeOfService__section">
+                            <div class="container">
+                                <div class="typeOfService__title">
+                                    <legend class="section__title" id="section__title-typeOfService"><strong>Serviço</strong></legend>
                                 </div>
-                                <br>
                                 
-                                <div class="customer-group2">
-                                    <div class="fields-align-customer">
-                                        <label for="customer-address" class="customer-address-label">Endereço</label>
-                                        <span type="text" class="inputbox-customer" id="preview-customer-address" name="endereco-cliente" placeholder="Avenida das Flores, 123 - Bairro Jardim das Rosas" required></span>
+                                <div class="row g-3">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                        <div class="form-floating mb-2">
+                                            <input type="date" class="form-control" id="dateOfServiceInput">
+                                            <label for="dateOfServiceLabel">Data</label>
+                                        </div>
                                     </div>
-                                    <div class="fields-align-customer">
-                                        <label for="customer-municipality" class="customer-municipality-label">Municipio</label>
-                                        <span type="text" class="inputbox-customer" id="preview-customer-municipality" name="municipio-cliente" placeholder="Cidade" required></span>
+            
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="numberOfOrderInput">
+                                            <label for="numberOfOrderLabel">Nº do Chamado</label>
+                                        </div>
                                     </div>
-                                    <div class="fields-align-customer">
-                                        <label for="customer-uf" class="customer-uf-label">UF</label>
-                                        <span name="uf" class="inputbox-customer" id="preview-customer-uf" required></span>
-                                            
+            
+                                
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                        <div class="form-floating mb-2">
+                                            <select class="form-select" id="typeOfServiceInput">
+                                                <option selected disabled value required>Selecione</option>
+                                                <option value="1">Instalação</option>
+                                                <option value="2">Reinstalação</option>
+                                                <option value="3">Manutenção Corretiva</option>
+                                                <option value="4">Manutenção Preventiva</option>
+                                                <option value="5">Revisão/Desinstalação</option>
+                                                <option value="6">Instalação de Demonstração</option>
+                                                <option value="7">Aplicação/Treinamento</option>
+                                                <option value="8">Acompanhamento</option>
+                                            </select>
+                                            <label for="typeOfServiceLabel">Serviço</label>
+                                        </div>
+                                    </div>
+                                
+            
+                                
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="equipmentBrandInput">
+                                                <option selected disabled value required>Selecione</option>
+                                                <option value="1">GE</option>
+                                                <option value="2">LOTUS</option>
+                                                <option value="3">DRTECH</option>
+                                                <option value="4">FUJIFILM</option>
+                                            </select>
+                                            <label for="equipmentBrandLabel">Fabricante</label>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div> 
+                        </section> 
+                        <br><br>
+            
+            
+            
+                        <!-- Form Customer information block/scope -->
+                        <section class="customer__section">
+                            <div class="container ">
+            
+                                <div class="customer__title">
+                                    <legend class="section__title" id="customer__section-title"><strong>Cliente</strong></legend>
+                                </div>
+            
+                                <div class="row g-3">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-floating mb-2 justify-content-center">
+                                            <input type="text" class="form-control" id="institutionNameInput">
+                                            <label for="institutionNameLabel">Nome da Instituição</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="addressCustomerInput">
+                                            <label for="addressCustomerLabel">Endereço</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-9 col-sm-4">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="municipalityInput">
+                                            <label for="municipalityLabel">Municipio</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-3 col-sm-2">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="ufStatesInput">
+                                                <option selected value required>AC</option>
+                                                <option value="2">AL</option>
+                                                <option value="3">AP</option>
+                                                <option value="4">AM</option>
+                                                <option value="5">BA</option>
+                                                <option value="6">CE</option>
+                                                <option value="7">DF</option>
+                                                <option value="8">ES</option>
+                                                <option value="9">GO</option>
+                                                <option value="10">MA</option>
+                                                <option value="11">MT</option>
+                                                <option value="12">MS</option>
+                                                <option value="13">MG</option>
+                                                <option value="14">PA</option>
+                                                <option value="15">PB</option>
+                                                <option value="16">PR</option>
+                                                <option value="17">PE</option>
+                                                <option value="18">PI</option>
+                                                <option value="19">RJ</option>
+                                                <option value="20">RN</option>
+                                                <option value="21">RS</option>
+                                                <option value="22">RO</option>
+                                                <option value="23">RR</option>
+                                                <option value="24">SC</option>
+                                                <option value="25">SP</option>
+                                                <option value="26">SE</option>
+                                                <option value="27">TO</option>
+                                            </select>
+                                            <label for="ufStatesLabel">UF</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-7 col-sm-3">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="customerContactNameInput">
+                                            <label for="customerContactNameLabel">Contato</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-5 col-sm-3">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="customerContactNumberInput">
+                                            <label for="customerContactNumberLabel">Cel/Tel</label>
+                                        </div>
                                     </div>
                                 </div>
-                        </fieldset>
-                    </div>
-
-                    <!--
-                    Form
-                    Equipment block/scope
-                    -->
-                    <fieldset class="equipment-group">
-                        <legend id="equip-title"><strong>Equipamento</strong></legend>
-                        <div class="equipment-group1">
-                            <div class="fields-align-equip">
-                                <label for="n-serie" class="serial-number-label">Nº de Série</label>
-                                <span type="text" class="inputbox-equip" id="preview-serial-number" name="n-serie" placeholder="SN 12345678" required></span>
                             </div>
-                            <div class="fields-align-equip">
-                                <label for="nome-equipamento" class="equip-name-label">Nome do Equipamento</label>
-                                <span type="text" class="inputbox-equip" id="preview-equip-name" name="nome-equipamento" placeholder="Modelo / Marca do Equipamento" required></span>
+                        </section>
+                        <br><br>
+            
+            
+            
+                        <!-- Form Equipment block/scope -->
+                        <section class="equipment__section">
+                            <div class="container">
+            
+                                <div class="equipment__title">
+                                    <legend class="section__title" id="equipment__section-title"><strong>Equipamento</strong></legend>
+                                </div>
+            
+                                <div class="row g-3">
+                                    <div class="col-8 col-sm-8 col-md-8">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="nameOfEquipmentInput">
+                                            <label for="nameOfEquipmentLabel">Nome do Equipamento</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-4 col-sm-4 col-md-4">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="serialNumberInput">
+                                            <label for="serialNumberLabel">Nº de Série</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <div class="form-floating mb-2">
+                                            <select class="form-select" id="equipmentBrandInput">
+                                                <option selected disabled value required>Selecione</option>
+                                                <option value="1">Radiologia</option>
+                                                <option value="2">Mamografia</option>
+                                                <option value="3">Ultrassonografia</option>
+                                                <option value="4">Odontologia</option>
+                                                <option value="5">Veterinária</option>
+                                            </select>
+                                            <label for="equipmentBrandLabel">Modalidade</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-12 col-sm-6 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="euipStatusInput">
+                                                <option selected disabled value required>Selecione</option>
+                                                <option value="1">Operante/Normal</option>
+                                                <option value="2">Inoperante/Parado</option>
+                                                <option value="3">Funcionando Parcialmente</option>
+                                            </select>
+                                            <label for="equipStatusLabel">Status do Equipamento</label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="fields-align-equip">
-                                <label for="n-chamado" class="os-number-label">Nº de Chamado</label>
-                                <span type="text" class="inputbox-equip" id="preview-os-number" name="n-chamado" placeholder="CH 12345678" required> </span>
-                            </div>
-                        </div>
-                        <br>
+                        </section>
                         
-                    
-                        <div class="equipment-group2">
-                            <div class="fields-align-equip-modality">
-                                <label for="modalidade-titulo" class="modality-title">Modalidade</label>
-                                <div class="checkbox-group">
-                                    <span type="checkbox" class="modality-box" id="preview-rx-check" name="equip-check"></span>
-                                    <label for="radiologia" class="rx">Radiologia</label>
-                                    
-                                    <span type="checkbox" class="modality-box" id="preview-mg-check" name="equip-check"></span>
-                                    <label for="mamografia" class="mg">Mamografia</label>
-                                    
-                                    <span type="checkbox" class="modality-box" id="preview-ul-check" name="equip-check"></span>
-                                    <label for="ultrassonografia" class="ul">Ultrassonografia</label>
-                                    
-                                    <span type="checkbox" class="modality-box" id="preview-odonto-check" name="equip-check"></span>
-                                    <label for="odontologia" class="odonto">Odontologia</label>
-                                    
-                                    <span type="checkbox" class="modality-box" id="preview-vet-check" name="equip-check"></span>
-                                    <label for="veterinaria" class="vet">Veterinária</label>  
+            
+            
+            
+                        <!-- Form Displacement to go and displacement to return block/scope -->
+                        <section class="displacement__section">
+                            <div class="container">
+            
+                                <div class="displacement__title-and-icon">
+                                    <legend class="section__title" id="displacement__section-title"><strong>Deslocamento</strong></legend>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                                    </svg>
+                                </div>
+                                
+                                
+                                <!-- displacement__section-to-go -->
+                                <div class="displacement__section-to-go">
+                                    <div class="row g-3">
+                                        
+                                        <h6>Deslocamento de Ida</h6>
+                                        <!-- departureDateField to GO -->
+                                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                            <div class="form-floating mb-2">
+                                                <input type="date" class="form-control" id="departureDateInput">
+                                                <label for="departureDateLabel">Data de Ida</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- departureTimeField to GO -->
+                                        <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control" id="departureTimeToGoInput">
+                                                <label for="departureTimeToGoLabel">Hora de Saída</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- arrivalTimeField to GO -->
+                                        <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control" id="arrivalTimeToGoInput">
+                                                <label for="arrivalTimeToGoLabel">Hora de Chegada</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- departureLocationField to GO -->
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control" id="departureLocationToGoInput">
+                                                <label for="departureLocationToGoLabel">Local de Origem</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- arrivalLocationField to GO -->
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                                            <div class="form-floating mb-5">
+                                                <input type="text" class="form-control" id="arrivalLocationToGoInput">
+                                                <label for="arrivalLocationToGoLabel">Local de Destino</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+            
+            
+                                <!-- displacement__section-to-return -->
+                                <div class="displacement__section-to-return"> 
+                                    <div class="row g-3">
+            
+                                        <h6>Deslocamento de Volta</h6>
+                                        <!-- departureDateField to RETURN -->
+                                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                            <div class="form-floating mb-2">
+                                                <input type="date" class="form-control" id="returnDateInput">
+                                                <label for="returnDateLabel">Data de Volta</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- departureTimeField to RETURN -->
+                                        <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control" id="departureTimeToReturnInput">
+                                                <label for="departureTimeToReturnLabel">Hora de Saída</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- arrivalTimeField to RETURN -->
+                                        <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control" id="arrivalTimeToReturnInput">
+                                                <label for="arrivalTimeToReturnLabel">Hora de Chegada</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- departureLocationField to RETURN -->
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control" id="departureLocationToReturnInput">
+                                                <label for="departureLocationToReturnLabel">Local de Origem</label>
+                                            </div>
+                                        </div>
+            
+                                        <!-- arrivalLocationField to RETURN -->
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="arrivalLocationToReturnInput">
+                                                <label for="arrivalLocationToReturnLabel">Local de Destino</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            
-                            
-                            <div class="fields-align-equip-status">
-                                <label for="equip-status" class="status-equip-label">Status do Equipamento</label>
-                                <span name="equip-status" class="inputbox-status-equip" id="preview-equip-status"></span>
-                                    
-                                </select>
+                        </section>
+                        
+            
+            
+            
+                        <!-- Form Time of service block/scope -->
+                        <section class="timeAndDescription__section">
+                            <div class="container">
+            
+                                <div class="timeAndDescription__title">
+                                    <legend class="section__title" id="section__title-timeOfService"><strong>Descrição do Serviço</strong></legend>
+                                </div>
+            
+                                <div class="row g-3">
+                                    <div class="col-6 col-sm-3">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="floatingInput">
+                                            <label for="floatingInput">Hora de Início</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-6 col-sm-3">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" id="floatingInput">
+                                            <label for="floatingInput">Hora de Término</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-floating mb-2">
+                                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                <option selected disabled value required>Selecione</option>
+                                                <option value="1">Concluído</option>
+                                                <option value="2">Não foi possível concluir</option>
+                                                <option value="3">Em andamento</option>
+                                                <option value="4">Cancelado</option>
+                                            </select>
+                                            <label for="floatingSelect">Status de Atendimento</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-12 col-sm-6" style="display: none;">
+                                        <div class="form-floating mb-2">
+                                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                <option selected disabled value required>Selecione</option>
+                                                <option value="1">Usuário</option>
+                                                <option value="2">Siteplanning</option>
+                                                <option value="3">Equipamento</option>
+                                            </select>
+                                            <label for="floatingSelect">Causa do Problema</label>
+                                        </div>
+                                    </div>
+            
+                                    <!-- Form Description of service block/scope -->
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
+                                        <div class="form-floating mb-5">
+                                            <textarea class="form-control" id="floatingTextarea" style="height: 100px"></textarea>
+                                            <label for="floatingTextarea">Descrição do serviço</label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </fieldset>
-                
-                    <!--
-                    Form
-                    Displacement to go and displacement to return block/scope
-                    -->
-                    <fieldset class="preview-deslocamento-group">
-                        <div id="legend-desloc">
-                            <legend class="desloc-titulo"><strong>Deslocamento</strong></legend>
-                        </div>
-                        <div class="deslocamento-ida">
-                            <div class="fields-align-desloc-ida">
-                                <label for="data" id="label-data-ida">Data de Ida</label>
-                                <span type="date" class="inputbox-desloc-ida" id="preview-data-ida" name="data-ida" required></span>
+                        </section>
+            
+            
+            
+                        <!-- Functions Buttons to clear and to send form block/scope -->
+                        <section class="osButtons__section">
+                            <div class="container">
+                                <div class="osButtons">
+                                    <button type="button" class="btn btn-outline-dark col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4" id="showDeleteModal__button" onclick="showDeleteModal()">Limpar formulário</button>
+                                    <button type="button" class="btn btn-custom col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4" id="previewOS__button" onclick="saveDataPreview()">Preview</button>
+                                </div>
                             </div>
-                            <div class="fields-align-desloc-ida">
-                                <label for="hora-inicio" id="label-hora-inicio-ida">Início</label>
-                                <span type="text" class="inputbox-desloc-ida" id="preview-hora-inicio-ida" name="hora-inicio" placeholder="08h00" required></span>
-                            </div>
-                            <div class="fields-align-desloc-ida">
-                                <label for="hora-chegada" id="label-hora-chegada-ida">Chegada</label>
-                                <span type="text" class="inputbox-desloc-ida" id="preview-hora-chegada-ida" name="hora-chegada" placeholder="10h00" required></span>
-                            </div>
-                            <div class="fields-align-desloc-ida">
-                                <label for="local-origem" id="label-local-origem-ida">Origem</label>
-                                <span type="text" class="inputbox-desloc-ida" id="preview-local-origem-ida" name="local-origem" placeholder="Casa ou Hotel" required></span>
-                            </div>
-                            <div class="fields-align-desloc-ida">
-                                <label for="local-chegada" id="label-local-destino-ida">Destino</label>
-                                <span type="text" class="inputbox-desloc-ida" id="preview-local-destino-ida" name="local-cdestino" placeholder="Local de Atendimento" required></span>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="deslocamento-volta">
-                            <div class="fields-align-desloc-volta">
-                                <label for="data-volta" id="label-data-volta">Data de Volta</label>
-                                <span type="date" class="inputbox-desloc-volta" id="preview-data-volta" name="data-volta" required></span>
-                            </div>
-                            <div class="fields-align-desloc-volta">
-                                <label for="hora-inicio" id="label-hora-inicio-volta">Início</label>
-                                <span type="text" class="inputbox-desloc-volta" id="preview-hora-inicio-volta" name="hora-inicio-volta" placeholder="16h00" required></span>
-                            </div>
-                            <div class="fields-align-desloc-volta">
-                                <label for="hora-chegada" id="label-hora-chegada-volta">Chegada</label>
-                                <span type="text" class="inputbox-desloc-volta" id="preview-hora-chegada-volta" name="hora-chegada-volta" placeholder="18h00" required></span>
-                            </div>
-                            <div class="fields-align-desloc-volta">
-                                <label for="local-origem" id="label-local-origem-volta">Origem</label>
-                                <span type="text" class="inputbox-desloc-volta" id="preview-local-origem-volta" name="local-origem-volta" placeholder="Local de Atendimento" required></span>
-                            </div>
-                            <div class="fields-align-desloc-volta">
-                                <label for="local-chegada" id="label-local-destino-volta">Destino</label>
-                                <span type="text" class="inputbox-desloc-volta" id="preview-local-destino-volta" name="local-destino-volta" placeholder="Casa ou Hotel" required></span>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <!--
-                    Form
-                    Time of service block/scope
-                    -->
-                    <fieldset class="tempo-servico">
-                        <Legend id="tempo-titulo"><strong>Tempo de Serviço</strong></Legend>
-                        <div class="fields-align-time">
-                            <label for="hora-inicio" id="label-inicio-time">Início</label>
-                            <span type="text" id="preview-inputbox-inicio-servico" name="hora-inicio-tempo" placeholder="13h00" required></span>
-                        </div>
-                        <div class="fields-align-time">
-                            <label for="hora-termino" id="label-termino-time">Término</label>
-                            <span type="text" id="preview-inputbox-termino-servico" name="hora-termino-tempo" placeholder="16h00" required></span>
-                        </div>
-                        <div class="fields-align-time">
-                            <label for="status-atend" id="label-status-atend">Status de Atendimento</label>
-                            <span class="inputbox-status-atend" id="preview-status-atend" required></span>
-
-                        </div>
-                        <div class="fields-align-time">
-                            <label for="obs" id="label-obs">Observações</label>
-                            <span type="text" id="preview-inputbox-obs" name="obs-tempo" placeholder="Apontamentos relevantes"></span>
-                        </div>
-                    </fieldset>
-                    <!--
-                    Form
-                    Description of service block/scope
-                    -->
-                    <fieldset class="description"> 
-                        <legend id="descricao-titulo"><strong>Descrição do Serviço</strong></legend>
-                        <span id="preview-desc-servico" name="desc-servico" required></span>
-                    </fieldset>
-
-                    <section class="signatures__group">
-                        <div class="signatures__group__fields">
-                            <input type="text" name="inputbox-tech-name" class="signatures__inputbox">
-                            <label for="label-tech-name" class="signatures__labels">assinatura do técnico</label>
-                        </div>
-                        <div class="signatures__group__fields">
-                            <input type="text" name="inputbox-cliente-name" class="signatures__inputbox">
-                            <label for="label-cliente-name" class="signatures__labels">assinatura do cliente</label>
-                        </div>
-                    </section>
-                </form>
-            </section>
-        </main>
-        <br><br>
-        
-        <br><br>
+                        </section>
+                        <br><br>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
-    <script src="assets/js/select-card.js" defer></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-
-            
-            // Obtendo valores dos inputs da entrada -> index.html usando DOM
-            /*
-                Os IDs nomeados com: preview-alguma-coisa recebem valores.
-                Valores estes que estão armazenados no localStorage do Web Storage do Google Chrome.
-                Esses valores são obtidos a partir do ID do doc de entrada de dados index.html
-            */
-            document.getElementById('preview-data-service').textContent = localStorage.getItem('data-servico');
-            document.getElementById('preview-type-service').textContent = localStorage.getItem('tipo-servico');
-            document.getElementById('preview-fabricante').textContent = localStorage.getItem('fabricante');
+    <br><br>
 
 
-            // Pegando o valor do localStorage e formatando
-            let dataServico = localStorage.getItem('data-servico');
 
-            // Verifica se a data foi armazenada e está no formato aaaa-mm-dd
-            if (dataServico) {
-                // Divide a data em [ano, mês, dia]
-                let [ano, mes, dia] = dataServico.split('-');
-                
-                // Reorganiza e exibe no formato dd/mm/aaaa
-                document.getElementById('preview-data-service').textContent = `${dia}/${mes}/${ano}`;
-            }
+    <!-- DeleteModal block/scope -->
+    <section class="deleteModal__section">
+        <div class="modal" tabindex="-1" id="deleteModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Confirmação de exclusão</h5>
+                    </div>
+                        <div class="modal-body">
+                        <p>Quer mesmo excluir os dados do formulário?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal" id="cancelResetForm__button">Cancelar exclusão</button>
+                        <button type="button" class="btn btn-danger" id="confirmResetForm__button">Confirmar exclusão</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            document.getElementById('preview-customer-name').textContent = localStorage.getItem('nome-cliente');
-            document.getElementById('preview-customer-contact').textContent = localStorage.getItem('contato-cliente');
-            document.getElementById('preview-customer-cel-tel').textContent = localStorage.getItem('cel-tel-cliente');
 
-            document.getElementById('preview-customer-address').textContent = localStorage.getItem('endereco-cliente');
-            document.getElementById('preview-customer-municipality').textContent = localStorage.getItem('municipio-cliente');
-            document.getElementById('preview-customer-uf').textContent = localStorage.getItem('uf');
 
-            document.getElementById('preview-serial-number').textContent = localStorage.getItem('n-serie');
-            document.getElementById('preview-equip-name').textContent = localStorage.getItem('nome-equipamento');
-            document.getElementById('preview-os-number').textContent = localStorage.getItem('n-chamado');
+    <!-- PreviewModal blocl/scope -->
+    <div id="previewModal" class="modal">
+        <div class="modal-content">
+            <iframe id="previewFrame" src="window-print-preview.html"></iframe>
+            <div id="modal-buttons">
+                <button id="printButton">Imprimir</button>
+                <button id="closeButton">Fechar preview</button>
+            </div>
+        </div>
+    </div>
 
-                                                    // Convertendo de string para boolean
-            let isCheckedRx = localStorage.getItem('rx-check') === 'true'; 
-            document.getElementById('preview-rx-check').innerHTML = isCheckedRx 
-            ? '<img src="assets/window-print-preview/checked-icon.png" alt="checked">'         /*'✓'*/
-            : '<img src="assets/window-print-preview/unchecked-icon.png" alt="unchecked">';         /*''*/
 
-            let isCheckedMg = localStorage.getItem('mg-check') === 'true'; 
-            document.getElementById('preview-mg-check').innerHTML = isCheckedMg 
-            ? '<img src="assets/window-print-preview/checked-icon.png" alt="checked">'         
-            : '<img src="assets/window-print-preview/unchecked-icon.png" alt="unchecked">';         
 
-            let isCheckedUl = localStorage.getItem('ul-check') === 'true'; 
-            document.getElementById('preview-ul-check').innerHTML = isCheckedUl 
-            ? '<img src="assets/window-print-preview/checked-icon.png" alt="checked">'        
-            : '<img src="assets/window-print-preview/unchecked-icon.png" alt="unchecked">';         
+    <!-- Footer infos -->
+    <footer class="footer-infos d-flex justify-content-center">
+        <p id="dev-web-k">&copy Todos os direitos reservados.</p>
+    </footer>
+    <br>
 
-            let isCheckedOdonto = localStorage.getItem('odonto-check') === 'true'; 
-            document.getElementById('preview-odonto-check').innerHTML = isCheckedOdonto 
-            ? '<img src="assets/window-print-preview/checked-icon.png" alt="checked">'         
-            : '<img src="assets/window-print-preview/unchecked-icon.png" alt="unchecked">';         
 
-            let isCheckedVet = localStorage.getItem('vet-check') === 'true'; 
-            document.getElementById('preview-vet-check').innerHTML = isCheckedVet 
-            ? '<img src="assets/window-print-preview/checked-icon.png" alt="checked">'         
-            : '<img src="assets/window-print-preview/unchecked-icon.png" alt="unchecked">';     
+    <!-- JS functions -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/selectService__functions.js" defer></script>
 
-            
-            document.getElementById('preview-equip-status').textContent = localStorage.getItem('equip-status');
+    <script src="assets/js/saveData__windowPreview.js" defer></script>
 
-            document.getElementById('preview-data-ida').textContent = localStorage.getItem('data-ida');
-            document.getElementById('preview-hora-inicio-ida').textContent = localStorage.getItem('hora-inicio-ida');
-            document.getElementById('preview-hora-chegada-ida').textContent = localStorage.getItem('hora-chegada-ida');
-            document.getElementById('preview-local-origem-ida').textContent = localStorage.getItem('local-origem-ida');
-            document.getElementById('preview-local-destino-ida').textContent = localStorage.getItem('local-destino-ida');
+    <script src="assets/js/dateInput__functions.js" defer></script>
+    <script src="assets/js/textareaInput__functions.js" defer></script>
 
-            let dataIda = localStorage.getItem('data-ida');
+    <script src="assets/js/deleteModalBox__functions.js" defer></script>
+    <script src="assets/js/modalBox__preview-functions.js" defer></script>
 
-            // Verifica se a data foi armazenada e está no formato aaaa-mm-dd
-            if (dataIda) {
-                // Divide a data em [ano, mês, dia]
-                let [ano, mes, dia] = dataIda.split('-');
-                
-                // Reorganiza e exibe no formato dd/mm/aaaa
-                document.getElementById('preview-data-ida').textContent = `${dia}/${mes}/${ano}`;
-            }
-
-            document.getElementById('preview-data-volta').textContent = localStorage.getItem('data-volta');
-            document.getElementById('preview-hora-inicio-volta').textContent = localStorage.getItem('hora-inicio-volta');
-            document.getElementById('preview-hora-chegada-volta').textContent = localStorage.getItem('hora-chegada-volta');
-            document.getElementById('preview-local-origem-volta').textContent = localStorage.getItem('local-origem-volta');
-            document.getElementById('preview-local-destino-volta').textContent = localStorage.getItem('local-destino-volta');
-
-            let dataVolta = localStorage.getItem('data-volta');
-
-            // Verifica se a data foi armazenada e está no formato aaaa-mm-dd
-            if (dataVolta) {
-                // Divide a data em [ano, mês, dia]
-                let [ano, mes, dia] = dataVolta.split('-');
-                
-                // Reorganiza e exibe no formato dd/mm/aaaa
-                document.getElementById('preview-data-volta').textContent = `${dia}/${mes}/${ano}`;
-            }
-
-            document.getElementById('preview-inputbox-inicio-servico').textContent = localStorage.getItem('inputbox-inicio-servico');
-            document.getElementById('preview-inputbox-termino-servico').textContent = localStorage.getItem('inputbox-termino-servico');
-            document.getElementById('preview-status-atend').textContent = localStorage.getItem('status-atend');
-            document.getElementById('preview-inputbox-obs').textContent = localStorage.getItem('inputbox-obs');
-            
-
-            /*
-            Utilizando innerText para o input do tipo textarea
-            */
-
-            const previewDescricaoServico = localStorage.getItem('desc-servico');
-            document.getElementById('preview-desc-servico').innerText = previewDescricaoServico;
-
-        });
-    </script>
 </body>
 </html>
