@@ -8,13 +8,10 @@ document.getElementById('typeOfServiceInput__preview').textContent = localStorag
 document.getElementById('equipmentBrandInput__preview').textContent = localStorage.getItem('equipmentBrandInput');
 
 
-
-
-
-document.getElementById('preview-hora-chegada-volta').textContent = localStorage.getItem('hora-chegada-volta');
-document.getElementById('preview-local-origem-volta').textContent = localStorage.getItem('local-origem-volta');
-document.getElementById('preview-local-destino-volta').textContent = localStorage.getItem('local-destino-volta');
-document.getElementById('preview-inputbox-inicio-servico').textContent = localStorage.getItem('inputbox-inicio-servico');
-document.getElementById('preview-inputbox-termino-servico').textContent = localStorage.getItem('inputbox-termino-servico');
-document.getElementById('preview-status-atend').textContent = localStorage.getItem('status-atend');
-document.getElementById('preview-inputbox-obs').textContent = localStorage.getItem('inputbox-obs');
+// customer__section
+document.getElementById('institutionNameInput__preview').textContent = localStorage.getItem('institutionNameInput');
+document.getElementById('addressCustomerInput__preview').textContent = localStorage.getItem('addressCustomerInput');
+document.getElementById('municipalityInput__preview').textContent = localStorage.getItem('municipalityInput');
+document.getElementById('ufStatesInput__preview').textContent = localStorage.getItem('ufStatesInput');
+document.getElementById('customerContactNameInput__preview').textContent = localStorage.getItem('icustomerContactNameInput');
+document.getElementById('customerContactNumberInput__preview').textContent = localStorage.getItem('customerContactNumberInput');
