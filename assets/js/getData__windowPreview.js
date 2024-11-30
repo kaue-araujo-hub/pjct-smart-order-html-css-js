@@ -16,6 +16,7 @@ document.getElementById('ufStatesInput__preview').textContent = localStorage.get
 document.getElementById('customerContactNameInput__preview').textContent = localStorage.getItem('icustomerContactNameInput');
 document.getElementById('customerContactNumberInput__preview').textContent = localStorage.getItem('customerContactNumberInput');
 
+
 // equipment__section
 document.getElementById('nameOfEquipmentInput__preview').textContent = localStorage.getItem('nameOfEquipmentInput');
 document.getElementById('serialNumberInput__preview').textContent = localStorage.getItem('serialNumberInput');
@@ -30,9 +31,17 @@ document.getElementById('arrivalTimeToGoInput__preview').textContent = localStor
 document.getElementById('departureLocationToGoInput__preview').textContent = localStorage.getItem('departureLocationToGoInput');
 document.getElementById('arrivalLocationToGoInput__preview').textContent = localStorage.getItem('arrivalLocationToGoInput');
 
+
 // displacement__section to RETURN
 document.getElementById('returnDateInput__preview').textContent = localStorage.getItem('returnDateInput');
 document.getElementById('departureTimeToReturnInput__preview').textContent = localStorage.getItem('departureTimeToReturnInput');
 document.getElementById('arrivalTimeToReturnInput__preview').textContent = localStorage.getItem('arrivalTimeToReturnInput');
 document.getElementById('departureLocationToReturnInput__preview').textContent = localStorage.getItem('departureLocationToReturnInput');
 document.getElementById('arrivalLocationToReturnInput__preview').textContent = localStorage.getItem('arrivalLocationToReturnInput');
+
+
+// timeAndDescription__section
+document.getElementById('startTimeInput__preview').textContent = localStorage.getItem('startTimeInput');
+document.getElementById('endTimeInput__preview').textContent = localStorage.getItem('endTimeInput');
+document.getElementById('serviceStatusInput__preview').textContent = localStorage.getItem('serviceStatusInput');
+document.getElementById('serviceDescriptionInput__preview').textContent = localStorage.getItem('serviceDescriptionInput');
