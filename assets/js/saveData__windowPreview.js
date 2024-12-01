@@ -6,6 +6,9 @@ Pegando o valor dos inputs e armazenando no localStorage
 
 */
 
+
+
+
 function saveDataPreview() {
     // Variaveis 1º bloco do formulário 
     const dataServico = document.getElementById('dateOfServiceInput').value;
@@ -39,14 +42,14 @@ function saveDataPreview() {
 
 
     // Variaveis 3º bloco do formulário
-    const nomeEquipamento = document.getElementById('equipmentNameInput').value;
+    const nomeEquipamento = document.getElementById('nameOfEquipmentInput').value;
     const nSerie = document.getElementById('serialNumberInput').value;
-    const modalidadeEquipamento = document.getElementById('equipmentBrandInput').value;
+    const modalidadeEquipamento = document.getElementById('equipmentModalityInput').value;
     const equipStatus = document.getElementById('equipStatusInput').value;
     // Armazenando os valores no localStorage 3º bloco
-    localStorage.setItem('equipmentNameInput', nomeEquipamento);
+    localStorage.setItem('nameOfEquipmentInput', nomeEquipamento);
     localStorage.setItem('serialNumberInput', nSerie);
-    localStorage.setItem('equipmentBrandInput', modalidadeEquipamento);
+    localStorage.setItem('equipmentModalityInput', modalidadeEquipamento);
     localStorage.setItem('equipStatusInput', equipStatus);
     
     

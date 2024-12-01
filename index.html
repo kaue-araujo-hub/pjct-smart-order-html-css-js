@@ -78,14 +78,14 @@
                                         <div class="form-floating mb-2">
                                             <select class="form-select" id="typeOfServiceInput">
                                                 <option selected disabled value required>Selecione</option>
-                                                <option value="1">Instalação</option>
-                                                <option value="2">Reinstalação</option>
-                                                <option value="3">Manutenção Corretiva</option>
-                                                <option value="4">Manutenção Preventiva</option>
-                                                <option value="5">Revisão/Desinstalação</option>
-                                                <option value="6">Instalação de Demonstração</option>
-                                                <option value="7">Aplicação/Treinamento</option>
-                                                <option value="8">Acompanhamento</option>
+                                                <option value="Instalação">Instalação</option>
+                                                <option value="Reinstalação">Reinstalação</option>
+                                                <option value="Manutenção Corretiva">Manutenção Corretiva</option>
+                                                <option value="Manutenção Preventiva">Manutenção Preventiva</option>
+                                                <option value="Revisão/Desinstalação">Revisão/Desinstalação</option>
+                                                <option value="Instalação de Demonstração">Instalação de Demonstração</option>
+                                                <option value="Aplicação/Treinamento">Aplicação/Treinamento</option>
+                                                <option value="Acompanhamento">Acompanhamento</option>
                                             </select>
                                             <label for="typeOfServiceLabel">Serviço</label>
                                         </div>
@@ -93,14 +93,14 @@
                                 
             
                                 
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                                         <div class="form-floating">
                                             <select class="form-select" id="equipmentBrandInput">
                                                 <option selected disabled value required>Selecione</option>
-                                                <option value="1">GE</option>
-                                                <option value="2">LOTUS</option>
-                                                <option value="3">DRTECH</option>
-                                                <option value="4">FUJIFILM</option>
+                                                <option value="GE">GE</option>
+                                                <option value="LOTUS">LOTUS</option>
+                                                <option value="DRTECH">DRTECH</option>
+                                                <option value="FUJIFILM">FUJIFILM</option>
                                             </select>
                                             <label for="equipmentBrandLabel">Fabricante</label>
                                         </div>
@@ -146,32 +146,32 @@
                                         <div class="form-floating">
                                             <select class="form-select" id="ufStatesInput">
                                                 <option selected value required>AC</option>
-                                                <option value="2">AL</option>
-                                                <option value="3">AP</option>
-                                                <option value="4">AM</option>
-                                                <option value="5">BA</option>
-                                                <option value="6">CE</option>
-                                                <option value="7">DF</option>
-                                                <option value="8">ES</option>
-                                                <option value="9">GO</option>
-                                                <option value="10">MA</option>
-                                                <option value="11">MT</option>
-                                                <option value="12">MS</option>
-                                                <option value="13">MG</option>
-                                                <option value="14">PA</option>
-                                                <option value="15">PB</option>
-                                                <option value="16">PR</option>
-                                                <option value="17">PE</option>
-                                                <option value="18">PI</option>
-                                                <option value="19">RJ</option>
-                                                <option value="20">RN</option>
-                                                <option value="21">RS</option>
-                                                <option value="22">RO</option>
-                                                <option value="23">RR</option>
-                                                <option value="24">SC</option>
-                                                <option value="25">SP</option>
-                                                <option value="26">SE</option>
-                                                <option value="27">TO</option>
+                                                <option value="AL">AL</option>
+                                                <option value="AP">AP</option>
+                                                <option value="AM">AM</option>
+                                                <option value="BA">BA</option>
+                                                <option value="CE">CE</option>
+                                                <option value="DF">DF</option>
+                                                <option value="ES">ES</option>
+                                                <option value="GO">GO</option>
+                                                <option value="MA">MA</option>
+                                                <option value="MT">MT</option>
+                                                <option value="MS">MS</option>
+                                                <option value="MG">MG</option>
+                                                <option value="PA">PA</option>
+                                                <option value="PB">PB</option>
+                                                <option value="PR">PR</option>
+                                                <option value="PE">PE</option>
+                                                <option value="PI">PI</option>
+                                                <option value="RJ">RJ</option>
+                                                <option value="RN">RN</option>
+                                                <option value="RS">RS</option>
+                                                <option value="RO">RO</option>
+                                                <option value="RR">RR</option>
+                                                <option value="SC">SC</option>
+                                                <option value="SP">SP</option>
+                                                <option value="SE">SE</option>
+                                                <option value="TO">TO</option>
                                             </select>
                                             <label for="ufStatesLabel">UF</label>
                                         </div>
@@ -208,8 +208,8 @@
                                 <div class="row g-3">
                                     <div class="col-8 col-sm-8 col-md-8">
                                         <div class="form-floating mb-2">
-                                            <input type="text" class="form-control" id="equipmentNameInput">
-                                            <label for="equipmentNameLabel">Nome do Equipamento</label>
+                                            <input type="text" class="form-control" id="nameOfEquipmentInput">
+                                            <label for="nameOfEquipmentLabel">Nome do Equipamento</label>
                                         </div>
                                     </div>
             
@@ -221,16 +221,16 @@
                                     </div>
             
                                     <div class="col-12 col-sm-6 col-md-6">
-                                        <div class="form-floating mb-2">
-                                            <select class="form-select" id="equipmentBrandInput">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="equipmentModalityInput">
                                                 <option selected disabled value required>Selecione</option>
-                                                <option value="1">Radiologia</option>
-                                                <option value="2">Mamografia</option>
-                                                <option value="3">Ultrassonografia</option>
-                                                <option value="4">Odontologia</option>
-                                                <option value="5">Veterinária</option>
+                                                <option value="Radiologia">Radiologia</option>
+                                                <option value="Mamografia">Mamografia</option>
+                                                <option value="Ultrassonografia">Ultrassonografia</option>
+                                                <option value="Odontologia">Odontologia</option>
+                                                <option value="Veterinária">Veterinária</option>
                                             </select>
-                                            <label for="equipmentBrandLabel">Modalidade</label>
+                                            <label for="equipmentModalityLabel">Modalidade</label>
                                         </div>
                                     </div>
             
@@ -238,9 +238,9 @@
                                         <div class="form-floating">
                                             <select class="form-select" id="equipStatusInput">
                                                 <option selected disabled value required>Selecione</option>
-                                                <option value="1">Operante/Normal</option>
-                                                <option value="2">Inoperante/Parado</option>
-                                                <option value="3">Funcionando Parcialmente</option>
+                                                <option value="Operante/Normal">Operante/Normal</option>
+                                                <option value="Inoperante/Parado">Inoperante/Parado</option>
+                                                <option value="Funcionando Parcialmente">Funcionando Parcialmente</option>
                                             </select>
                                             <label for="equipStatusLabel">Status do Equipamento</label>
                                         </div>
@@ -470,7 +470,7 @@
     <!-- PreviewModal blocl/scope -->
     <div id="previewModal" class="modal">
         <div class="modal-content">
-            <iframe id="previewFrame" src="window-print-preview.html"></iframe>
+            <iframe id="previewFrame" src="windowPreview.html"></iframe>
             <div id="modal-buttons">
                 <button id="printButton">Imprimir</button>
                 <button id="closeButton">Fechar preview</button>
