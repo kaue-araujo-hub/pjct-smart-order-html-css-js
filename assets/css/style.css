@@ -8,8 +8,9 @@
 @import url(timeAndDescriptionSection__style.css);
 
 @import url(osButtonsSection__style.css);
-@import url(deleteModalBox__style.css);
 
+@import url(deleteModalBox__style.css);
+@import url(windowPreview__modalBox.css);
 
 
 

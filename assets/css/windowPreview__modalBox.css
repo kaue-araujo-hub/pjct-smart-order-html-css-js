@@ -1,0 +1,78 @@
+
+
+
+
+/* Modal */
+#previewModal {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw; /* Garantir largura total */
+height: 100vh; /* Garantir altura total */
+background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+display: flex; /* Flexbox para centralizar */
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Efeito de escurecimento */
+    backdrop-filter: blur(5px); /* Efeito de desfoque */
+    display: none; /* Inicialmente oculto */
+    z-index: 9; /* Colocado atrás do modal */
+}
+
+/* Conteúdo do modal */
+#preview-modal-content {
+background-color: white;
+border-radius: 8px;
+padding: 20px;
+width: 90%; /* Responsivo por padrão */
+height: 90%; /* Ocupa grande parte da tela */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+display: flex;
+flex-direction: column;
+/* overflow: hidden; Esconde conteúdos que ultrapassam */
+}
+
+/* Iframe dentro do modal */
+#previewFrame {
+flex: 2; /* Ocupa todo o espaço disponível verticalmente */
+width: 100%; /* Largura total */
+height: 100%; /* Altura total */
+border: none;
+}
+
+/* Botões no modal */
+#preview-modal-buttons {
+display: flex;
+justify-content: space-between;
+gap: 10px;
+margin-top: 10px;
+}
+
+/* Media Queries para dispositivos menores */
+    @media (max-width: 768px) {
+    .preview-modal-content {
+        width: 95%; /* Ajusta largura no celular */
+        height: 95%; /* Ajusta altura no celular */
+    }
+
+    #previewFrame {
+        width: 100%; /* Largura total */
+        height: 80%; /* Ajusta altura para caber no modal */
+    }
+
+    #preview-modal-buttons {
+        flex-direction: row; /* Botões empilhados */
+        gap: 5px;
+    }
+}
+
+
