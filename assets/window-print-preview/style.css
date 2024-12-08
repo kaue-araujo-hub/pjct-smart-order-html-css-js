@@ -1,7 +1,7 @@
 
-body {
-    padding: 20px;
-}
+/* body {
+    /* padding: 20px; 
+} */
 
 .inputFieldsForm {
     min-width: 210mm;
@@ -16,6 +16,14 @@ body {
     padding: 20px;
     background-color: black;
     color: white;
+    margin-bottom: 42px;
+}
+
+.card__header_os-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .card__header_website-and-tel {
@@ -23,9 +31,4 @@ body {
     justify-content: row;
 }
 
-.os__title {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+

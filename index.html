@@ -35,7 +35,7 @@
                 <br><br>
 
                 <div class="main-content-title"> <!-- main-title -->
-                    <h1 class="display-5" id="text">Escreva sua ordem de serviço</h1>
+                    <h1 class="display-5" id="text">Ordem de serviço</h1>
                     <h1 class="display-5" id="text-degrade">com agilidade e precisão.</h1>
                 </div>
                 <br><br>
@@ -432,7 +432,7 @@
                         <section class="osButtons__section">
                             <div class="container">
                                 <div class="osButtons">
-                                    <button type="button" class="btn btn-outline-dark col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4" id="showDeleteModal__button" onclick="showDeleteModal()">Limpar formulário</button>
+                                    <button type="button" class="btn btn-outline-dark col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4" id="showDeleteModal__button" onclick="showDeleteModal()">Clear</button>
                                     <button type="button" class="btn btn-custom col-6 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4" id="showWindowPreview__button">Preview</button>
                                 </div>
                             </div>
@@ -469,14 +469,23 @@
 
 
 
+
+
+
     <!-- PreviewModal block/scope -->
     <div id="previewModal" class="modal" style="display: none;">
         <div class="modal-content" id="preview-modal-content">
             <iframe id="previewFrame" src="windowPreview.html"></iframe>
-            <div id="modal-buttons" id="preview-modal-buttons">
-                <button type="button" class="btn btn-outline-dark" id="printButton">Imprimir</button>
-                <button type="button" class="btn btn-outline-dark" id="closeButton">Fechar preview</button>
-            </div>
+            <!-- <div class="container">  -->
+                <!-- <div class="row"> -->
+                    <!-- <div class="col-6"> -->
+                        <div id="modal-buttons" id="preview-modal-buttons">
+                            <button type="button" class="btn btn-outline-dark" id="closeButton">Close Preview</button>
+                            <button type="button" class="btn btn-outline-dark" id="printButton">Print</button>
+                        </div>
+                    <!-- </div> -->
+                <!-- </div>  -->
+            <!-- </div> -->
         </div>
     </div>
 
