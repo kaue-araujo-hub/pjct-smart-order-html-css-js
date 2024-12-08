@@ -1,11 +1,7 @@
 
-/* body {
-    /* padding: 20px; 
-} */
 
-.inputFieldsForm {
-    min-width: 210mm;
-    max-width: 210mm;
+body {
+    max-width: 21cm;
 }
 
 .card__header {
