@@ -189,14 +189,14 @@
                         </div>
                     </div>
                 </section>
-                
+                <br><br>
     
                 <!-- Form Displacement to go and displacement to return block/scope -->
                 <section class="displacement__section">
                     <div class="container">
     
                         <div class="displacement__title-and-icon">
-                            <legend class="section__title" id="displacement__section-title"><strong>Deslocamento</strong></legend>
+                            <h5 class="section__title" id="displacement__section-title">Deslocamento</h5>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
                             </svg>
@@ -310,41 +310,35 @@
                         </div>
                     </div>
                 </section>
-                
+                <br><br>
     
                 <!-- Form Time of service block/scope -->
                 <section class="timeAndDescription__section">
                     <div class="container">
     
                         <div class="timeAndDescription__title">
-                            <legend class="section__title" id="section__title-timeOfService"><strong>Descrição do Serviço</strong></legend>
+                            <h5 class="section__title" id="section__title-timeOfService">Descrição do Serviço</h5>
                         </div>
     
                         <div class="row g-3">
                             <div class="col-6 col-sm-3">
                                 <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="startTimeInput__preview">
                                     <label for="startTimeLabel">Hora de Início</label>
+                                    <span type="text" class="form-control" id="startTimeInput__preview"></span>
                                 </div>
                             </div>
     
                             <div class="col-6 col-sm-3">
                                 <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="endTimeInput__preview'">
                                     <label for="endTimeLabel">Hora de Término</label>
+                                    <span type="text" class="form-control" id="endTimeInput__preview"></span>
                                 </div>
                             </div>
     
                             <div class="col-12 col-sm-6">
                                 <div class="form-floating mb-2">
-                                    <select class="form-select" id="serviceStatusInput__preview" aria-label="Floating label select example">
-                                        <option selected disabled value required>Selecione</option>
-                                        <option value="1">Concluído</option>
-                                        <option value="2">Não foi possível concluir</option>
-                                        <option value="3">Em andamento</option>
-                                        <option value="4">Cancelado</option>
-                                    </select>
                                     <label for="serviceStatusLabel">Status de Atendimento</label>
+                                    <span class="form-select" id="serviceStatusInput__preview"></span>
                                 </div>
                             </div>
     
@@ -363,8 +357,8 @@
                             <!-- Form Description of service block/scope -->
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
                                 <div class="form-floating mb-5">
-                                    <textarea class="form-control" id="serviceDescriptionInput__preview" style="height: 100px"></textarea>
                                     <label for="serviceDescriptionLabel">Descrição do serviço</label>
+                                    <span class="form-control" id="serviceDescriptionInput__preview" style="height: 100px"></span>
                                 </div>
                             </div>
                         </div>
