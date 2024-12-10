@@ -514,9 +514,16 @@
 
     <script>
 
-        document.getElementById("showWindowPreview__button").addEventListener("click", function () {
-            document.getElementById("previewModal").style.display = "flex";
+
+        window.documemt.addEventListenner("DOMContentLoaded", () => {
+            const iframePreview = window.document.getElementById("#printButton").addEventListener("click" , () => {
+                iframePreview.print();
+            });
         });
+
+        // document.getElementById("showWindowPreview__button").addEventListener("click", function () {
+        //     document.getElementById("previewModal").style.display = "flex";
+        // });
     </script>
 
 </body>
