@@ -39,6 +39,26 @@
             justify-content: space-evenly;
         }
 
+
+        .customer__section {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .customer__div-one {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-bottom: 42px;
+        }
+
+        .customer__div-two {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
     </style>
     
 </head>
@@ -124,33 +144,36 @@
 
             <!-- Form Customer information block/scope -->
             <section class="customer__section">
-                <div class="container ">
+                <div class="">
 
-                    <div class="row">
-                        <div class="customer__title">
-                            <h5 class="section__title" id="customer__section-title">Cliente</h5>
-                        </div>
+                    <div class="customer__title">
+                        <h3 class="section__title" id="customer__section-title">Cliente</h3>
+                    </div>
 
-                        <div class="col-6 col-sm-6">
-                            <div class="form mb-4">
+                    <div class="customer__div-one">
+                        <div class="institutionName__div">
+                            <div class="institutionName__field">
                                 <label for="institutionNameLabel">Nome da Instituição</label>
-                                <span type="text" class="form-control" id="institutionNameInput__preview"></span>
+                                <span type="text" id="institutionNameInput__preview"></span>
                                 
                             </div>
                         </div>
 
-                        <div class="col-6 col-sm-6">
-                            <div class="form mb-4">
+                        <div class="addressCustomer__div">
+                            <div class="addressCustomer__field">
                                 <label for="addressCustomerLabel">Endereço</label>
-                                <span type="text" class="form-control" id="addressCustomerInput__preview"></span>
+                                <span type="text" id="addressCustomerInput__preview"></span>
                                 
                             </div>
                         </div>
+                    </div>
+                    <div class="customer__div-two">
+                    
 
                         <div class="col-4 col-sm-4">
                             <div class="form">
                                 <label for="municipalityLabel">Municipio</label>
-                                <span type="text" class="form-control" id="municipalityInput__preview"></span>
+                                <span type="text" id="municipalityInput__preview"></span>
                                 
                             </div>
                         </div>
@@ -158,7 +181,7 @@
                         <div class="col-1 col-sm-1">
                             <div class="form">
                                 <label for="ufStatesLabel">UF</label>
-                                <span class="form-select" id="ufStatesInput__preview"></span>
+                                <span id="ufStatesInput__preview"></span>
 
                             </div>
                         </div>
@@ -166,7 +189,7 @@
                         <div class="col-4 col-sm-4">
                             <div class="form">
                                 <label for="customerContactNameLabel">Contato</label>
-                                <span type="text" class="form-control" id="customerContactNameInput__preview"></span>
+                                <span type="text" id="customerContactNameInput__preview"></span>
                                 
                             </div>
                         </div>
@@ -174,7 +197,7 @@
                         <div class="col-3 col-sm-3">
                             <div class="form">
                                 <label for="customerContactNumberLabel">Cel/Tel</label>
-                                <span type="text" class="form-control" id="customerContactNumberInput__preview"></span>
+                                <span type="text" id="customerContactNumberInput__preview"></span>
                                 
                             </div>
                         </div>
