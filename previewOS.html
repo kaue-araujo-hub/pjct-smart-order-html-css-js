@@ -5,72 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ordem de Serviço * Window Preview">
     <title>Univen * Ordem de Serviço</title>
+
+    <style>
+
+        body {
+            width: 21cm;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card__header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px;
+            background-color: black;
+            color: white;
+            margin-bottom: 42px;
+        } 
+
+        .card__header_os-title {
+            font-size: 24px;
+        }
+
+        .card__header_website-and-tel {
+            font-size: 24px;
+        }
+
+
+        .typeOfService__field {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+    </style>
+    
 </head>
+
+
+<!-- 41 9616-1271 -->
+<!-- • -->
+<!-- &nbsp; -->
+
 <body class="a4-page">
 
     <!-- A4 header-->
     <header class="card__header-preview-os">
         <div class="card__header">
-            <div class="card__header_img">
-                <img src="assets/window-print-preview/Logo-branco Univen-140x40.png" alt="univen-logo" width="140" height="40" class="d-inline-block align-text-top">
-            </div>
 
             <div class="card__header_os-title">
                 <h5>Ordem de Serviço</h5>
             </div>
 
+            <div class="card__header_img">
+                <img src="assets/window-print-preview/Logo-branco Univen-140x40.png" alt="univen-logo" width="140" height="40" class="d-inline-block align-text-top">
+            </div>
+
             <div class="card__header_website-and-tel">
-                <h5 id="card__header_website-and-tel">univen.com.br | 41 9616-1271</h5>
+                <h5 id="card__header_website-and-tel">univen.com.br</h5>
             </div>
         </div>
     </header>
 
-    <main>
+    <main style="padding-left: 20px; padding-right: 20px;">
         <form action="" class="osForm">
 
             <!-- Form Service information block/scope -->
             <section class="typeOfService__section">
+                
+                <div class="typeOfService__title">
+                    <h3 class="section__title" id="section__title-typeOfService">Serviço</h3>
+                </div>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="typeOfService__title">
-                            <h5 class="section__title" id="section__title-typeOfService">Serviço</h5>
-                        </div>
+                <div class="typeOfService__inputs">
+                    <div class="typeOfService__field">
+                        
 
-                        <div class="col-2 col-sm-2 col-lg-2">
-                            <div class="form">
+                        <div class="dateOfService__div">
+                            <div class="dateOfService__field">
                                 <label for="dateOfServiceLabel">Data</label>
-                                <span type="date" class="form-control" id="dateOfServiceInput__preview"></span>
+                                <span type="date" id="dateOfServiceInput__preview"></span>
                                 
                             </div>
                         </div>
 
-                        <div class="col-3 col-sm-3 col-lg-3">
-                            <div class="form">
+                        <div class="numberOfOrder__div">
+                            <div class="numberOfOrder__field">
                                 <label for="numberOfOrderLabel">Nº do Chamado</label>
-                                <span type="text" class="form-control" id="numberOfOrderInput__preview"></span>
+                                <span type="text" id="numberOfOrderInput__preview"></span>
                                 
                             </div>
                         </div>
 
                     
-                        <div class="col-4 col-sm-4 col-lg-4">
-                            <div class="form">
+                        <div class="typeOfService__div">
+                            <div class="typeOfService__field">
                                 <label for="typeOfServiceLabel">Serviço</label>
-                                <span class="form-select" id="typeOfServiceInput__preview"></span>
+                                <span id="typeOfServiceInput__preview"></span>
                             </div>
                         </div>
                     
 
                     
-                        <div class="col-3 col-sm-3 col-lg-3">
-                            <div class="form">
+                        <div class="equipmentBrandInput__div">
+                            <div class="equipmentBrandInput__field">
                                 <label for="equipmentBrandLabel">Fabricante</label>
-                                <span class="form-select" id="equipmentBrandInput__preview"></span>
+                                <span id="equipmentBrandInput__preview"></span>
                             </div>
                         </div> 
                     </div>
                 </div> 
+
+
+
             </section> 
             <br><br>
 
