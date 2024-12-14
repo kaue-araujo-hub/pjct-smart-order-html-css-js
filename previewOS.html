@@ -59,6 +59,19 @@
             justify-content: space-evenly;
         }
 
+
+        .equipment__fields {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-bottom: 42px;
+        }
+
+        /* .displacement__input-fields{
+
+        } */
+
+
     </style>
     
 </head>
@@ -210,15 +223,17 @@
             <section class="equipment__section">
                 <div class="container">
 
-                    <div class="row">
-                        <div class="equipment__title">
-                            <h5 class="section__title" id="equipment__section-title">Equipamento</h5>
-                        </div>
+
+                    <div class="equipment__title">
+                        <h3 class="section__title" id="equipment__section-title">Equipamento</h3>
+                    </div>
+
+                    <div class="equipment__fields">
 
                         <div class="col-8 col-sm-8 col-md-8">
                             <div class="form mb-4">
                                 <label for="nameOfEquipmentLabel">Nome do Equipamento</label>
-                                <span type="text" class="form-control" id="nameOfEquipmentInput__preview"></span>
+                                <span type="text" id="nameOfEquipmentInput__preview"></span>
                                 
                             </div>
                         </div>
@@ -226,7 +241,7 @@
                         <div class="col-4 col-sm-4 col-md-4">
                             <div class="form mb-4">
                                 <label for="serialNumberLabel">Nº de Série</label>
-                                <span type="text" class="form-control" id="serialNumberInput__preview"></span>
+                                <span type="text" id="serialNumberInput__preview"></span>
                                 
                             </div>
                         </div>
@@ -234,7 +249,7 @@
                         <div class="col-6 col-sm-6 col-md-6">
                             <div class="form">
                                 <label for="equipmentModalityLabel">Modalidade</label>
-                                <span class="form-select" id="equipmentModalityInput__preview"></span>
+                                <span id="equipmentModalityInput__preview"></span>
                                 
                             </div>
                         </div>
@@ -242,7 +257,7 @@
                         <div class="col-6 col-sm-6 col-md-6">
                             <div class="form">
                                 <label for="equipStatusLabel">Status do Equipamento</label>
-                                <span class="form-select" id="equipStatusInput__preview"></span>
+                                <span id="equipStatusInput__preview"></span>
                                 
                             </div>
                         </div>
@@ -253,11 +268,11 @@
 
             <!-- Form Displacement to go and displacement to return block/scope -->
             <section class="displacement__section">
-                <div class="container">
+                <div class="displacement__input-fields">
 
                     <div class="displacement__title-and-icon">
-                        <h5 class="section__title" id="displacement__section-title">Deslocamento</h5>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                        <h3 class="section__title" id="displacement__section-title">Deslocamento</h3>
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16"> -->
                             <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
                         </svg>
                     </div>
@@ -267,7 +282,7 @@
                     <div class="displacement__section-to-go">
                         <div class="row g-3">
                             
-                            <h6>Deslocamento de Ida</h6>
+                            <h4>Deslocamento de Ida</h4>
                             <!-- departureDateField to GO -->
                             <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
                                 <div class="form-floating mb-2">
@@ -321,7 +336,7 @@
                     <div class="displacement__section-to-return"> 
                         <div class="row g-3">
 
-                            <h6>Deslocamento de Volta</h6>
+                            <h4>Deslocamento de Volta</h4>
                             <!-- departureDateField to RETURN -->
                             <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
                                 <div class="form-floating mb-2">
@@ -377,7 +392,7 @@
                 <div class="container">
 
                     <div class="timeAndDescription__title">
-                        <h5 class="section__title" id="section__title-timeOfService">Descrição do Serviço</h5>
+                        <h3 class="section__title" id="section__title-timeOfService">Descrição do Serviço</h3>
                     </div>
 
                     <div class="row g-3">
