@@ -475,17 +475,13 @@
     <!-- PreviewModal block/scope -->
     <div id="previewModal" class="modal" style="display: none;">
         <div class="modal-content" id="preview-modal-content">
-            <iframe id="previewFrame" src="windowPreview.html"></iframe>
-            <!-- <div class="container">  -->
-                <!-- <div class="row"> -->
-                    <!-- <div class="col-6"> -->
-                        <div id="modal-buttons" id="preview-modal-buttons">
-                            <button type="button" class="btn btn-outline-dark" id="closeButton">Close Preview</button>
-                            <button type="button" class="btn btn-outline-dark" id="printButton">Print</button>
-                        </div>
-                    <!-- </div> -->
-                <!-- </div>  -->
-            <!-- </div> -->
+            <div class="iframe-window">
+                <iframe id="previewFrame" src="windowPreview.html"></iframe>
+            </div>
+            <div id="modal-buttons" id="preview-modal-buttons">
+                <button type="button" class="btn btn-outline-dark" id="closeButton">Close Preview</button>
+                <button type="button" class="btn btn-outline-dark" id="printButton">Print</button>
+            </div>
         </div>
     </div>
 
@@ -513,17 +509,10 @@
     <script src="assets/js/previewModalBox__functions.js" defer></script>
 
     <script>
-
-
-        window.documemt.addEventListenner("DOMContentLoaded", () => {
-            const iframePreview = window.document.getElementById("#printButton").addEventListener("click" , () => {
-                iframePreview.print();
-            });
+        const printIframe = window.document.getElementById("printButton");
+        printIframe.addEventListener("click", () => {
+            window.print();
         });
-
-        // document.getElementById("showWindowPreview__button").addEventListener("click", function () {
-        //     document.getElementById("previewModal").style.display = "flex";
-        // });
     </script>
 
 </body>

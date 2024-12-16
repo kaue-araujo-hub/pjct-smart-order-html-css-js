@@ -1,6 +1,8 @@
 
 /* Modal */
 #previewModal {
+    width: 100%;
+    height: 100%;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
@@ -8,9 +10,11 @@
 
 /* Conteúdo do modal */
 #preview-modal-content {
-    max-width: 21cm;
-    height: 95%;
-    padding: 15px;
+    max-width: 100%;
+    min-width: 100%;
+    /* min-height: fit-content; */
+    height: 96%;
+    padding: 12px;
     
 }
 
@@ -24,8 +28,8 @@
 #preview-modal-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
+    /* justify-content: space-between; */
+    /* gap: 20px; */
 }
 
 

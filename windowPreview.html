@@ -23,379 +23,348 @@
     <!-- Form fields -->
     <section class="inputFieldsForm">
         <!-- <div class="container"> -->
+        <header class="card__header-preview-os">
             <div class="card__header">
-                <div class="card__header_img">
-                    <img src="assets/window-print-preview/Logo-branco Univen-140x40.png" alt="univen-logo" width="140" height="40" class="d-inline-block align-text-top">
-                </div>
-
+    
                 <div class="card__header_os-title">
                     <h5>Ordem de Serviço</h5>
                 </div>
-
-                <div class="card__header_website-and-tel">
-                    <h5 id="card__header_website-and-tel">univen.com.br | 41 9616-1271</h5>
+    
+                <div class="card__header_img">
+                    <img src="assets/window-print-preview/Logo-branco Univen-140x40.png" alt="univen-logo" width="140" height="40" class="d-inline-block align-text-top">
+                </div>
+    
+                <div class="card__header_website">
+                    <h5 id="card__header_website">univen.com.br</h5>
                 </div>
             </div>
+        </header>
 
+        <form class="osForm">
+            <!-- Form Service information block/scope -->
+            <section class="typeOfService__section">
 
-            <form class="osForm">
-                <!-- Form Service information block/scope -->
-                <section class="typeOfService__section">
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="typeOfService__title">
-                                <h5 class="section__title" id="section__title-typeOfService">Serviço</h5>
-                            </div>
-
-                            <div class="col-2 col-sm-2 col-lg-2">
-                                <div class="form">
-                                    <label for="dateOfServiceLabel">Data</label>
-                                    <span type="date" class="form-control" id="dateOfServiceInput__preview"></span>
-                                    
-                                </div>
-                            </div>
-    
-                            <div class="col-3 col-sm-3 col-lg-3">
-                                <div class="form">
-                                    <label for="numberOfOrderLabel">Nº do Chamado</label>
-                                    <span type="text" class="form-control" id="numberOfOrderInput__preview"></span>
-                                    
-                                </div>
-                            </div>
-    
-                        
-                            <div class="col-4 col-sm-4 col-lg-4">
-                                <div class="form">
-                                    <label for="typeOfServiceLabel">Serviço</label>
-                                    <span class="form-select" id="typeOfServiceInput__preview"></span>
-                                </div>
-                            </div>
-                        
-    
-                        
-                            <div class="col-3 col-sm-3 col-lg-3">
-                                <div class="form">
-                                    <label for="equipmentBrandLabel">Fabricante</label>
-                                    <span class="form-select" id="equipmentBrandInput__preview"></span>
-                                </div>
-                            </div> 
+                <div class="container">
+                    <div class="row">
+                        <div class="typeOfService__title">
+                            <h5 class="section__title" id="section__title-typeOfService">Serviço</h5>
                         </div>
-                    </div> 
-                </section> 
-                <br><br>
 
-                <!-- Form Customer information block/scope -->
-                <section class="customer__section">
-                    <div class="container ">
-    
-                        <div class="row">
-                            <div class="customer__title">
-                                <h5 class="section__title" id="customer__section-title">Cliente</h5>
-                            </div>
-
-                            <div class="col-6 col-sm-6">
-                                <div class="form mb-4">
-                                    <label for="institutionNameLabel">Nome da Instituição</label>
-                                    <span type="text" class="form-control" id="institutionNameInput__preview"></span>
-                                    
-                                </div>
-                            </div>
-    
-                            <div class="col-6 col-sm-6">
-                                <div class="form mb-4">
-                                    <label for="addressCustomerLabel">Endereço</label>
-                                    <span type="text" class="form-control" id="addressCustomerInput__preview"></span>
-                                    
-                                </div>
-                            </div>
-    
-                            <div class="col-4 col-sm-4">
-                                <div class="form">
-                                    <label for="municipalityLabel">Municipio</label>
-                                    <span type="text" class="form-control" id="municipalityInput__preview"></span>
-                                    
-                                </div>
-                            </div>
-    
-                            <div class="col-1 col-sm-1">
-                                <div class="form">
-                                    <label for="ufStatesLabel">UF</label>
-                                    <span class="form-select" id="ufStatesInput__preview"></span>
-
-                                </div>
-                            </div>
-    
-                            <div class="col-4 col-sm-4">
-                                <div class="form">
-                                    <label for="customerContactNameLabel">Contato</label>
-                                    <span type="text" class="form-control" id="customerContactNameInput__preview"></span>
-                                    
-                                </div>
-                            </div>
-    
-                            <div class="col-3 col-sm-3">
-                                <div class="form">
-                                    <label for="customerContactNumberLabel">Cel/Tel</label>
-                                    <span type="text" class="form-control" id="customerContactNumberInput__preview"></span>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br><br>
-
-                <!-- Form Equipment block/scope -->
-                <section class="equipment__section">
-                    <div class="container">
-    
-                        <div class="row">
-                            <div class="equipment__title">
-                                <h5 class="section__title" id="equipment__section-title">Equipamento</h5>
-                            </div>
-
-                            <div class="col-8 col-sm-8 col-md-8">
-                                <div class="form mb-4">
-                                    <label for="nameOfEquipmentLabel">Nome do Equipamento</label>
-                                    <span type="text" class="form-control" id="nameOfEquipmentInput__preview"></span>
-                                    
-                                </div>
-                            </div>
-    
-                            <div class="col-4 col-sm-4 col-md-4">
-                                <div class="form mb-4">
-                                    <label for="serialNumberLabel">Nº de Série</label>
-                                    <span type="text" class="form-control" id="serialNumberInput__preview"></span>
-                                    
-                                </div>
-                            </div>
-    
-                            <div class="col-6 col-sm-6 col-md-6">
-                                <div class="form">
-                                    <label for="equipmentModalityLabel">Modalidade</label>
-                                    <span class="form-select" id="equipmentModalityInput__preview"></span>
-                                    
-                                </div>
-                            </div>
-    
-                            <div class="col-6 col-sm-6 col-md-6">
-                                <div class="form">
-                                    <label for="equipStatusLabel">Status do Equipamento</label>
-                                    <span class="form-select" id="equipStatusInput__preview"></span>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br><br>
-    
-                <!-- Form Displacement to go and displacement to return block/scope -->
-                <section class="displacement__section">
-                    <div class="container">
-    
-                        <div class="displacement__title-and-icon">
-                            <h5 class="section__title" id="displacement__section-title">Deslocamento</h5>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
-                            </svg>
-                        </div>
-                        
-                        
-                        <!-- displacement__section-to-go -->
-                        <div class="displacement__section-to-go">
-                            <div class="row g-3">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                            <div class="form">
+                                <label for="dateOfServiceLabel">Data</label>
+                                <span type="date" class="form-control" id="dateOfServiceInput__preview"></span>
                                 
-                                <h6>Deslocamento de Ida</h6>
-                                <!-- departureDateField to GO -->
-                                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
-                                    <div class="form-floating mb-2">
-                                        <label for="departureDateLabel">Data de Ida</label>
-                                        <span type="date" class="form-control" id="departureDateInput__preview"></span>
-                                        
-                                    </div>
-                                </div>
-    
-                                <!-- departureTimeField to GO -->
-                                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
-                                    <div class="form-floating mb-2">
-                                        <label for="departureTimeToGoLabel">Hora de Saída</label>
-                                        <span type="text" class="form-control" id="departureTimeToGoInput__preview"></span>
-                                        
-                                    </div>
-                                </div>
-    
-                                <!-- arrivalTimeField to GO -->
-                                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
-                                    <div class="form-floating mb-2">
-                                        <label for="arrivalTimeToGoLabel">Hora de Chegada</label>
-                                        <span type="text" class="form-control" id="arrivalTimeToGoInput__preview"></span>
-                                        
-                                    </div>
-                                </div>
-    
-                                <!-- departureLocationField to GO -->
-                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
-                                    <div class="form-floating mb-2">
-                                        <label for="departureLocationToGoLabel">Local de Origem</label>
-                                        <span type="text" class="form-control" id="departureLocationToGoInput__preview"></span>
-                                        
-                                    </div>
-                                </div>
-    
-                                <!-- arrivalLocationField to GO -->
-                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
-                                    <div class="form-floating mb-5">
-                                        <label for="arrivalLocationToGoLabel">Local de Destino</label>
-                                        <span type="text" class="form-control" id="arrivalLocationToGoInput"></span>
-                                        
-                                    </div>
-                                </div>
                             </div>
                         </div>
-    
-    
-    
-                        <!-- displacement__section-to-return -->
-                        <div class="displacement__section-to-return"> 
-                            <div class="row g-3">
-    
-                                <h6>Deslocamento de Volta</h6>
-                                <!-- departureDateField to RETURN -->
-                                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
-                                    <div class="form-floating mb-2">
-                                        <label for="returnDateLabel">Data de Volta</label>
-                                        <span type="date" class="form-control" id="returnDateInput__preview"></span>
-                                        
-                                    </div>
-                                </div>
-    
-                                <!-- departureTimeField to RETURN -->
-                                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
-                                    <div class="form-floating mb-2">
-                                        <label for="departureTimeToReturnLabel">Hora de Saída</label>
-                                        <span type="text" class="form-control" id="departureTimeToReturnInput__preview"></span>
-                                        
-                                    </div>
-                                </div>
-    
-                                <!-- arrivalTimeField to RETURN -->
-                                <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
-                                    <div class="form-floating mb-2">
-                                        <label for="arrivalTimeToReturnLabel">Hora de Chegada</label>
-                                        <span type="text" class="form-control" id="arrivalTimeToReturnInput__preview"></span>
-                                        
-                                    </div>
-                                </div>
-    
-                                <!-- departureLocationField to RETURN -->
-                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
-                                    <div class="form-floating mb-2">
-                                        <label for="departureLocationToReturnLabel">Local de Origem</label>
-                                        <span type="text" class="form-control" id="departureLocationToReturnInput__preview"></span>
-                                        
-                                    </div>
-                                </div>
-    
-                                <!-- arrivalLocationField to RETURN -->
-                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
-                                    <div class="form-floating">
-                                        <label for="arrivalLocationToReturnLabel">Local de Destino</label>
-                                        <span type="text" class="form-control" id="arrivalLocationToReturnInput__preview"></span>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br><br>
-    
-                <!-- Form Time of service block/scope -->
-                <section class="timeAndDescription__section">
-                    <div class="container">
-    
-                        <div class="timeAndDescription__title">
-                            <h5 class="section__title" id="section__title-timeOfService">Descrição do Serviço</h5>
-                        </div>
-    
-                        <div class="row g-3">
-                            <div class="col-6 col-sm-3">
-                                <div class="form-floating mb-2">
-                                    <label for="startTimeLabel">Hora de Início</label>
-                                    <span type="text" class="form-control" id="startTimeInput__preview"></span>
-                                </div>
-                            </div>
-    
-                            <div class="col-6 col-sm-3">
-                                <div class="form-floating mb-2">
-                                    <label for="endTimeLabel">Hora de Término</label>
-                                    <span type="text" class="form-control" id="endTimeInput__preview"></span>
-                                </div>
-                            </div>
-    
-                            <div class="col-12 col-sm-6">
-                                <div class="form-floating mb-2">
-                                    <label for="serviceStatusLabel">Status de Atendimento</label>
-                                    <span class="form-select" id="serviceStatusInput__preview"></span>
-                                </div>
-                            </div>
-    
-                            <div class="col-12 col-sm-6" style="display: none;">
-                                <div class="form-floating mb-2">
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                        <option selected disabled value required>Selecione</option>
-                                        <option value="1">Usuário</option>
-                                        <option value="2">Siteplanning</option>
-                                        <option value="3">Equipamento</option>
-                                    </select>
-                                    <label for="floatingSelect">Causa do Problema</label>
-                                </div>
-                            </div>
-    
-                            <!-- Form Description of service block/scope -->
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
-                                <div class="form-floating mb-5">
-                                    <label for="serviceDescriptionLabel">Descrição do serviço</label>
-                                    <span class="form-control" id="serviceDescriptionInput__preview" style="height: 100px"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                        <br><br>
-                    </form>
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="form">
+                                <label for="numberOfOrderLabel">Nº do Chamado</label>
+                                <span type="text" class="form-control" id="numberOfOrderInput__preview"></span>
+                                
+                            </div>
+                        </div>
+
+                    
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <div class="form">
+                                <label for="typeOfServiceLabel">Serviço</label>
+                                <span class="form-select" id="typeOfServiceInput__preview"></span>
+                            </div>
+                        </div>
+                    
+
+                    
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="form">
+                                <label for="equipmentBrandLabel">Fabricante</label>
+                                <span class="form-select" id="equipmentBrandInput__preview"></span>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+            </section> 
+            <br><br>
+
+            <!-- Form Customer information block/scope -->
+            <section class="customer__section">
+                <div class="container ">
+
+                    <div class="row">
+                        <div class="customer__title">
+                            <h5 class="section__title" id="customer__section-title">Cliente</h5>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="form mb-4">
+                                <label for="institutionNameLabel">Nome da Instituição</label>
+                                <span type="text" class="form-control" id="institutionNameInput__preview"></span>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="form mb-4">
+                                <label for="addressCustomerLabel">Endereço</label>
+                                <span type="text" class="form-control" id="addressCustomerInput__preview"></span>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <div class="form">
+                                <label for="municipalityLabel">Municipio</label>
+                                <span type="text" class="form-control" id="municipalityInput__preview"></span>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                            <div class="form">
+                                <label for="ufStatesLabel">UF</label>
+                                <span class="form-select" id="ufStatesInput__preview"></span>
+
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <div class="form">
+                                <label for="customerContactNameLabel">Contato</label>
+                                <span type="text" class="form-control" id="customerContactNameInput__preview"></span>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="form">
+                                <label for="customerContactNumberLabel">Cel/Tel</label>
+                                <span type="text" class="form-control" id="customerContactNumberInput__preview"></span>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+            <br><br>
+
+            <!-- Form Equipment block/scope -->
+            <section class="equipment__section">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="equipment__title">
+                            <h5 class="section__title" id="equipment__section-title">Equipamento</h5>
+                        </div>
+
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                            <div class="form mb-4">
+                                <label for="nameOfEquipmentLabel">Nome do Equipamento</label>
+                                <span type="text" class="form-control" id="nameOfEquipmentInput__preview"></span>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <div class="form mb-4">
+                                <label for="serialNumberLabel">Nº de Série</label>
+                                <span type="text" class="form-control" id="serialNumberInput__preview"></span>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="form">
+                                <label for="equipmentModalityLabel">Modalidade</label>
+                                <span class="form-select" id="equipmentModalityInput__preview"></span>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="form">
+                                <label for="equipStatusLabel">Status do Equipamento</label>
+                                <span class="form-select" id="equipStatusInput__preview"></span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br>
+
+            <!-- Form Displacement to go and displacement to return block/scope -->
+            <section class="displacement__section">
+                <div class="container">
+
+                    <div class="displacement__title-and-icon">
+                        <h5 class="section__title" id="displacement__section-title">Deslocamento</h5>
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                        </svg> -->
+                    </div>
+                    
+                    
+                    <!-- displacement__section-to-go -->
+                    <div class="displacement__section-to-go">
+                        <div class="row g-3">
+                            
+                            <h6>Deslocamento de Ida</h6>
+                            <!-- departureDateField to GO -->
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                                <div class="form-floating mb-2">
+                                    <label for="departureDateLabel">Data de Ida</label>
+                                    <span type="date" class="form-control" id="departureDateInput__preview"></span>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- departureTimeField to GO -->
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                                <div class="form-floating mb-2">
+                                    <label for="departureTimeToGoLabel">Hora de Saída</label>
+                                    <span type="text" class="form-control" id="departureTimeToGoInput__preview"></span>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- arrivalTimeField to GO -->
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                                <div class="form-floating mb-2">
+                                    <label for="arrivalTimeToGoLabel">Hora de Chegada</label>
+                                    <span type="text" class="form-control" id="arrivalTimeToGoInput__preview"></span>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- departureLocationField to GO -->
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="form-floating mb-2">
+                                    <label for="departureLocationToGoLabel">Local de Origem</label>
+                                    <span type="text" class="form-control" id="departureLocationToGoInput__preview"></span>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- arrivalLocationField to GO -->
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="form-floating mb-5">
+                                    <label for="arrivalLocationToGoLabel">Local de Destino</label>
+                                    <span type="text" class="form-control" id="arrivalLocationToGoInput"></span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- displacement__section-to-return -->
+                    <div class="displacement__section-to-return"> 
+                        <div class="row g-3">
+
+                            <h6>Deslocamento de Volta</h6>
+                            <!-- departureDateField to RETURN -->
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                                <div class="form-floating mb-2">
+                                    <label for="returnDateLabel">Data de Volta</label>
+                                    <span type="date" class="form-control" id="returnDateInput__preview"></span>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- departureTimeField to RETURN -->
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                                <div class="form-floating mb-2">
+                                    <label for="departureTimeToReturnLabel">Hora de Saída</label>
+                                    <span type="text" class="form-control" id="departureTimeToReturnInput__preview"></span>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- arrivalTimeField to RETURN -->
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                                <div class="form-floating mb-2">
+                                    <label for="arrivalTimeToReturnLabel">Hora de Chegada</label>
+                                    <span type="text" class="form-control" id="arrivalTimeToReturnInput__preview"></span>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- departureLocationField to RETURN -->
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="form-floating mb-2">
+                                    <label for="departureLocationToReturnLabel">Local de Origem</label>
+                                    <span type="text" class="form-control" id="departureLocationToReturnInput__preview"></span>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- arrivalLocationField to RETURN -->
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="form-floating">
+                                    <label for="arrivalLocationToReturnLabel">Local de Destino</label>
+                                    <span type="text" class="form-control" id="arrivalLocationToReturnInput__preview"></span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br><br>
+
+            <!-- Form Time of service block/scope -->
+            <section class="timeAndDescription__section">
+                <div class="container">
+
+                    <div class="timeAndDescription__title">
+                        <h5 class="section__title" id="section__title-timeOfService">Descrição do Serviço</h5>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="form-floating mb-2">
+                                <label for="startTimeLabel">Hora de Início</label>
+                                <span type="text" class="form-control" id="startTimeInput__preview"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-6 col-xxl-3">
+                            <div class="form-floating mb-2">
+                                <label for="endTimeLabel">Hora de Término</label>
+                                <span type="text" class="form-control" id="endTimeInput__preview"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="form-floating mb-2">
+                                <label for="serviceStatusLabel">Status de Atendimento</label>
+                                <span class="form-select" id="serviceStatusInput__preview"></span>
+                            </div>
+                        </div>
+
+                        <!-- Form Description of service block/scope -->
+                        <div class="col-xxl-12">
+                            <div class="form-floating mb-5">
+                                <label for="serviceDescriptionLabel">Descrição do serviço</label>
+                                <span class="form-control" id="serviceDescriptionInput__preview" style="height: 100px"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <br><br>
+        </form>
     </section>
     <br><br>
-
-
-
-
-
-
-
 
     <!-- JS functions -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="assets/window-print-preview/getData__windowPreview.js" defer></script>
     <script src="assets/window-print-preview/fixDate__windowPreview.js" defer></script>
     <script src="assets/js/modalBox__preview-functions.js" defer></script>
-
-    <script>
-
-        window.documemt.addEventListenner("DOMContentLoaded", () => {
-            const iframePreview = window.document.getElementById("#printButton").addEventListener("click" , () => {
-                iframePreview.print();
-            });
-        });
-
-    </script>
-
 
 </body>
 </html>

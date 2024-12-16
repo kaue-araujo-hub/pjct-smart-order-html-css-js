@@ -1,7 +1,7 @@
 
-
 body {
     max-width: 21cm;
+    min-width: 21cm;
 }
 
 .card__header {
@@ -22,7 +22,7 @@ body {
     margin-bottom: 20px;
 }
 
-.card__header_website-and-tel {
+.card__header_website {
     display: flex;
     justify-content: row;
 }
