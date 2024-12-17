@@ -478,7 +478,7 @@
             <div class="iframe-window">
                 <iframe id="previewFrame" src="windowPreview.html"></iframe>
             </div>
-            <div id="modal-buttons" id="preview-modal-buttons">
+            <div id="preview-modal-buttons">
                 <button type="button" class="btn btn-outline-dark" id="closeButton">Close Preview</button>
                 <button type="button" class="btn btn-outline-dark" id="printButton">Print</button>
             </div>
@@ -509,8 +509,9 @@
     <script src="assets/js/previewModalBox__functions.js" defer></script>
 
     <script>
-        const printIframe = window.document.getElementById("printButton");
-        printIframe.addEventListener("click", () => {
+        const printIframeButton = window.document.getElementById("printButton");
+        printIframeButton.addEventListener("click", () => {
+            const iframePage = window.document.getElementById("preview-modal-content");
             window.print();
         });
     </script>

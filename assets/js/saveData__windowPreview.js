@@ -6,11 +6,9 @@ Pegando o valor dos inputs e armazenando no localStorage
 
 */
 
+const previewButton = window.document.getElementById("showWindowPreview__button")
+previewButton.addEventListener("click" , () => {
 
-
-
-function saveDataPreview() {
-    // Variaveis 1º bloco do formulário 
     const dataServico = document.getElementById('dateOfServiceInput').value;
     const numeroChamado = document.getElementById('numberOfOrderInput').value;
     const tipoServico = document.getElementById('typeOfServiceInput').value;
@@ -20,8 +18,6 @@ function saveDataPreview() {
     localStorage.setItem('numberOfOrderInput', numeroChamado);
     localStorage.setItem('typeOfServiceInput', tipoServico);
     localStorage.setItem('equipmentBrandInput', fabricante);
-
-
 
     // Variaveis 2º bloco do formulário
     const nomeCliente = document.getElementById('institutionNameInput').value;
@@ -38,9 +34,6 @@ function saveDataPreview() {
     localStorage.setItem('customerContactNameInput', contatoCliente);
     localStorage.setItem('customerContactNumberInput', celTelCliente);
 
-
-
-
     // Variaveis 3º bloco do formulário
     const nomeEquipamento = document.getElementById('nameOfEquipmentInput').value;
     const nSerie = document.getElementById('serialNumberInput').value;
@@ -51,9 +44,6 @@ function saveDataPreview() {
     localStorage.setItem('serialNumberInput', nSerie);
     localStorage.setItem('equipmentModalityInput', modalidadeEquipamento);
     localStorage.setItem('equipStatusInput', equipStatus);
-    
-    
-
 
     // Variaveis 4º bloco do formulário
     const dataIda = document.getElementById('departureDateInput').value; //departureDateField to GO
@@ -68,8 +58,6 @@ function saveDataPreview() {
     localStorage.setItem('departureLocationToGoInput', localOrigemIda);
     localStorage.setItem('arrivalLocationToGoInput', localDestinoIda);
 
-
-
     // Variaveis 5º bloco do formulário
     const dataVolta = document.getElementById('returnDateInput').value;
     const horaInicioVolta = document.getElementById('departureTimeToReturnInput').value;
@@ -83,8 +71,6 @@ function saveDataPreview() {
     localStorage.setItem('departureLocationToReturnInput', localOrigemVolta);
     localStorage.setItem('arrivalLocationToReturnInput', localDestinoVolta);
 
-
-
     // Variaveis 6º bloco do formulário
     const inicioServico = document.getElementById('startTimeInput').value;
     const terminoServico = document.getElementById('endTimeInput').value;
@@ -93,17 +79,15 @@ function saveDataPreview() {
     localStorage.setItem('startTimeInput', inicioServico);
     localStorage.setItem('endTimeInput', terminoServico);
     localStorage.setItem('serviceStatusInput', statusAtend);
-    
-
 
     // Variaveis 7º bloco do formulário
     const descricaoServico = document.getElementById('serviceDescriptionInput').value;
     // Armazenando os valores no localStorage 9º bloco
     localStorage.setItem('serviceDescriptionInput', descricaoServico);
 
+});
 
-    // window.open('window-print-preview.html');
-}
+
 
 
 
