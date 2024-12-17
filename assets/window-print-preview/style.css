@@ -4,12 +4,17 @@ body {
     min-width: 21cm;
 }
 
+.inputFieldsForm {
+    display: flex;
+    flex-direction: column;
+}
+
 .card__header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 32px;
     background-color: black;
     color: white;
     margin-bottom: 42px;
