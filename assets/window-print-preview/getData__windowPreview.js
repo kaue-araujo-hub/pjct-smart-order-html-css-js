@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
     // typeOfService__section
-    const dateOfService = document.getElementById('dateOfServiceInput__preview');
-    dateOfService.textContent = localStorage.getItem('dateOfServiceInput');
+    document.getElementById('dateOfServiceInput__preview').textContent = localStorage.getItem('dateOfServiceInput');
     document.getElementById('numberOfOrderInput__preview').textContent = localStorage.getItem('numberOfOrderInput');
     document.getElementById('typeOfServiceInput__preview').textContent = localStorage.getItem('typeOfServiceInput');
     document.getElementById('equipmentBrandInput__preview').textContent = localStorage.getItem('equipmentBrandInput');
